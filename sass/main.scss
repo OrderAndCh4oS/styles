@@ -16,6 +16,8 @@
 @import "elements/modal";
 
 @import "styles/general";
+@import "styles/components/example";
 
-@import "elements/color";
-@import "elements/helpers";
+@import "helpers/color";
+@import "helpers/spacing";
+@import "helpers/helpers";

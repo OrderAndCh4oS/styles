@@ -1,0 +1,9 @@
+
+@each $i in $colors {
+  .bc-#{nth($i,1)} {
+    background-color: #{nth($i,2)};
+  }
+  .color-#{nth($i,1)} {
+    color: #{nth($i,2)};
+  }
+}

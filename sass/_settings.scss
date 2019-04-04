@@ -24,28 +24,50 @@ $color--light-grey: #b3b3b3;
 $color--grey: #808080;
 $color--dark-grey: #525252;
 $color--darker-grey: #414141;
-$color--black: #242121;
+$color--darkest-grey: #363636;
+$color--black: #1c1c1c;
 
 $color--green: #35c13a;
 $color--lighter-green: #3be541;
 $color--red: #c62d32;
 $color--lighter-red: #ee393c;
 
-$modal--overlay-bk: rgba(238, 238, 238, 0.8);
+$color--primary: $color--black;
+$color--primary--hover: $color--grey;
 
-$color--accent: $color--black;
-$color--accent--hover: $color--grey;
+$color--secondary: $color--dark-grey;
+$color--secondary--hover: $color--light-grey;
 
 $color--error: $color--red;
 $color--error--hover: $color--lighter-red;
 $color--valid: $color--green;
 $color--valid--hover: $color--lighter-green;
 
+$colors: "black" $color--black,
+"darkest-grey" $color--darkest-grey,
+"darker-grey" $color--darker-grey,
+"dark-grey" $color--dark-grey,
+"grey" $color--grey,
+"light-grey" $color--light-grey,
+"lighter-grey" $color--lighter-grey,
+"lightest-grey" $color--lightest-grey,
+"white" $color--white,
+"green" $color--green,
+"red" $color--red,
+"lighter-green" $color--lighter-green,
+"lighter-red" $color--lighter-red,
+"primary" $color--primary,
+"secondary" $color--secondary,
+"error" $color--error,
+"valid" $color--valid
+"transparent" transparent;
+
 $body--bk-color: $color--white;
 $wrapper--bk-color: $color--white;
+$modal--overlay--bk-color: rgba(238, 238, 238, 0.8);
 
-$link--color: $color--accent;
-$link--color--hover: $color--accent--hover;
+$link--color: $color--primary;
+$link--color--hover: $color--primary--hover;
 $link--decoration: none;
 
 /**
@@ -102,7 +124,7 @@ $select--padding: remCalc(4) remCalc(6);
 
 $form--padding: remCalc(4) remCalc(6);
 $form--border: $border--width $border--stroke $color--light-grey;
-$form--border--focus: $border--width $border--stroke $color--accent;
+$form--border--focus: $border--width $border--stroke $color--primary;
 $form--font--size: $font--size--minus-one;
 $form--width: 100%;
 
@@ -111,11 +133,11 @@ $form--width: 100%;
 */
 $button--padding: remCalc(5) remCalc(12) remCalc(5);
 $button--color: $color--white;
-$button--bk-color: $color--accent;
-$button--border: $border--width $border--stroke $color--accent;
+$button--bk-color: $color--primary;
+$button--border: $border--width $border--stroke $color--primary;
 $button--color--hover: $color--white;
-$button--bk-color--hover: $color--accent--hover;
-$button--border--hover: $border--width $border--stroke $color--accent--hover;
+$button--bk-color--hover: $color--primary--hover;
+$button--border--hover: $border--width $border--stroke $color--primary--hover;
 
 $button--color--disabled: $color--lighter-grey;
 $button--bk-color-disabled: $color--light-grey;
@@ -134,7 +156,7 @@ $drop-shadow: rgba(0, 0, 0, .2) 1px 1px 3px;
 /**
 * Selection Settings
 */
-$selection-background-color: $color--accent;
+$selection-background-color: $color--primary;
 $selection-color: $color--white;
 
 /**
