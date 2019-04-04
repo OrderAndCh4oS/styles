@@ -1,0 +1,25 @@
+{
+    "name": "@orderandchaos/styles",
+    "version": "1.0.0",
+    "description": "Stylesheets framework",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "css": "node-sass sass/main.scss -o build"
+    },
+    "keywords": [
+        "sass",
+        "framework",
+        "css",
+        "styles"
+    ],
+    "author": {
+        "name": "Sarcoma",
+        "email": "sean@orderandchaoscreative.com",
+        "url": "https://orderandchaoscreative.com/"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "modularscale-sass": "^3.0.8",
+        "node-sass": "^4.11.0"
+    }
+}
