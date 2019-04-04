@@ -25,7 +25,8 @@ h3, .header-three {
   margin-bottom: $gutter--half;
 }
 
-h4, h5, h6 {
+h4, h5, h6,
+.header-four, .header-five, .header-six {
   font-size: $font--size--one;
 }
 
@@ -34,7 +35,7 @@ h4, h5, h6 {
   margin-bottom: 0;
 }
 
-p {
+p, .body-text {
   color: $text--color;
   font-size: $font--size--one;
   font-weight: $font--weight--regular;
@@ -93,7 +94,7 @@ em,
 blockquote {
   margin: 0 0 $gutter;
   padding: 0 $gutter;
-  border-left: 3px solid $color--accent;
+  border-left: 3px solid $color--primary;
 }
 
 blockquote p:first-of-type:before {
