@@ -117,9 +117,9 @@ q {
   font-style: italic;
 }
 
-hr {
+hr, .rule {
   border: solid $border--color;
-  border-width: 3px 0 0;
+  border-width: 1px 0 0;
   clear: both;
   margin: 0 0 $gutter;
   height: 0;
