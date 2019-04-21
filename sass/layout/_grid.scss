@@ -9,7 +9,6 @@
   flex: 1;
   margin-left: -$gutter--half;
   margin-right: -$gutter--half;
-  padding-bottom: $gutter--half;
 }
 
 .column {
@@ -17,14 +16,7 @@
   flex: 0 1 auto;
   padding-left: $gutter--half;
   padding-right: $gutter--half;
-}
-
-.no-padding-bottom {
-  padding-bottom: 0;
-}
-
-.padding-bottom {
-  padding-bottom: $gutter;
+  margin-bottom: $gutter;
 }
 
 .col-1 {
@@ -121,14 +113,6 @@
 
 @media #{$large-down} {
 
-  .lrg-no-padding-bottom {
-    padding-bottom: 0;
-  }
-
-  .lrg-padding-bottom {
-    padding-bottom: $gutter;
-  }
-
   .col-lrg-1 {
     width: 8.3333%;
   }
@@ -179,13 +163,6 @@
 }
 
 @media #{$medium-down} {
-  .med-no-padding-bottom {
-    padding-bottom: 0;
-  }
-
-  .med-padding-bottom {
-    padding-bottom: $gutter;
-  }
 
   .col-med-1 {
     width: 8.3333%;
@@ -237,13 +214,6 @@
 }
 
 @media #{$small-down} {
-  .sml-no-padding-bottom {
-    padding-bottom: 0;
-  }
-
-  .sml-padding-bottom {
-    padding-bottom: $gutter;
-  }
 
   .col-sml-1 {
     width: 8.3333%;
@@ -295,13 +265,6 @@
 }
 
 @media #{$xsmall-down} {
-  .xsml-no-padding-bottom {
-    padding-bottom: 0;
-  }
-
-  .xsml-padding-bottom {
-    padding-bottom: $gutter;
-  }
 
   .col-xsml-1 {
     width: 8.3333%;
