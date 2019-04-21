@@ -48,16 +48,13 @@ p, .body-text {
 
 a, a:visited {
   color: $link--color;
-  font-weight: $font--weight--regular;
-  text-transform: uppercase;
-  letter-spacing: 1px;
   outline: 0;
-  text-decoration: none;
+  text-decoration: $link--decoration;
 }
 
 a:hover, a:focus, a.active {
   color: $link--color--hover;
-  text-decoration: $link--decoration;
+  text-decoration: $link--decoration--hover;
 }
 
 p a, p a:visited {
@@ -137,6 +134,8 @@ ol {
 
 ul.none {
   list-style: none;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 ul.square {

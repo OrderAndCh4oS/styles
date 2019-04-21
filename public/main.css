@@ -658,17 +658,14 @@ p, .body-text {
 }
 
 a, a:visited {
-    color: #1c1c1c;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    color: #525252;
     outline: 0;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:hover, a:focus, a.active {
-    color: #808080;
-    text-decoration: none;
+    color: #363636;
+    text-decoration: underline;
 }
 
 p a, p a:visited {
@@ -742,6 +739,8 @@ ol {
 
 ul.none {
     list-style: none;
+    margin-left: 0;
+    padding-left: 0;
 }
 
 ul.square {
