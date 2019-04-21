@@ -66,9 +66,10 @@ $body--bk-color: $color--white;
 $wrapper--bk-color: $color--white;
 $modal--overlay--bk-color: rgba(238, 238, 238, 0.8);
 
-$link--color: $color--primary;
-$link--color--hover: $color--primary--hover;
-$link--decoration: none;
+$link--color: $color--dark-grey;
+$link--color--hover: $color--darkest-grey;
+$link--decoration: underline;
+$link--decoration--hover: underline;
 
 /**
 * Border Settings
