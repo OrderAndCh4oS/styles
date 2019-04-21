@@ -19,6 +19,14 @@
   padding-right: $gutter--half;
 }
 
+.no-padding-bottom {
+  padding-bottom: 0;
+}
+
+.padding-bottom {
+  padding-bottom: $gutter;
+}
+
 .col-1 {
   width: 8.3333%;
 }

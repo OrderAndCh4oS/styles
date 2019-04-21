@@ -4,7 +4,7 @@
     "description": "Stylesheets framework",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "css": "node-sass sass/main.scss -o build"
+        "css": "node-sass sass/main.scss -o public"
     },
     "keywords": [
         "sass",
@@ -20,6 +20,7 @@
     "license": "MIT",
     "dependencies": {
         "modularscale-sass": "^3.0.8",
-        "node-sass": "^4.11.0"
+        "node-sass": "^4.11.0",
+        "tar": "^4.4.8"
     }
 }
