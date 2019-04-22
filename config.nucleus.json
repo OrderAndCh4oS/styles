@@ -4,7 +4,10 @@
     "sass/**/*scss"
   ],
   "target": "docs",
-  "css": "main.css",
+  "css": [
+    "styles/main.css",
+    "styles/override.css"
+  ],
   "namespace": "page",
   "verbose": 3,
   "counterCSS": null,

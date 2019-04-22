@@ -4,7 +4,7 @@ fieldset {
 
 /**
  * @atom Input
- * @section Forms
+ * @section Forms > Inputs
  * @modifiers
  *  .input--inline Inline Input
  *  .input--valid Input is valid
@@ -118,7 +118,7 @@ legend span {
 
 /**
  * @atom Label
- * @section Forms
+ * @section Forms > Labels
  * @modifiers
  *  .label--text Label text
  *  .label--inline Inline label
@@ -142,7 +142,7 @@ label {
 
 /**
  * @atom Field Error
- * @section Forms
+ * @section Forms > Validation
  * @markup
  *  <label class="label--text">Label Text</label>
  *  <input type="text" placeholder="Text Input">

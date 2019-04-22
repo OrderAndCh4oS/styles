@@ -1244,20 +1244,150 @@ table {
 .main-header {
   margin-bottom: 1.25rem; }
 
-.regular {
-  font-family: "Roboto", "Avenir", "Verdana", sans-serif; }
+/**
+ * @atom Font Weights
+ * @section Typography > Code
+ * @modifiers
+ *  .text--light light font weight
+ *  .text--regular regular font weight
+ *  .text--medium medium font weight
+ *  .text--semi-bold semi-bold font weight
+ *  .text--bold bold font weight
+ *  .text--black black font weight
+ * @markup
+ *  <p class="text--light">Light: The quick brown fox jumps over a lazy dog</p>
+ *  <p class="text--regular">Regular: The quick brown fox jumps over a lazy dog</p>
+ *  <p class="text--medium">Medium: The quick brown fox jumps over a lazy dog</p>
+ *  <p class="text--semi-bold">Semi-bold: The quick brown fox jumps over a lazy dog</p>
+ *  <p class="text--bold">Bold: The quick brown fox jumps over a lazy dog</p>
+ *  <p class="text--black">Black: The quick brown fox jumps over a lazy dog</p>
+ */
+.text--light {
+    font-family: "Roboto", "Avenir", "Verdana", sans-serif;
+    font-weight: 300;
+}
 
-.medium {
+.text--regular {
+    font-family: "Roboto", "Avenir", "Verdana", sans-serif;
+    font-weight: 400;
+}
+
+.text--medium {
   font-family: "Roboto", "Avenir", "Verdana", sans-serif;
   font-weight: 500; }
 
-.semi-bold {
+.text--semi-bold {
   font-family: "Roboto", "Avenir", "Verdana", sans-serif;
   font-weight: 600; }
 
 .text--bold {
   font-family: "Roboto", "Avenir", "Verdana", sans-serif;
+    font-weight: 700;
+}
+
+.text--black {
+    font-family: "Roboto", "Avenir", "Verdana", sans-serif;
   font-weight: 900; }
+
+/**
+ * @atom Font Sizes
+ * @section Typography > Sizes
+ * @modifiers
+ *  .text--minus-two Font size: minus two modular scale notches from base font
+ *  .text--minus-one Font size: minus one modular scale notch from base font
+ *  .text--one Font size: modular scale base font
+ *  .text--two Font size: plus one modular scale notch from base font size
+ *  .text--three Font size: plus two modular scale notches from base font size
+ *  .text--four Font size: plus three modular scale notches from base font size
+ *  .text--five Font size: plus four modular scale notches from base font size
+ *  .text--six Font size: plus five modular scale notches from base font size
+ *  .text--seven Font size: plus six modular scale notches from base font size
+ *  .text--eight Font size: plus seven modular scale notches from base font size
+ *  .text--nine Font size: plus eight modular scale notches from base font size
+ *  .text--ten Font size: plus nine modular scale notches from base font size
+ *  .text--eleven Font size: plus ten modular scale notches from base font size
+ *  .text--twelve Font size: plus eleven modular scale notches from base font size
+ * @markup
+ *  <p class="text--minus-two">Font Minus Two</p>
+ *  <p class="text--minus-one">Font Minus One</p>
+ *  <p class="text--one">Font One</p>
+ *  <p class="text--two">Font Two</p>
+ *  <p class="text--three">Font Three</p>
+ *  <p class="text--four">Font Four</p>
+ *  <p class="text--five">Font Five</p>
+ *  <p class="text--six">Font Six</p>
+ *  <p class="text--seven">Font Seven</p>
+ *  <p class="text--eight">Font Eight</p>
+ */
+.text--minus-two {
+    font-size: 0.61803rem;
+    line-height: 0.89754rem;
+}
+
+.text--minus-one {
+    font-size: 0.77254rem;
+    line-height: 0.89754rem;
+}
+
+.text--one {
+    font-size: 1rem;
+    line-height: 1.1875rem;
+}
+
+.text--two {
+    font-size: 1.25rem;
+    line-height: 1.4375rem;
+}
+
+.text--three {
+    font-size: 1.61803rem;
+    line-height: 1.80553rem;
+}
+
+.text--four {
+    font-size: 2.02254rem;
+    line-height: 2.21004rem;
+}
+
+.text--five {
+    font-size: 2.61803rem;
+    line-height: 2.80553rem;
+}
+
+.text--six {
+    font-size: 3.27254rem;
+    line-height: 3.46004rem;
+}
+
+.text--seven {
+    font-size: 4.23607rem;
+    line-height: 4.42357rem;
+}
+
+.text--eight {
+    font-size: 5.29509rem;
+    line-height: 5.48259rem;
+}
+
+.text--nine {
+    font-size: 6.8541rem;
+    line-height: 7.0416rem;
+}
+
+.text--ten {
+    font-size: 8.56763rem;
+    line-height: 8.75513rem;
+}
+
+.text--eleven {
+    font-size: 11.09017rem;
+    line-height: 11.27767rem;
+}
+
+.text--twelve {
+    font-size: 13.86271rem;
+    line-height: 14.05021rem;
+}
 
 p, ul, ol, dl {
   margin-top: 0;
@@ -1276,33 +1406,33 @@ p, ul, ol, dl {
  */
 h1, h2, h3, h4, h5, h6 {
   color: #1c1c1c;
-  font-weight: 900;
+    font-weight: 700;
   font-family: "Roboto", "Avenir", "Verdana", sans-serif;
   margin-top: 0;
   margin-bottom: 0.625rem; }
 
 h1, .header-one {
   font-size: 2.61803rem;
-  font-weight: 900;
+    font-weight: 700;
   line-height: 2.80553rem;
   margin-bottom: 0.625rem; }
 
 h2, .header-two {
   font-size: 2.02254rem;
-  font-weight: 900;
+    font-weight: 700;
   line-height: 2.21004rem;
   margin-bottom: 0.625rem; }
 
 h3, .header-three {
   font-size: 1.61803rem;
-  font-weight: 900;
+    font-weight: 700;
   line-height: 1.80553rem;
   margin-bottom: 0.625rem; }
 
 h4, h5, h6,
 .header-four, .header-five, .header-six {
   font-size: 1rem;
-  font-weight: 900;
+    font-weight: 700;
   line-height: 1.1875rem;
   margin-bottom: 0.625rem; }
 
@@ -1379,7 +1509,8 @@ nav ol {
  */
 strong,
 .text--bold {
-  font-weight: 900; }
+    font-weight: 700;
+}
 
 /**
  * @atom Emphasised Text
@@ -1437,6 +1568,11 @@ ul, ol {
 /**
  * @atom Unordered List
  * @section Typography > Lists
+ * @modifiers
+ *  .list--none No list style
+ *  .list--square List style square
+ *  .list--circle List style circle
+ *  .list--disc List style disc
  * @markup
  *  <ul>
  *      <li>This is a list item in an unordered list</li>
@@ -1496,18 +1632,18 @@ ol {
  *      <dd>And it gets a definition too, which is this line.</dd>
  *  </dl>
  */
-ul.none {
+ul.list--none {
   list-style: none;
   margin-left: 0;
   padding-left: 0; }
 
-ul.square {
+ul.list--square {
   list-style: square outside; }
 
-ul.circle {
+ul.list--circle {
   list-style: circle outside; }
 
-ul.disc {
+ul.list--disc {
   list-style: disc outside; }
 
 ul ul, ul ol,
@@ -1540,77 +1676,6 @@ code {
     background-color: #414141;
     color: #b3b3b3;
     border-radius: 3px; }
-
-/**
- * @atom Font Sizes
- * @section Typography > Sizes
- * @markup
- *  <p class="font-minus-two">Font Minus Two</p>
- *  <p class="font-minus-one">Font Minus One</p>
- *  <p class="font-one">Font One</p>
- *  <p class="font-two">Font Two</p>
- *  <p class="font-three">Font Three</p>
- *  <p class="font-four">Font Four</p>
- *  <p class="font-five">Font Five</p>
- *  <p class="font-six">Font Six</p>
- *  <p class="font-seven">Font Seven</p>
- *  <p class="font-eight">Font Eight</p>
- */
-.font-minus-two {
-  font-size: 0.61803rem;
-  line-height: 0.89754rem; }
-
-.font-minus-one {
-  font-size: 0.77254rem;
-  line-height: 0.89754rem; }
-
-.font-one {
-  font-size: 1rem;
-  line-height: 1.1875rem; }
-
-.font-two {
-  font-size: 1.25rem;
-  line-height: 1.4375rem; }
-
-.font-three {
-  font-size: 1.61803rem;
-  line-height: 1.80553rem; }
-
-.font-four {
-  font-size: 2.02254rem;
-  line-height: 2.21004rem; }
-
-.font-five {
-  font-size: 2.61803rem;
-  line-height: 2.80553rem; }
-
-.font-six {
-  font-size: 3.27254rem;
-  line-height: 3.46004rem; }
-
-.font-seven {
-  font-size: 4.23607rem;
-  line-height: 4.42357rem; }
-
-.font-eight {
-  font-size: 5.29509rem;
-  line-height: 5.48259rem; }
-
-.font-nine {
-  font-size: 6.8541rem;
-  line-height: 7.0416rem; }
-
-.font-ten {
-  font-size: 8.56763rem;
-  line-height: 8.75513rem; }
-
-.font-eleven {
-  font-size: 11.09017rem;
-  line-height: 11.27767rem; }
-
-.font-twelve {
-  font-size: 13.86271rem;
-  line-height: 14.05021rem; }
 
 /**
  * @atom Tables
@@ -1661,7 +1726,8 @@ table {
 
 th {
   text-align: left;
-  font-weight: 900; }
+    font-weight: 700;
+}
 
 tr:nth-child(odd) td:nth-child(odd) {
   background-color: #dadada; }

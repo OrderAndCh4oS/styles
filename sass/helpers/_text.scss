@@ -9,12 +9,12 @@
  *  .text--bold bold font weight
  *  .text--black black font weight
  * @markup
- *  <p class="text--light">The quick brown fox jumps over a lazy dog</p>
- *  <p class="text--regular">The quick brown fox jumps over a lazy dog</p>
- *  <p class="text--medium">The quick brown fox jumps over a lazy dog</p>
- *  <p class="text--semi-bold">The quick brown fox jumps over a lazy dog</p>
- *  <p class="text--bold">The quick brown fox jumps over a lazy dog</p>
- *  <p class="text--black">The quick brown fox jumps over a lazy dog</p>
+ *  <p class="text--light">Light: The quick brown fox jumps over a lazy dog</p>
+ *  <p class="text--regular">Regular: The quick brown fox jumps over a lazy dog</p>
+ *  <p class="text--medium">Medium: The quick brown fox jumps over a lazy dog</p>
+ *  <p class="text--semi-bold">Semi-bold: The quick brown fox jumps over a lazy dog</p>
+ *  <p class="text--bold">Bold: The quick brown fox jumps over a lazy dog</p>
+ *  <p class="text--black">Black: The quick brown fox jumps over a lazy dog</p>
  */
 
 .text--light {
@@ -46,4 +46,105 @@
 .text--black {
   font-family: $font--family;
   font-weight: $font--weight--black;
+}
+
+
+/**
+ * @atom Font Sizes
+ * @section Typography > Sizes
+ * @modifiers
+ *  .text--minus-two Font size: minus two modular scale notches from base font
+ *  .text--minus-one Font size: minus one modular scale notch from base font
+ *  .text--one Font size: modular scale base font
+ *  .text--two Font size: plus one modular scale notch from base font size
+ *  .text--three Font size: plus two modular scale notches from base font size
+ *  .text--four Font size: plus three modular scale notches from base font size
+ *  .text--five Font size: plus four modular scale notches from base font size
+ *  .text--six Font size: plus five modular scale notches from base font size
+ *  .text--seven Font size: plus six modular scale notches from base font size
+ *  .text--eight Font size: plus seven modular scale notches from base font size
+ *  .text--nine Font size: plus eight modular scale notches from base font size
+ *  .text--ten Font size: plus nine modular scale notches from base font size
+ *  .text--eleven Font size: plus ten modular scale notches from base font size
+ *  .text--twelve Font size: plus eleven modular scale notches from base font size
+ * @markup
+ *  <p class="text--minus-two">Font Minus Two</p>
+ *  <p class="text--minus-one">Font Minus One</p>
+ *  <p class="text--one">Font One</p>
+ *  <p class="text--two">Font Two</p>
+ *  <p class="text--three">Font Three</p>
+ *  <p class="text--four">Font Four</p>
+ *  <p class="text--five">Font Five</p>
+ *  <p class="text--six">Font Six</p>
+ *  <p class="text--seven">Font Seven</p>
+ *  <p class="text--eight">Font Eight</p>
+ */
+.text--minus-two {
+  font-size: $font--size--minus-two;
+  line-height: $font--size--minus-one + $font--leading--tight;
+}
+
+.text--minus-one {
+  font-size: $font--size--minus-one;
+  line-height: $font--size--minus-one + $font--leading--tight;
+}
+
+.text--one {
+  font-size: $font--size--one;
+  line-height: $font--size--one + $font--leading;
+}
+
+.text--two {
+  font-size: $font--size--two;
+  line-height: $font--size--two + $font--leading;
+}
+
+.text--three {
+  font-size: $font--size--three;
+  line-height: $font--size--three + $font--leading;
+}
+
+.text--four {
+  font-size: $font--size--four;
+  line-height: $font--size--four + $font--leading;
+}
+
+.text--five {
+  font-size: $font--size--five;
+  line-height: $font--size--five + $font--leading;
+}
+
+.text--six {
+  font-size: $font--size--six;
+  line-height: $font--size--six + $font--leading;
+}
+
+.text--seven {
+  font-size: $font--size--seven;
+  line-height: $font--size--seven + $font--leading--tight;
+}
+
+.text--eight {
+  font-size: $font--size--eight;
+  line-height: $font--size--eight + $font--leading--tight;
+}
+
+.text--nine {
+  font-size: $font--size--nine;
+  line-height: $font--size--nine;
+}
+
+.text--ten {
+  font-size: $font--size--ten;
+  line-height: $font--size--ten;
+}
+
+.text--eleven {
+  font-size: $font--size--eleven;
+  line-height: $font--size--eleven;
+}
+
+.text--twelve {
+  font-size: $font--size--twelve;
+  line-height: $font--size--twelve;
 }

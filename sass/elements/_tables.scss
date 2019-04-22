@@ -1,3 +1,46 @@
+/**
+ * @atom Tables
+ * @section Tables
+ * @markup
+ *  <table>
+ *      <thead>
+ *      <tr>
+ *          <th>Table Heading 1</th>
+ *          <th>Table Heading 2</th>
+ *          <th>Table Heading 3</th>
+ *      </tr>
+ *      </thead>
+ *      <tfoot>
+ *      <tr>
+ *          <th>Table Footer 1</th>
+ *          <th>Table Footer 2</th>
+ *          <th>Table Footer 3</th>
+ *      </tr>
+ *      </tfoot>
+ *      <tbody>
+ *      <tr>
+ *          <td>Table Cell 1</td>
+ *          <td>Table Cell 2</td>
+ *          <td>Table Cell 3</td>
+ *      </tr>
+ *      <tr>
+ *          <td>Table Cell 1</td>
+ *          <td>Table Cell 2</td>
+ *          <td>Table Cell 3</td>
+ *      </tr>
+ *      <tr>
+ *          <td>Table Cell 1</td>
+ *          <td>Table Cell 2</td>
+ *          <td>Table Cell 3</td>
+ *      </tr>
+ *      <tr>
+ *          <td>Table Cell 1</td>
+ *          <td>Table Cell 2</td>
+ *          <td>Table Cell 3</td>
+ *      </tr>
+ *      </tbody>
+ *  </table>
+ */
 table {
   width: 100%;
   margin: 0 0 $gutter;
@@ -27,14 +70,10 @@ tr:nth-child(even) td:nth-child(even) {
 td, th {
   padding: $gutter--half / 3 $gutter--half / 2;
   border: none;
-  border-bottom: 1px solid $color--light-grey;
+  border-bottom: $border--width $border--stroke $color--light-grey;
 }
 
 td {
   text-align: left;
   font-weight: $font--weight--regular;
-
-  button {
-    width: 100%;
-  }
 }

@@ -26,21 +26,21 @@ h1, h2, h3, h4, h5, h6 {
 h1, .header-one {
   font-size: $font--size--five;
   font-weight: $font--weight--bold;
-  line-height: $font--size--five + rem-calc(3px);
+  line-height: $font--size--five + $font--leading;
   margin-bottom: $gutter--half;
 }
 
 h2, .header-two {
   font-size: $font--size--four;
   font-weight: $font--weight--bold;
-  line-height: $font--size--four + rem-calc(3px);
+  line-height: $font--size--four + $font--leading;
   margin-bottom: $gutter--half;
 }
 
 h3, .header-three {
   font-size: $font--size--three;
   font-weight: $font--weight--bold;
-  line-height: $font--size--three + rem-calc(3px);
+  line-height: $font--size--three + $font--leading;
   margin-bottom: $gutter--half;
 }
 
@@ -48,7 +48,7 @@ h4, h5, h6,
 .header-four, .header-five, .header-six {
   font-size: $font--size--one;
   font-weight: $font--weight--bold;
-  line-height: $font--size--one + rem-calc(3px);
+  line-height: $font--size--one + $font--leading;
   margin-bottom: $gutter--half;
 }
 
@@ -63,7 +63,7 @@ h4, h5, h6,
  */
 .pretitle {
   font-size: $font--size--one;
-  line-height: $font--size--one + rem-calc(3px);
+  line-height: $font--size--one + $font--leading--loose;
   margin-bottom: 0;
 }
 
@@ -79,7 +79,7 @@ p, .body-text {
   font-size: $font--size--one;
   font-weight: $font--weight--regular;
   font-family: $font--family;
-  line-height: $font--size--one + rem-calc(3px);
+  line-height: $font--size--one + $font--leading;
 }
 
 /**
@@ -90,7 +90,7 @@ p, .body-text {
  */
 .intro-text {
   font-size: $font--size--two;
-  line-height: $font--size--two + rem-calc(3px);
+  line-height: $font--size--two + $font--leading;
 }
 
 /**
@@ -202,6 +202,11 @@ ul, ol {
 /**
  * @atom Unordered List
  * @section Typography > Lists
+ * @modifiers
+ *  .list--none No list style
+ *  .list--square List style square
+ *  .list--circle List style circle
+ *  .list--disc List style disc
  * @markup
  *  <ul>
  *      <li>This is a list item in an unordered list</li>
@@ -266,21 +271,21 @@ ol {
 dl {
 }
 
-ul.none {
+ul.list--none {
   list-style: none;
   margin-left: 0;
   padding-left: 0;
 }
 
-ul.square {
+ul.list--square {
   list-style: square outside;
 }
 
-ul.circle {
+ul.list--circle {
   list-style: circle outside;
 }
 
-ul.disc {
+ul.list--disc {
   list-style: disc outside;
 }
 
@@ -292,13 +297,15 @@ ol ol, ol ul {
 li, dt, dd {
   font-size: $font--size--one;
   color: $text--color;
-  line-height: $font--size--one + rem-calc(3px);
+  line-height: $font--size--one + $font--leading;
   margin-bottom: 0;
 }
 
 /**
  * @atom Code Block
  * @section Typography > Code
+ * @modifiers
+ *  .code--block display a block of code
  * @markup
  *  <p>Inline <code>// Code goes here</code></p>
  *  <code class="code--block">// Code goes here</code>
@@ -316,74 +323,4 @@ code {
     color: $color--light-grey;
     border-radius: $border--radius;
   }
-}
-
-.font-minus-two {
-  font-size: $font--size--minus-two;
-  line-height: $font--size--minus-one + rem-calc(2px);
-}
-
-.font-minus-one {
-  font-size: $font--size--minus-one;
-  line-height: $font--size--minus-one + rem-calc(2px);
-}
-
-.font-one {
-  font-size: $font--size--one;
-  line-height: $font--size--one + rem-calc(3px);
-}
-
-.font-two {
-  font-size: $font--size--two;
-  line-height: $font--size--two + rem-calc(3px);
-}
-
-.font-three {
-  font-size: $font--size--three;
-  line-height: $font--size--three + rem-calc(3px);
-}
-
-.font-four {
-  font-size: $font--size--four;
-  line-height: $font--size--four + rem-calc(3px);
-}
-
-.font-five {
-  font-size: $font--size--five;
-  line-height: $font--size--five + rem-calc(3px);
-}
-
-.font-six {
-  font-size: $font--size--six;
-  line-height: $font--size--six + rem-calc(3px);
-}
-
-.font-seven {
-  font-size: $font--size--seven;
-  line-height: $font--size--seven + rem-calc(3px);
-}
-
-.font-eight {
-  font-size: $font--size--eight;
-  line-height: $font--size--eight + rem-calc(3px);
-}
-
-.font-nine {
-  font-size: $font--size--nine;
-  line-height: $font--size--nine + rem-calc(3px);
-}
-
-.font-ten {
-  font-size: $font--size--ten;
-  line-height: $font--size--ten + rem-calc(3px);
-}
-
-.font-eleven {
-  font-size: $font--size--eleven;
-  line-height: $font--size--eleven + rem-calc(3px);
-}
-
-.font-twelve {
-  font-size: $font--size--twelve;
-  line-height: $font--size--twelve + rem-calc(3px);
 }

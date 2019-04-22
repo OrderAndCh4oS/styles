@@ -1,0 +1,8 @@
+.SG-toc > ul > li, .SG-toc > ul > li > ul li {
+    font-size: 14px !important;
+}
+
+.SG-a {
+    text-decoration: none;
+    border-bottom: none;
+}

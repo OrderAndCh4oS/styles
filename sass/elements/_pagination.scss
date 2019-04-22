@@ -1,21 +1,52 @@
+/**
+ * @atom Pagination
+ * @section Buttons > Pagination
+ * @modifiers
+ *  .pagination--button Apply to all pagination items
+ *  .pagination--current Apply to current page
+ *  .pagination--disabled Apply to non link spacers
+ * @markup
+ *  <nav class="pagination">
+ *    <a href="#" class="pagination--button">&lt;&lt;</a>
+ *    <a href="#" class="pagination--button">&lt;</a>
+ *    <span class="pagination--button pagination--disabled">...</span>
+ *    <a href="#" class="pagination--button">2</a>
+ *    <span class="pagination--button pagination--current">3</span>
+ *    <a href="#" class="pagination--button">4</a>
+ *    <span class="pagination--button pagination--disabled">...</span>
+ *    <a href="#" class="pagination--button">&gt;</a>
+ *    <a href="#" class="pagination--button">&gt;&gt;</a>
+ *  </nav>
+ */
 .pagination {
   margin-bottom: $gutter--half;
+  display: flex;
+  flex: 1 0 auto;
+  flex-wrap: nowrap;
 
-  span {
-    a {
-      @extend .button;
-      color: $button--color;
+  .pagination--button {
+    @extend .button;
+    color: $button--color;
+    margin: 0 $gutter--half / 2;
+
+    &:first-child {
+      margin-left: 0;
     }
 
-    &.current {
-      @extend .button:hover;
-      padding: $button--padding;
-      display: inline-block;
-      cursor: default;
+    &:last-child {
+      margin-right: 0;
     }
+  }
 
-    &.button--disabled {
-      display: none;
-    }
+  .pagination--current {
+    @extend .button:hover;
+    padding: $button--padding;
+    cursor: default;
+  }
+
+  .pagination--disabled {
+    @extend .button:disabled;
+    padding: $button--padding;
+    cursor: default;
   }
 }

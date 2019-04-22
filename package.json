@@ -5,9 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "http-server -o",
-    "css": "node-sass sass/main.scss -o build --output-style=compressed --precision=4",
+    "css": "node-sass sass/main.scss -o dist --output-style=compressed --precision=4",
     "watch": "node-sass sass/main.scss -o public -w -r --output-style=compact --source-map=true --precision=4",
-    "styleguide": "node-sass sass/main.scss -o docs && nucleus --title 'Style Guide' --config config.nucleus.json"
+    "styleguide": "npm run css && node-sass sass/main.scss -o docs/styles && nucleus --title 'Style Guide' --config config.nucleus.json"
   },
   "keywords": [
     "sass",
