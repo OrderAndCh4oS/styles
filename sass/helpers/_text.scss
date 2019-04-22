@@ -1,0 +1,49 @@
+/**
+ * @atom Font Weights
+ * @section Typography > Code
+ * @modifiers
+ *  .text--light light font weight
+ *  .text--regular regular font weight
+ *  .text--medium medium font weight
+ *  .text--semi-bold semi-bold font weight
+ *  .text--bold bold font weight
+ *  .text--black black font weight
+ * @markup
+ *  <p class="text--light">The quick brown fox jumps over a lazy dog</p>
+ *  <p class="text--regular">The quick brown fox jumps over a lazy dog</p>
+ *  <p class="text--medium">The quick brown fox jumps over a lazy dog</p>
+ *  <p class="text--semi-bold">The quick brown fox jumps over a lazy dog</p>
+ *  <p class="text--bold">The quick brown fox jumps over a lazy dog</p>
+ *  <p class="text--black">The quick brown fox jumps over a lazy dog</p>
+ */
+
+.text--light {
+  font-family: $font--family;
+  font-weight: $font--weight--light;
+}
+
+
+.text--regular {
+  font-family: $font--family;
+  font-weight: $font--weight--regular;
+}
+
+.text--medium {
+  font-family: $font--family;
+  font-weight: $font--weight--medium;
+}
+
+.text--semi-bold {
+  font-family: $font--family;
+  font-weight: $font--weight--semi-bold;
+}
+
+.text--bold {
+  font-family: $font--family;
+  font-weight: $font--weight--bold;
+}
+
+.text--black {
+  font-family: $font--family;
+  font-weight: $font--weight--black;
+}
