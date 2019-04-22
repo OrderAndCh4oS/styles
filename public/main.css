@@ -663,7 +663,7 @@ a, a:visited {
     text-decoration: underline;
 }
 
-a:hover, a:focus, a.active {
+a:hover, a:focus, a.button--active {
     color: #363636;
     text-decoration: underline;
 }
@@ -949,44 +949,44 @@ a.button, .pagination span a, button, input[type="submit"], input[type="reset"],
     -webkit-appearance: none;
 }
 
-a.button.active, a.button:focus, .pagination span a:focus, a.button:active, .pagination span a:active, .pagination span a.active, .button:hover, .pagination span a:hover, .pagination span.current, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
+a.button.button--active, a.button:focus, .pagination span a:focus, a.button:active, .pagination span a:active, .pagination span a.button--active, .button:hover, .pagination span a:hover, .pagination span.current, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
     color: #fcfcfc;
     background: #808080;
     border: 1px solid #808080;
 }
 
-a.button.disabled, .pagination span a.disabled, button.disabled, button:disabled, input[type="submit"].disabled, input[type="reset"].disabled, input[type="button"].disabled {
+a.button.button--disabled, .pagination span a.button--disabled, button.button--disabled, button:disabled, input[type="submit"].button--disabled, input[type="reset"].button--disabled, input[type="button"].button--disabled {
     cursor: default;
     border: 1px solid #b3b3b3;
     color: #eeeeee;
     background-color: #b3b3b3;
 }
 
-a.button.disabled:hover, .pagination span a.disabled:hover, a.button.disabled:active, .pagination span a.disabled:active, button.disabled:hover, button.disabled:active, button:disabled:hover, button:disabled:active, input[type="submit"].disabled:hover, input[type="submit"].disabled:active, input[type="reset"].disabled:hover, input[type="reset"].disabled:active, input[type="button"].disabled:hover, input[type="button"].disabled:active {
+a.button.button--disabled:hover, .pagination span a.button--disabled:hover, a.button.button--disabled:active, .pagination span a.button--disabled:active, button.button--disabled:hover, button.button--disabled:active, button:disabled:hover, button:disabled:active, input[type="submit"].button--disabled:hover, input[type="submit"].button--disabled:active, input[type="reset"].button--disabled:hover, input[type="reset"].button--disabled:active, input[type="button"].button--disabled:hover, input[type="button"].button--disabled:active {
     cursor: default;
     border: 1px solid #b3b3b3;
     color: #eeeeee;
     background-color: #b3b3b3;
 }
 
-a.button.destructive, .pagination span a.destructive, button.destructive, input[type="submit"].destructive, input[type="reset"].destructive, input[type="button"].destructive {
+a.button.button--destructive, .pagination span a.button--destructive, button.button--destructive, input[type="submit"].button--destructive, input[type="reset"].button--destructive, input[type="button"].button--destructive {
     border-color: #c62d32;
     background-color: #c62d32;
     color: #fcfcfc;
 }
 
-a.button.destructive:hover, .pagination span a.destructive:hover, button.destructive:hover, input[type="submit"].destructive:hover, input[type="reset"].destructive:hover, input[type="button"].destructive:hover {
+a.button.button--destructive:hover, .pagination span a.button--destructive:hover, button.button--destructive:hover, input[type="submit"].button--destructive:hover, input[type="reset"].button--destructive:hover, input[type="button"].button--destructive:hover {
     border-color: #ee393c;
     background-color: #ee393c;
 }
 
-a.button.affirmative, .pagination span a.affirmative, button.affirmative, input[type="submit"].affirmative, input[type="reset"].affirmative, input[type="button"].affirmative {
+a.button.button--affirmative, .pagination span a.button--affirmative, button.button--affirmative, input[type="submit"].button--affirmative, input[type="reset"].button--affirmative, input[type="button"].button--affirmative {
     border-color: #35c13a;
     background-color: #35c13a;
     color: #fcfcfc;
 }
 
-a.button.affirmative:hover, .pagination span a.affirmative:hover, button.affirmative:hover, input[type="submit"].affirmative:hover, input[type="reset"].affirmative:hover, input[type="button"].affirmative:hover {
+a.button.button--affirmative:hover, .pagination span a.button--affirmative:hover, button.button--affirmative:hover, input[type="submit"].button--affirmative:hover, input[type="reset"].button--affirmative:hover, input[type="button"].button--affirmative:hover {
     border-color: #3be541;
     background-color: #3be541;
 }
@@ -997,7 +997,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     padding: 0;
 }
 
-button.switch {
+button.button--switch {
     border: none;
     height: 1.75rem;
     width: 3rem;
@@ -1008,11 +1008,11 @@ button.switch {
     transition: background-color 100ms ease-in-out;
 }
 
-button.switch.on {
+button.button--switch.button--switch--on {
     background-color: #35c13a;
 }
 
-button.switch:after {
+button.button--switch:after {
     content: '';
     position: absolute;
     display: block;
@@ -1025,11 +1025,11 @@ button.switch:after {
     transition: left 280ms ease-in-out;
 }
 
-button.switch.on:after {
+button.button--switch.button--switch--on:after {
     left: 1.3125rem;
 }
 
-button.radio-button {
+button.button--radio {
     background-color: #525252;
     border-color: #525252;
     border-right: 1px solid #eeeeee;
@@ -1037,32 +1037,32 @@ button.radio-button {
     border-radius: 0;
 }
 
-button.radio-button:hover {
+button.button--radio:hover {
     border-color: #808080;
     background-color: #808080;
     border-right: 1px solid #eeeeee;
 }
 
-button.radio-button:first-of-type {
+button.button--radio:first-of-type {
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
 }
 
-button.radio-button:last-of-type {
+button.button--radio:last-of-type {
     border-bottom-right-radius: 3px;
     border-top-right-radius: 3px;
     border-right: 1px solid #525252;
 }
 
-button.radio-button:last-of-type.checked {
+button.button--radio:last-of-type.checked {
     border-right: 1px solid #35c13a;
 }
 
-button.radio-button:last-of-type:hover {
+button.button--radio:last-of-type:hover {
     border-right: 1px solid #eeeeee;
 }
 
-button.radio-button.checked {
+button.button--radio.checked {
     border-color: #35c13a;
     background-color: #35c13a;
     border-right: 1px solid #eeeeee;
@@ -1082,7 +1082,7 @@ button.radio-button.checked {
     cursor: default;
 }
 
-.pagination span.disabled {
+.pagination span.button--disabled {
     display: none;
 }
 
