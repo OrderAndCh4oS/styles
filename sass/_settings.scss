@@ -5,44 +5,119 @@
 // If you want your base font-size to be different and not have it affect the grid breakpoints,
 // set $rem-base to $base-font-size and make sure $base-font-size is a px value.
 
+/**
+ *
+ */
 $base-font-size: 16px;
 $base-line-height: 1.4;
 $em-base: $base-font-size !default;
 
 $wrapper-width: 1920;
-$gutter: remCalc($base-font-size + 4);
+$gutter: rem-calc($base-font-size + 4);
 $gutter--half: $gutter / 2;
 $gutter--double: $gutter * 2;
 
 $ms-base: $base-font-size 20;
 $ms-ratio: $golden;
 
+/** @color white */
 $color--white: #fcfcfc;
+/** @color lightest-grey */
 $color--lightest-grey: #f7f7f7;
+/** @color lighter-grey */
 $color--lighter-grey: #eeeeee;
+/** @color light-grey */
 $color--light-grey: #b3b3b3;
+/** @color grey */
 $color--grey: #808080;
+/** @color dark-grey */
 $color--dark-grey: #525252;
+/** @color darker-grey */
 $color--darker-grey: #414141;
+/** @color darkest-grey */
 $color--darkest-grey: #363636;
+/** @color black */
 $color--black: #1c1c1c;
 
+/** @color green */
 $color--green: #35c13a;
+/** @color lighter-green */
 $color--lighter-green: #3be541;
+/** @color red */
 $color--red: #c62d32;
+/** @color lighter-red */
 $color--lighter-red: #ee393c;
 
+/**
+ * The main brand color variabled.
+ *
+ * @nuclide Primary-Color
+ * @section Colors > Brand
+ */
 $color--primary: $color--black;
+
+/**
+ * The main brand color variable when hovered.
+ *
+ * @nuclide Primary-Color-Hover
+ * @section Colors > Brand
+ */
 $color--primary--hover: $color--grey;
 
+/**
+ * An alternative brand color variable.
+ *
+ * @nuclide Secondary-Color
+ * @section Colors > Brand
+ */
 $color--secondary: $color--dark-grey;
+
+/**
+ * An alternative brand color variable when hovered.
+ *
+ * @nuclide Secondary-Color-Hover
+ * @section Colors > Brand
+ */
 $color--secondary--hover: $color--light-grey;
 
+/**
+ * The main color for depicting errors or dangerous actions.
+ *
+ * @nuclide Error-Color
+ * @section Colors > Semantic
+ */
 $color--error: $color--red;
+
+/**
+ * The main color for depicting errors or dangerous actions when hovered.
+ *
+ * @nuclide Error-Color-Hover
+ * @section Colors > Semantic
+ */
 $color--error--hover: $color--lighter-red;
+
+/**
+ * The main color for depicting valid states or affirmative actions.
+ *
+ * @nuclide Error-Color-Hover
+ * @section Colors > Semantic
+ */
 $color--valid: $color--green;
+
+/**
+ * The main color for depicting valid states or affirmative actions when hovered.
+ *
+ * @nuclide Error-Color-Hover
+ * @section Colors > Semantic
+ */
 $color--valid--hover: $color--lighter-green;
 
+/**
+ * An array containing all the defined colors
+ *
+ * @nuclide Color-List
+ * @section Colors > List
+ */
 $colors: "black" $color--black,
 "darkest-grey" $color--darkest-grey,
 "darker-grey" $color--darker-grey,
@@ -62,150 +137,679 @@ $colors: "black" $color--black,
 "valid" $color--valid
 "transparent" transparent;
 
+/**
+ * The default body background colour
+ *
+ * @nuclide Body-Background-Color
+ * @section General > Background Colors
+ */
 $body--bk-color: $color--white;
-$wrapper--bk-color: $color--white;
-$modal--overlay--bk-color: rgba(238, 238, 238, 0.8);
 
+/**
+ * The default page wrapper background color
+ *
+ * @nuclide Page-Wrapper-Background-Color
+ * @section General > Background Colors
+ */
+$wrapper--bk-color: $color--white;
+
+/**
+ * Header color
+ *
+ * @nuclide Header-Color
+ * @section General > Colors
+ */
+$header--color: $color--black;
+/**
+ * Text color
+ *
+ * @nuclide Text-Color
+ * @section General > Colors
+ */
+$text--color: $color--darker-grey;
+/**
+ * Text color light
+ *
+ * @nuclide Text-Color-Light
+ * @section General > Colors
+ */
+$text--color-light: $color--light-grey;
+
+/**
+ * The default link color
+ *
+ * @nuclide Link-Color
+ * @section General > Links
+ */
 $link--color: $color--dark-grey;
+
+/**
+ * The default link color when hovered
+ *
+ * @nuclide Link-Color-Hover
+ * @section General > Links
+ */
 $link--color--hover: $color--darkest-grey;
+
+/**
+ * The default link decoration
+ *
+ * @nuclide Link-Decoration
+ * @section General > Links
+ */
 $link--decoration: underline;
+
+/**
+ * The default link decoration when hovered
+ *
+ * @nuclide Link-Decoration
+ * @section General > Links
+ */
 $link--decoration--hover: underline;
 
 /**
-* Border Settings
-*/
+ * The default border color
+ *
+ * @nuclide Border-Color
+ * @section General > Border
+ */
 $border--color: $color--light-grey;
+/**
+ * The default border width
+ *
+ * @nuclide Border-Width
+ * @section General > Border
+ */
 $border--width: 1px;
+/**
+ * The default border stroke
+ *
+ * @nuclide Border-Stroke
+ * @section General > Border
+ */
 $border--stroke: solid;
+/**
+ * The default border
+ *
+ * @nuclide Border
+ * @section General > Border
+ */
 $border: $border--width $border--stroke $border--color;
 
 /**
-* Font Colour Settings
-*/
-$header--color: $color--black;
-$text--color: $color--darker-grey;
-$text--colour-light: $color--light-grey;
-
-/**
-* Font Settings
-*/
+ * The base font family
+ *
+ * @nuclide Font-Family
+ * @section Font
+ */
 $font--family: "Roboto", "Avenir", "Verdana", sans-serif;
 
+
+/**
+ * The base font family emphasis type oblique/italic
+ *
+ * @nuclide Font-Family-Emphasis
+ * @section Font
+ */
 $font--emphasis: italic;
 
+/**
+ * The base font family weight light
+ *
+ * @nuclide Font-Family-Weight-Light
+ * @section Font > Weights
+ */
+$font--weight--regular: 300;
+/**
+ * The base font family weight regular
+ *
+ * @nuclide Font-Family-Weight-Regular
+ * @section Font > Weights
+ */
 $font--weight--regular: 400;
+/**
+ * The base font family weight medium
+ *
+ * @nuclide Font-Family-Weight-Medium
+ * @section Font > Weights
+ */
 $font--weight--medium: 500;
+/**
+ * The base font family weight semi-bold
+ *
+ * @nuclide Font-Family-Weight-Semi-Bold
+ * @section Font > Weights
+ */
 $font--weight--semi-bold: 600;
+/**
+ * The base font family weight bold
+ *
+ * @nuclide Font-Family-Weight-Bold
+ * @section Font > Weights
+ */
 $font--weight--bold: 700;
-
-$font--size--minus-two: remCalc(ms(-2));
-$font--size--minus-one: remCalc(ms(-1));
-$font--size--one: remCalc(ms(0));
-$font--size--two: remCalc(ms(1));
-$font--size--three: remCalc(ms(2));
-$font--size--four: remCalc(ms(3));
-$font--size--five: remCalc(ms(4));
-$font--size--six: remCalc(ms(5));
-$font--size--seven: remCalc(ms(6));
-$font--size--eight: remCalc(ms(7));
-$font--size--nine: remCalc(ms(8));
-$font--size--ten: remCalc(ms(9));
-$font--size--eleven: remCalc(ms(10));
-$font--size--twelve: remCalc(ms(11));
+/**
+ * The base font family weight black
+ *
+ * @nuclide Font-Family-Weight-Black
+ * @section Font > Weights
+ */
+$font--weight--bold: 900;
 
 /**
-* Form Settings
-*/
+ * Extra small font size
+ *
+ * @nuclide Font-Minus-Two
+ * @section Font > Sizes
+ */
+$font--size--minus-two: rem-calc(ms(-2));
+/**
+ * Small font size
+ *
+ * @nuclide Font-Minus-One
+ * @section Font > Sizes
+ */
+$font--size--minus-one: rem-calc(ms(-1));
+/**
+ * Normal font size
+ *
+ * @nuclide Font-One
+ * @section Font > Sizes
+ */
+$font--size--one: rem-calc(ms(0));
+/**
+ * Font size two
+ *
+ * @nuclide Font-Two
+ * @section Font > Sizes
+ */
+$font--size--two: rem-calc(ms(1));
+/**
+ * Font size three
+ *
+ * @nuclide Font-Three
+ * @section Font > Sizes
+ */
+$font--size--three: rem-calc(ms(2));
+/**
+ * Font size four
+ *
+ * @nuclide Font-Four
+ * @section Font > Sizes
+ */
+$font--size--four: rem-calc(ms(3));
+/**
+ * Font size five
+ *
+ * @nuclide Font-Five
+ * @section Font > Sizes
+ */
+$font--size--five: rem-calc(ms(4));
+/**
+ * Font size six
+ *
+ * @nuclide Font-Six
+ * @section Font > Sizes
+ */
+$font--size--six: rem-calc(ms(5));
+/**
+ * Font size seven
+ *
+ * @nuclide Font-Seven
+ * @section Font > Sizes
+ */
+$font--size--seven: rem-calc(ms(6));
+/**
+ * Font size eight
+ *
+ * @nuclide Font-Eight
+ * @section Font > Sizes
+ */
+$font--size--eight: rem-calc(ms(7));
+/**
+ * Font size nine
+ *
+ * @nuclide Font-Nine
+ * @section Font > Sizes
+ */
+$font--size--nine: rem-calc(ms(8));
+/**
+ * Font size ten
+ *
+ * @nuclide Font-Ten
+ * @section Font > Sizes
+ */
+$font--size--ten: rem-calc(ms(9));
+/**
+ * Font size eleven
+ *
+ * @nuclide Font-Eleven
+ * @section Font > Sizes
+ */
+$font--size--eleven: rem-calc(ms(10));
+/**
+ * Font size twelve
+ *
+ * @nuclide Font-Twelve
+ * @section Font > Sizes
+ */
+$font--size--twelve: rem-calc(ms(11));
+
+/**
+ * Form default width
+ *
+ * @nuclide Form-Width
+ * @section Form
+ */
+$form--width: 100%;
+/**
+ * Form padding
+ *
+ * @nuclide Form-Padding
+ * @section Form > Input
+ */
+$form--padding: rem-calc(4) rem-calc(6);
+/**
+ * Form border
+ *
+ * @nuclide Form-Border
+ * @section Form
+ */
+$form--border: $border--width $border--stroke $color--light-grey;
+/**
+ * Form border when focused
+ *
+ * @nuclide Form-Border-Focus
+ * @section Form
+ */
+$form--border--focus: $border--width $border--stroke $color--primary;
+/**
+ * Form font size
+ *
+ * @nuclide Form-Font-Size
+ * @section Form
+ */
+$form--font--size: $font--size--minus-one;
+/**
+ * Form input text color
+ *
+ * @nuclide Input-Color
+ * @section Form > Input
+ */
 $input--color: $color--black;
+/**
+ * Form input text focus color
+ *
+ * @nuclide Input-Focus-Color
+ * @section Form > Input
+ */
 $input--focus--color: $color--black;
+/**
+ * Form input background color
+ *
+ * @nuclide Background-Color
+ * @section Form > Input
+ */
 $input--bk-color: $color--white;
+/**
+ * Form input background focus color
+ *
+ * @nuclide Background-Color-Focus
+ * @section Form > Input
+ */
 $input--focus--bk-color: $color--white;
 
-$select--padding: remCalc(4) remCalc(6);
-
-$form--padding: remCalc(4) remCalc(6);
-$form--border: $border--width $border--stroke $color--light-grey;
-$form--border--focus: $border--width $border--stroke $color--primary;
-$form--font--size: $font--size--minus-one;
-$form--width: 100%;
+/**
+ * Form select padding, can differ slightly to input padding
+ *
+ * @nuclide Select-Padding
+ * @section Form > Select
+ */
+$select--padding: rem-calc(4) rem-calc(6);
 
 /**
-* Button Settings
-*/
-$button--padding: remCalc(5) remCalc(12) remCalc(5);
+ * Button padding
+ *
+ * @nuclide Button-Padding
+ * @section Buttons > Default
+ */
+$button--padding: rem-calc(5) rem-calc(12) rem-calc(5);
+/**
+ * Button color
+ *
+ * @nuclide Button-Color
+ * @section Buttons > Default
+ */
 $button--color: $color--white;
-$button--bk-color: $color--primary;
-$button--border: $border--width $border--stroke $color--primary;
+
+/**
+ * Button color
+ *
+ * @nuclide Button-Color
+ * @section Buttons > Default
+ */
 $button--color--hover: $color--white;
+
+/**
+ * Button background color
+ *
+ * @nuclide Button-Background-Colour
+ * @section Buttons > Default
+ */
+$button--bk-color: $color--primary;
+/**
+ * Button background color when hovered
+ *
+ * @nuclide Button-Background-Colour-Hovered
+ * @section Buttons > Default
+ */
 $button--bk-color--hover: $color--primary--hover;
+
+/**
+ * Button border
+ *
+ * @nuclide Button-Border
+ * @section Buttons > Default
+ */
+$button--border: $border--width $border--stroke $color--primary;
+/**
+ * Button border when hovered
+ *
+ * @nuclide Button-Border-Hover
+ * @section Buttons > Default
+ */
 $button--border--hover: $border--width $border--stroke $color--primary--hover;
 
+/**
+ * Button color disabled
+ *
+ * @nuclide Button-Color-Disabled
+ * @section Buttons > Disabled
+ */
 $button--color--disabled: $color--lighter-grey;
+
+/**
+ * Button background color disabled
+ *
+ * @nuclide Button-Background-Color-Disabled
+ * @section Buttons > Disabled
+ */
 $button--bk-color-disabled: $color--light-grey;
+/**
+ * Button Border disabled
+ *
+ * @nuclide Button-Border-Disabled
+ * @section Buttons > Disabled
+ */
 $button--border--disabled: $border--width $border--stroke $color--light-grey;
 
 /**
-* Radius Settings
-*/
+ * Global border radius
+ *
+ * @nuclide Border-Radius
+ * @section General > Miscellaneous
+ */
 $border--radius: 3px;
-
 /**
-* Drop Shadow Settings
-*/
+ * Default drop shadow
+ *
+ * @nuclide Drop-Shadow
+ * @section General > Miscellaneous
+ */
 $drop-shadow: rgba(0, 0, 0, .2) 1px 1px 3px;
-
 /**
-* Selection Settings
-*/
+ * The default transparent overlay background color
+ *
+ * @nuclide Modal-Overlay
+ * @section General > Miscellaneous
+ */
+$modal--overlay--bk-color: rgba(238, 238, 238, 0.8);
+/**
+ * Default selection background color
+ *
+ * @nuclide Selection-Background-Color
+ * @section General > Miscellaneous
+ */
 $selection-background-color: $color--primary;
+/**
+ * Default selection color
+ *
+ * @nuclide Selection-Color
+ * @section General > Miscellaneous
+ */
 $selection-color: $color--white;
 
 /**
-* Animation Settings
-*/
+ * Default transition
+ *
+ * @nuclide Default-Transition
+ * @section General > Miscellaneous
+ */
 $default-transition: all 0.2s ease-in-out;
 
 
 /**
-* Media Query Ranges
-*/
+ * Media query extra small range
+ *
+ * @nuclide X-Small-Range
+ * @section Media Queries > Ranges
+ */
 $xsmall-range: (421px, 767px);
+/**
+ * Media query small range
+ *
+ * @nuclide Small-Range
+ * @section Media Queries > Ranges
+ */
 $small-range: (768px, 1023px);
+/**
+ * Media query medium range
+ *
+ * @nuclide Medium-Range
+ * @section Media Queries > Ranges
+ */
 $medium-range: (1024px, 1239px);
+/**
+ * Media query large range
+ *
+ * @nuclide Large-Range
+ * @section Media Queries > Ranges
+ */
 $large-range: (1240px, 1439px);
+/**
+ * Media query extra large range
+ *
+ * @nuclide X-Large-Range
+ * @section Media Queries > Ranges
+ */
 $xlarge-range: (1440px, 1599px);
-$xxlarge-range: (1600px, 1919px);
-$xxlarge-range: (1920px);
+/**
+ * Media query extra extra large range
+ *
+ * @nuclide XX-Large-Range
+ * @section Media Queries > Ranges
+ */
+$xxlarge-range: (1600px);
 
+/**
+ * Media query extra small range upper bound
+ *
+ * @nuclide X-Small-Range-Upper-Bound
+ * @section Media Queries > Bounds
+ */
 $xsmall: upper-bound($xsmall-range);
+/**
+ * Media query small range upper bound
+ *
+ * @nuclide Small-Range-Upper-Bound
+ * @section Media Queries > Bounds
+ */
 $small: upper-bound($small-range);
+/**
+ * Media query medium range upper bound
+ *
+ * @nuclide Medium-Range-Upper-Bound
+ * @section Media Queries > Bounds
+ */
 $medium: upper-bound($medium-range);
+/**
+ * Media query large range upper bound
+ *
+ * @nuclide Large-Range-Upper-Bound
+ * @section Media Queries > Bounds
+ */
 $large: upper-bound($large-range);
+/**
+ * Media query extra large range upper bound
+ *
+ * @nuclide X-Large-Range-Upper-Bound
+ * @section Media Queries > Bounds
+ */
 $xlarge: upper-bound($xlarge-range);
+/**
+ * Media query extra extra large range upper bound
+ *
+ * @nuclide XX-Large-Range-Upper-Bound
+ * @section Media Queries > Bounds
+ */
+$xxlarge: upper-bound($xxlarge-range);
 
+/**
+ * Media query screen only
+ *
+ * @nuclide Screen-Only
+ * @section Media Queries > Helpers
+ */
 $screen: "only screen";
-
+/**
+ * Media query landscape
+ *
+ * @nuclide Screen-Only
+ * @section Media Queries > Helpers
+ */
 $landscape: "#{$screen} and (orientation: landscape)";
+/**
+ * Media query portrait
+ *
+ * @nuclide Screen-Only
+ * @section Media Queries > Helpers
+ */
 $portrait: "#{$screen} and (orientation: portrait)";
 
+/**
+ * Media extra small up
+ *
+ * @nuclide X-Small-Up
+ * @section Media Queries > Helpers
+ */
 $xsmall-up: "#{$screen} and (min-width:#{lower-bound($xsmall-range)})";
+/**
+ * Media extra small down
+ *
+ * @nuclide X-Small-Down
+ * @section Media Queries > Helpers
+ */
 $xsmall-down: "#{$screen} and (max-width:#{lower-bound($xsmall)})";
+/**
+ * Media extra small only
+ *
+ * @nuclide X-Small-Only
+ * @section Media Queries > Helpers
+ */
 $xsmall-only: "#{$screen} and (max-width: #{upper-bound($xsmall-range)})";
 
+/**
+ * Media small up
+ *
+ * @nuclide Small-Up
+ * @section Media Queries > Helpers
+ */
 $small-up: "#{$screen} and (min-width:#{lower-bound($small-range)})";
+/**
+ * Media small down
+ *
+ * @nuclide Small-Down
+ * @section Media Queries > Helpers
+ */
 $small-down: "#{$screen} and (max-width:#{lower-bound($small)})";
+/**
+ * Media small only
+ *
+ * @nuclide Small-Only
+ * @section Media Queries > Helpers
+ */
 $small-only: "#{$screen} and (min-width:#{lower-bound($small-range)}) and (max-width:#{upper-bound($small-range)})";
 
+/**
+ * Media medium up
+ *
+ * @nuclide Medium-Up
+ * @section Media Queries > Helpers
+ */
 $medium-up: "#{$screen} and (min-width:#{lower-bound($medium-range)})";
+/**
+ * Media medium down
+ *
+ * @nuclide Medium-Down
+ * @section Media Queries > Helpers
+ */
 $medium-down: "#{$screen} and (max-width:#{lower-bound($medium)})";
+/**
+ * Media medium only
+ *
+ * @nuclide Medium-Only
+ * @section Media Queries > Helpers
+ */
 $medium-only: "#{$screen} and (min-width:#{lower-bound($medium-range)}) and (max-width:#{upper-bound($medium-range)})";
 
+/**
+ * Media large up
+ *
+ * @nuclide Large-Up
+ * @section Media Queries > Helpers
+ */
 $large-up: "#{$screen} and (min-width:#{lower-bound($large-range)})";
+/**
+ * Media large down
+ *
+ * @nuclide Large-Down
+ * @section Media Queries > Helpers
+ */
 $large-down: "#{$screen} and (max-width:#{lower-bound($large)})";
+/**
+ * Media large only
+ *
+ * @nuclide Large-Only
+ * @section Media Queries > Helpers
+ */
 $large-only: "#{$screen} and (min-width:#{lower-bound($large-range)}) and (max-width:#{upper-bound($large-range)})";
 
+/**
+ * Media extra large up
+ *
+ * @nuclide X-Large-Up
+ * @section Media Queries > Helpers
+ */
 $xlarge-up: "#{$screen} and (min-width:#{lower-bound($xlarge-range)})";
+/**
+ * Media extra large down
+ *
+ * @nuclide X-Large-Down
+ * @section Media Queries > Helpers
+ */
 $xlarge-down: "#{$screen} and (max-width:#{lower-bound($xlarge)})";
+/**
+ * Media extra large only
+ *
+ * @nuclide X-Large-Only
+ * @section Media Queries > Helpers
+ */
 $xlarge-only: "#{$screen} and (min-width:#{lower-bound($xlarge-range)}) and (max-width:#{upper-bound($xlarge-range)})";
 
+/**
+ * Media extra extra large up
+ *
+ * @nuclide XX-Large-Up
+ * @section Media Queries > Helpers
+ */
 $xxlarge-up: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)})";

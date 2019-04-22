@@ -104,9 +104,9 @@ input::-moz-focus-inner {
 
 button.switch {
   border: none;
-  height: remCalc(28);
-  width: remCalc(48);
-  border-radius: remCalc(16);
+  height: rem-calc(28);
+  width: rem-calc(48);
+  border-radius: rem-calc(16);
   background-color: $color--red;
   overflow: hidden;
   position: relative;
@@ -120,17 +120,17 @@ button.switch {
     content: '';
     position: absolute;
     display: block;
-    width: remCalc(26);
-    height: remCalc(26);
+    width: rem-calc(26);
+    height: rem-calc(26);
     background-color: $color--white;
-    top: remCalc(1);
-    left: remCalc(1);
-    border-radius: remCalc(14);
+    top: rem-calc(1);
+    left: rem-calc(1);
+    border-radius: rem-calc(14);
     transition: left 280ms ease-in-out;
   }
 
   &.on:after {
-    left: remCalc(21);
+    left: rem-calc(21);
   }
 }
 

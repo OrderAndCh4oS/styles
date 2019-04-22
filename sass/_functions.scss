@@ -1,9 +1,27 @@
-// It strips the unit of measure and returns it
+/**
+ * It strips the unit of measure and returns it
+ *
+ * @mixin
+ * @section Calculations Mixins
+ * @param $num a unit in px or em
+ * @example
+ *  @include strip-unit(21px);
+ *  @include strip-unit(2em);
+ */
 @function strip-unit($num) {
   @return $num / ($num * 0 + 1);
 }
 
-// Converts "px" to "em" using the ($)em-base
+/**
+ * Converts "px" to "em" using the ($)em-base
+ *
+ * @mixin
+ * @section Calculations Mixins
+ * @param $value a unit in px or em
+ * @example
+ *  @include convert-to-rem(21px);
+ *  @include convert-to-rem(2em);
+ */
 @function convert-to-rem($value) {
   $value: strip-unit($value) / strip-unit($em-base) * 1rem;
   @if ($value == 0em) {
@@ -13,9 +31,18 @@
   @return $value;
 }
 
-// Working in ems is annoying. Think in pixels by using this handy function, remCalc(#)
-// Just enter the number, no need to mention "px"
-@function remCalc($values...) {
+/**
+ * Working in ems is annoying. Think in pixels by using this handy function, remCalc(#)
+ * Just enter the number, no need to mention "px"
+
+ * @mixin
+ * @section Calculations Mixins
+ * @param $values a list unit values
+ * @example
+ *  @include rem-calc(21px);
+ *  @include rem-calc(2em);
+ */
+@function rem-calc($values...) {
   $max: length($values);
   // Get the total number of parameters passed
 
@@ -33,25 +60,15 @@
   @return $emValues;
 }
 
-@mixin bg-pattern($name) {
-  background: url('../images/patterns/#{$name}.png') transparent 1px 1px;
-}
-
-@mixin svg-bg($name) {
-  background: url('../images/svg/#{$name}.svg') center center no-repeat;
-}
-
-@mixin svg-bg-center($name) {
-  background: url('../images/svg/#{$name}.svg') center center no-repeat;
-}
-
-@mixin svg-bg-link($name) {
-  background: url('../images/svg/#{$name}.svg') top center no-repeat;
-  &:hover {
-    background-position: bottom center;
-  }
-}
-
+/**
+ * Get the lowest value in a range
+ *
+ * @mixin
+ * @section Media Query Mixins
+ * @param $range a list unit values
+ * @example
+ *  @include lower-bound((1024px, 1239px));
+ */
 @function lower-bound($range) {
   @if length($range) <= 0 {
     @return 0;
@@ -59,6 +76,15 @@
   @return nth($range, 1);
 }
 
+/**
+ * Get the highest value in a range
+ *
+ * @mixin
+ * @section Media Query Mixins
+ * @param $range a list unit values
+ * @example
+ *  @include upper-bound((1024px, 1239px));
+ */
 @function upper-bound($range) {
   @if length($range) < 2 {
     @return 999999999999;

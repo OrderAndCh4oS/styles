@@ -64,7 +64,7 @@ legend {
   display: block;
   font-weight: $font--weight--regular;
   font-size: $font--size--minus-one;
-  margin: 0 0 remCalc(6) 0;
+  margin: 0 0 rem-calc(6) 0;
 }
 
 select {
@@ -97,7 +97,7 @@ legend span {
 }
 
 .read-only {
-  min-height: remCalc(34);
+  min-height: rem-calc(34);
   background-color: $color--lighter-grey;
 }
 
