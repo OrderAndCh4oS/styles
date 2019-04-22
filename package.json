@@ -5,8 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "http-server -o",
-    "css": "node-sass sass/main.scss -o public",
-    "watch": "node-sass sass/main.scss -o public -w -r --output-style=compact --source-map=true --precision=4"
+    "css": "node-sass sass/main.scss -o build --output-style=compressed --precision=4",
+    "watch": "node-sass sass/main.scss -o public -w -r --output-style=compact --source-map=true --precision=4",
+    "styleguide": "nucleus --config config.nucleus.json"
   },
   "keywords": [
     "sass",
@@ -25,6 +26,7 @@
     "node-sass": "^4.11.0"
   },
   "devDependencies": {
-    "http-server": "^0.11.1"
+    "http-server": "^0.11.1",
+    "nucleus-styleguide": "^1.1.1"
   }
 }

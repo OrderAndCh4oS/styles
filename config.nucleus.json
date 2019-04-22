@@ -1,0 +1,13 @@
+{
+  "title": "Nucleus",
+  "files": [
+    "sass/**/*scss"
+  ],
+  "target": "docs",
+  "css": "../build/main.css",
+  "namespace": "page",
+  "verbose": 3,
+  "counterCSS": null,
+  "staticLipsum": false,
+  "placeholderService": false
+}
