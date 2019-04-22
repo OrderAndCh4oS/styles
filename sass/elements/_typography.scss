@@ -1,58 +1,111 @@
-h1, h2, h3, h4, h5, h6, p, ul, ol, dl, input, .header-one {
+
+p, ul, ol, dl {
   margin-top: 0;
   margin-bottom: $gutter;
 }
 
-h1, h2, h3, h4, h5, h6, .header-one {
+/**
+ * @atom Headers
+ * @section Typography > Headers
+ * @markup
+ *  <h1>Header One</h1>
+ *  <h2>Header Two</h2>
+ *  <h3>Header Three</h3>
+ *  <h4>Header Four</h4>
+ *  <h5>Header Five</h5>
+ *  <h6>Header Six</h6>
+ */
+h1, h2, h3, h4, h5, h6 {
   color: $header--color;
   font-weight: $font--weight--bold;
   font-family: $font--family;
+  margin-top: 0;
+  margin-bottom: $gutter--half;
 }
 
 h1, .header-one {
   font-size: $font--size--five;
-  line-height: 1.1;
+  font-weight: $font--weight--bold;
+  line-height: $font--size--five + rem-calc(3px);
   margin-bottom: $gutter--half;
 }
 
 h2, .header-two {
   font-size: $font--size--four;
+  font-weight: $font--weight--bold;
+  line-height: $font--size--four + rem-calc(3px);
   margin-bottom: $gutter--half;
 }
 
 h3, .header-three {
   font-size: $font--size--three;
+  font-weight: $font--weight--bold;
+  line-height: $font--size--three + rem-calc(3px);
   margin-bottom: $gutter--half;
 }
 
 h4, h5, h6,
 .header-four, .header-five, .header-six {
   font-size: $font--size--one;
+  font-weight: $font--weight--bold;
+  line-height: $font--size--one + rem-calc(3px);
+  margin-bottom: $gutter--half;
 }
 
+/**
+ * @atom Pretitle
+ * @section Typography > Headers
+ * @markup
+ *  <header>
+ *    <p class="pretitle">Pretitle</p>
+ *    <h2>Header Two</h2>
+ *  </header>
+ */
 .pretitle {
   font-size: $font--size--one;
+  line-height: $font--size--one + rem-calc(3px);
   margin-bottom: 0;
 }
 
+/**
+ * @atom Body Text
+ * @section Typography > Text
+ * @markup
+ *  <p class="body-text">Earum dicta animi autem veritatis et ratione sed. Quisquam est neque quis ullam inventore odit ex sit. Sed voluptatem voluptatem quia rerum qui. Quaerat provident ipsa laudantium ut ipsa.</p>
+ *  <p class="body-text">A non et iure non fuga. Quia quaerat ut autem id iste et maxime. Qui id consequatur recusandae qui vel et odio aliquam.</p>
+ */
 p, .body-text {
   color: $text--color;
   font-size: $font--size--one;
   font-weight: $font--weight--regular;
   font-family: $font--family;
+  line-height: $font--size--one + rem-calc(3px);
 }
 
+/**
+ * @atom Intro Text
+ * @section Typography > Text
+ * @markup
+ *  <p class="intro-text">Veritatis et ratione sed. Quisquam est neque quis ullam inventore odit ex sit. Sed voluptatem voluptatem quia rerum qui. Quaerat provident ipsa laudantium ut ipsa.</p>
+ */
 .intro-text {
   font-size: $font--size--two;
+  line-height: $font--size--two + rem-calc(3px);
 }
 
+/**
+ * @atom Link
+ * @section Typography > Inline Text
+ * @markup
+ *  <p class="body-text"><a href="#">Link Text</a></p>
+ */
 a, a:visited {
   color: $link--color;
   outline: 0;
   text-decoration: $link--decoration;
 }
 
-a:hover, a:focus, a.button--active {
+a:hover, a:focus {
   color: $link--color--hover;
   text-decoration: $link--decoration--hover;
 }
@@ -72,16 +125,34 @@ nav ol {
   list-style: none;
 }
 
+/**
+ * @atom Bold Text
+ * @section Typography > Inline Text
+ * @markup
+ *  <p><strong>Strong Text</strong> and <span class="text--bold">Bold Text</span></p>
+ */
 strong,
-.bold {
+.text--bold {
   font-weight: $font--weight--bold;
 }
 
+/**
+ * @atom Emphasised Text
+ * @section Typography > Inline Text
+ * @markup
+ *  <p><em>Em Text</em> and <span class="text--italic">Italic Text</span></p>
+ */
 em,
-.italic {
+.text--italic {
   font-style: $font--emphasis;
 }
 
+/**
+ * @atom Block Quote
+ * @section Typography > Text
+ * @markup
+ *  <blockquote><p>Ipsam reprehenderit molestiae sit. Autem tempore dicta aspernatur voluptate recusandae aut fugit. Et vitae aut perferendis quas eum similique est ducimus. Recusandae ut est aut quas qui neque tenetur. Molestias veniam est modi tempore qui placeat quasi sed. Aliquid provident optio harum consectetur quo.</p></blockquote>
+ */
 blockquote {
   margin: 0 0 $gutter;
   padding: 0 $gutter;
@@ -105,9 +176,15 @@ blockquote cite {
 }
 
 q {
-  font-style: italic;
+  font-style: $font--emphasis;
 }
 
+/**
+ * @atom Horizontal Rule
+ * @section Typography > Rule
+ * @markup
+ *  <hr>
+ */
 hr, .rule {
   border: solid $border--color;
   border-width: 1px 0 0;
@@ -116,20 +193,77 @@ hr, .rule {
   height: 0;
 }
 
-/* #Lists
-  ================================================== */
 ul, ol {
   margin-left: $gutter--half;
   padding-left: $gutter--half;
   margin-bottom: $gutter;
 }
 
+/**
+ * @atom Unordered List
+ * @section Typography > Lists
+ * @markup
+ *  <ul>
+ *      <li>This is a list item in an unordered list</li>
+ *      <li>An unordered list is a list in which the sequence of items is not important. Sometimes, an
+ *          unordered list is a bulleted list. And this is a long list item in an unordered list that
+ *          can wrap onto a new line.
+ *      </li>
+ *      <li>
+ *          Lists can be nested inside of each other
+ *          <ul>
+ *              <li>This is a nested list item</li>
+ *              <li>This is another nested list item in an unordered list</li>
+ *          </ul>
+ *      </li>
+ *      <li>This is the last list item</li>
+ *  </ul>
+ */
 ul {
   list-style: disc outside;
 }
 
+/**
+ * @atom Ordered List
+ * @section Typography > Lists
+ * @markup
+ *  <ol>
+ *      <li>This is a list item in an ordered list</li>
+ *      <li>An ordered list is a list in which the sequence of items is important. An ordered list does
+ *          not necessarily contain sequence characters.
+ *      </li>
+ *      <li>
+ *          Lists can be nested inside of each other
+ *          <ol>
+ *              <li>This is a nested list item</li>
+ *              <li>This is another nested list item in an ordered list</li>
+ *          </ol>
+ *      </li>
+ *      <li>This is the last list item</li>
+ *  </ol>
+ */
 ol {
   list-style: decimal;
+}
+
+/**
+ * @atom Definition List
+ * @section Typography > Lists
+ * @markup
+ *  <dl>
+ *      <dt>Definition List</dt>
+ *      <dd>A number of connected items or names written or printed consecutively, typically one below
+ *          the other.
+ *      </dd>
+ *      <dt>This is a term.</dt>
+ *      <dd>This is the definition of that term, which both live in a <code>dl</code>.</dd>
+ *      <dt>Here is another term.</dt>
+ *      <dd>And it gets a definition too, which is this line.</dd>
+ *      <dt>Here is term that shares a definition with the term below.</dt>
+ *      <dd>And it gets a definition too, which is this line.</dd>
+ *  </dl>
+ */
+dl {
 }
 
 ul.none {
@@ -153,21 +287,45 @@ ul.disc {
 ul ul, ul ol,
 ol ol, ol ul {
   margin: 0 0 0 $gutter;
-  font-size: $base-font-size;
 }
 
-li {
-  line-height: $base-line-height;
+li, dt, dd {
+  font-size: $font--size--one;
+  color: $text--color;
+  line-height: $font--size--one + rem-calc(3px);
   margin-bottom: 0;
+}
+
+/**
+ * @atom Code Block
+ * @section Typography > Code
+ * @markup
+ *  <p>Inline <code>// Code goes here</code></p>
+ *  <code class="code--block">// Code goes here</code>
+ */
+code {
+  background-color: $color--lighter-grey;
+  color: $color--darker-grey;
+  padding: 1px 3px;
+  border-radius: 2px;
+
+  &.code--block {
+    display: block;
+    padding: $gutter--half;
+    background-color: $color--darker-grey;
+    color: $color--light-grey;
+    border-radius: $border--radius;
+  }
 }
 
 .font-minus-two {
   font-size: $font--size--minus-two;
+  line-height: $font--size--minus-one + rem-calc(2px);
 }
 
 .font-minus-one {
   font-size: $font--size--minus-one;
-  line-height: $font--size--minus-one + rem-calc(3px);
+  line-height: $font--size--minus-one + rem-calc(2px);
 }
 
 .font-one {
@@ -198,4 +356,34 @@ li {
 .font-six {
   font-size: $font--size--six;
   line-height: $font--size--six + rem-calc(3px);
+}
+
+.font-seven {
+  font-size: $font--size--seven;
+  line-height: $font--size--seven + rem-calc(3px);
+}
+
+.font-eight {
+  font-size: $font--size--eight;
+  line-height: $font--size--eight + rem-calc(3px);
+}
+
+.font-nine {
+  font-size: $font--size--nine;
+  line-height: $font--size--nine + rem-calc(3px);
+}
+
+.font-ten {
+  font-size: $font--size--ten;
+  line-height: $font--size--ten + rem-calc(3px);
+}
+
+.font-eleven {
+  font-size: $font--size--eleven;
+  line-height: $font--size--eleven + rem-calc(3px);
+}
+
+.font-twelve {
+  font-size: $font--size--twelve;
+  line-height: $font--size--twelve + rem-calc(3px);
 }

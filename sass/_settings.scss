@@ -23,9 +23,9 @@ $ms-ratio: $golden;
 /** @color white */
 $color--white: #fcfcfc;
 /** @color lightest-grey */
-$color--lightest-grey: #f7f7f7;
+$color--lightest-grey: #e8e8e8;
 /** @color lighter-grey */
-$color--lighter-grey: #eeeeee;
+$color--lighter-grey: #dadada;
 /** @color light-grey */
 $color--light-grey: #b3b3b3;
 /** @color grey */
@@ -429,7 +429,7 @@ $form--border--focus: $border--width $border--stroke $color--primary;
  * @nuclide Form-Font-Size
  * @section Form
  */
-$form--font--size: $font--size--minus-one;
+$form--font--size: $font--size--one;
 /**
  * Form input text color
  *
