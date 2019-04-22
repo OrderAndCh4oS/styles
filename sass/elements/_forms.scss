@@ -2,6 +2,24 @@ fieldset {
   margin-bottom: $gutter;
 }
 
+/**
+ * @atom Input
+ * @section Forms
+ * @modifiers
+ *  .input--inline Inline Input
+ *  .input--valid Input is valid
+ *  .input--error Input has an error
+ * @markup
+ *   <p>
+ *     <input type="text"  placeholder="Text Input">
+ *   </p>
+ *   <p>
+ *     <input class="input--valid" type="text"  placeholder="Valid Text Input">
+ *   </p>
+ *   <p>
+ *     <input class="input--error" type="text"  placeholder="Error Text Input">
+ *   </p>
+ */
 input,
 input[type="text"],
 input[type="password"],
@@ -13,10 +31,8 @@ input[type="search"],
 input[type="date"],
 input[type="time"],
 input[type="color"],
-input[type="file"],
 textarea,
-select,
-.read-only {
+select {
   box-sizing: border-box;
   border: $form--border;
   padding: $form--padding;
@@ -33,9 +49,31 @@ select,
   margin: 0;
   transition: background-color 280ms ease-in-out, border-color 400ms ease-in-out;
 
-  &.form-error {
-    background-color: #ffe0e8;
-    border-color: $color--red;
+  &.input--inline {
+    display: inline-block;
+    width: auto;
+  }
+
+  &.input--valid {
+    border-color: $color--valid;
+  }
+
+  &.input--error {
+    border-color: $color--error;
+  }
+
+  &[readonly] {
+    background-color: $color--light-grey;
+    border: $form--border;
+  }
+
+  &:focus {
+    border: $form--border--focus;
+    color: $input--focus--color;
+  }
+
+  &:disabled {
+    background-color: $color--light-grey;
   }
 }
 
@@ -43,27 +81,17 @@ select {
   padding: $select--padding;
 }
 
-input:focus,
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="email"]:focus,
-input[type="tel"]:focus,
-input[type="url"]:focus,
-input[type="number"]:focus,
-input[type="search"]:focus,
-input[type="date"]:focus,
-input[type="time"]:focus,
-input[type="color"]:focus,
-textarea:focus {
-  border: $form--border--focus;
-  color: $input--focus--color;
+input[type="file"] {
+  @extend input
 }
 
 label,
 legend {
   display: block;
-  font-weight: $font--weight--regular;
   font-size: $font--size--minus-one;
+  font-family: $font--family;
+  font-weight: $font--weight--regular;
+  color: $text--color;
   margin: 0 0 rem-calc(6) 0;
 }
 
@@ -71,19 +99,15 @@ select {
   width: $form--width;
 }
 
-label.inline {
-  display: inline;
-}
-
 input[type="checkbox"],
 input[type="radio"] {
   display: inline-block;
   margin-bottom: 0;
   width: auto;
-}
 
-input:disabled {
-  background-color: $color--lighter-grey;
+  &:disabled {
+    background-color: $color--light-grey;
+  }
 }
 
 legend span {
@@ -92,23 +116,42 @@ legend span {
   color: $text--color;
 }
 
-.input-label {
-  margin-bottom: $gutter--half;
-}
+/**
+ * @atom Label
+ * @section Forms
+ * @modifiers
+ *  .label--text Label text
+ *  .label--inline Inline label
+ * @markup
+ *  <label class="label--text">Label Text</label>
+ *  <input type="text"  placeholder="Text Input">
+ */
+label {
+  &.label--text {
+    margin-bottom: $gutter--half;
+  }
 
-.read-only {
-  min-height: rem-calc(34);
-  background-color: $color--lighter-grey;
+  &.label--inline {
+    display: inline;
+  }
 }
 
 .form-field {
   padding-bottom: $gutter;
 }
 
-p.form-error, span.form-error {
+/**
+ * @atom Field Error
+ * @section Forms
+ * @markup
+ *  <label class="label--text">Label Text</label>
+ *  <input type="text" placeholder="Text Input">
+ *  <p class="field--error">Oh no!</p>
+ */
+.field--error {
   padding-top: $gutter--half;
   padding-bottom: 0;
   margin-bottom: 0;
+  font-size: $font--size--minus-one;
   color: $color--red;
-  font-style: italic;
 }

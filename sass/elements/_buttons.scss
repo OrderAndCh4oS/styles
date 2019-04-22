@@ -91,19 +91,11 @@ input[type="button"] {
   }
 }
 
-
-/* Fix for odd Mozilla border & padding issues */
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
 /**
  * @atom Switch
  * @section Buttons
  * @modifiers
- *  .switch--on Button toggled on
+ *  .button--switch--on Button toggled on
  * @markup
  *  <button class="button--switch"></button>
  *  <button class="button--switch button--switch--on"></button>
@@ -137,44 +129,5 @@ button.button--switch {
 
   &.button--switch--on:after {
     left: rem-calc(21);
-  }
-}
-
-button.button--radio {
-  background-color: $color--dark-grey;
-  border-color: $color--dark-grey;
-  border-right: $border--width $border--stroke $color--lighter-grey;
-  margin-bottom: 0;
-  border-radius: 0;
-
-  &:hover {
-    border-color: $color--grey;
-    background-color: $color--grey;
-    border-right: $border--width $border--stroke $color--lighter-grey;
-  }
-
-  &:first-of-type {
-    border-top-left-radius: $border--radius;
-    border-bottom-left-radius: $border--radius;
-  }
-
-  &:last-of-type {
-    border-bottom-right-radius: $border--radius;
-    border-top-right-radius: $border--radius;
-    border-right: $border--width $border--stroke $color--dark-grey;
-
-    &.checked {
-      border-right: $border--width $border--stroke $color--green;
-    }
-
-    &:hover {
-      border-right: $border--width $border--stroke $color--lighter-grey;
-    }
-  }
-
-  &.checked {
-    border-color: $color--green;
-    background-color: $color--green;
-    border-right: $border--width $border--stroke $color--lighter-grey;
   }
 }

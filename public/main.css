@@ -605,7 +605,7 @@ table {
     font-weight: 600;
 }
 
-.bold {
+.text--bold {
     font-family: "Roboto", "Avenir", "Verdana", sans-serif;
     font-weight: 700;
 }
@@ -680,11 +680,11 @@ nav ul, nav ol {
     list-style: none;
 }
 
-strong, .bold {
+strong, .text--bold {
     font-weight: 700;
 }
 
-em, .italic {
+em, .text--italic {
     font-style: italic;
 }
 
@@ -849,7 +849,7 @@ fieldset {
     margin-bottom: 1.25rem;
 }
 
-input, input[type="text"], input[type="password"], input[type="email"], input[type="tel"], input[type="url"], input[type="number"], input[type="search"], input[type="date"], input[type="time"], input[type="color"], input[type="file"], textarea, select, .read-only {
+input, input[type="text"], input[type="password"], input[type="email"], input[type="tel"], input[type="url"], input[type="number"], input[type="search"], input[type="date"], input[type="time"], input[type="color"], input[type="file"], textarea, select, .input--read-only {
     box-sizing: border-box;
     border: 1px solid #b3b3b3;
     padding: 0.25rem 0.375rem;
@@ -867,7 +867,7 @@ input, input[type="text"], input[type="password"], input[type="email"], input[ty
     transition: background-color 280ms ease-in-out, border-color 400ms ease-in-out;
 }
 
-input.form-error, input[type="text"].form-error, input[type="password"].form-error, input[type="email"].form-error, input[type="tel"].form-error, input[type="url"].form-error, input[type="number"].form-error, input[type="search"].form-error, input[type="date"].form-error, input[type="time"].form-error, input[type="color"].form-error, input[type="file"].form-error, textarea.form-error, select.form-error, .read-only.form-error {
+input.field--error, input[type="text"].field--error, input[type="password"].field--error, input[type="email"].field--error, input[type="tel"].field--error, input[type="url"].field--error, input[type="number"].field--error, input[type="search"].field--error, input[type="date"].field--error, input[type="time"].field--error, input[type="color"].field--error, input[type="file"].field--error, textarea.field--error, select.field--error, .input--read-only.field--error {
     background-color: #ffe0e8;
     border-color: #c62d32;
 }
@@ -912,11 +912,11 @@ legend span {
     color: #414141;
 }
 
-.input-label {
+.label--text {
     margin-bottom: 0.625rem;
 }
 
-.read-only {
+.input--read-only {
     min-height: 2.125rem;
     background-color: #eeeeee;
 }
@@ -925,7 +925,7 @@ legend span {
     padding-bottom: 1.25rem;
 }
 
-p.form-error, span.form-error {
+p.field--error, span.field--error {
     padding-top: 0.625rem;
     padding-bottom: 0;
     margin-bottom: 0;
@@ -1054,7 +1054,7 @@ button.button--radio:last-of-type {
     border-right: 1px solid #525252;
 }
 
-button.button--radio:last-of-type.checked {
+button.button--radio:last-of-type.button--radio--checked {
     border-right: 1px solid #35c13a;
 }
 
@@ -1062,7 +1062,7 @@ button.button--radio:last-of-type:hover {
     border-right: 1px solid #eeeeee;
 }
 
-button.button--radio.checked {
+button.button--radio.button--radio--checked {
     border-color: #35c13a;
     background-color: #35c13a;
     border-right: 1px solid #eeeeee;
