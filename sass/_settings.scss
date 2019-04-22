@@ -5,11 +5,8 @@
 // If you want your base font-size to be different and not have it affect the grid breakpoints,
 // set $rem-base to $base-font-size and make sure $base-font-size is a px value.
 
-/**
- *
- */
 $base-font-size: 16px;
-$base-line-height: 1.4;
+$base-line-height: 1.25;
 $em-base: $base-font-size !default;
 
 $wrapper-width: 1920;
@@ -259,7 +256,7 @@ $font--emphasis: italic;
  * @nuclide Font-Family-Weight-Light
  * @section Font > Weights
  */
-$font--weight--regular: 300;
+$font--weight--light: 300;
 /**
  * The base font family weight regular
  *
@@ -294,7 +291,7 @@ $font--weight--bold: 700;
  * @nuclide Font-Family-Weight-Black
  * @section Font > Weights
  */
-$font--weight--bold: 900;
+$font--weight--black: 900;
 
 /**
  * Extra small font size
@@ -394,6 +391,28 @@ $font--size--eleven: rem-calc(ms(10));
  * @section Font > Sizes
  */
 $font--size--twelve: rem-calc(ms(11));
+
+/**
+ * Font leading
+ *
+ * @nuclide Font-Leading
+ * @section Font > Leading
+ */
+$font--leading: rem-calc(3px);
+/**
+ * Font leading tight
+ *
+ * @nuclide Font-Leading-Tight
+ * @section Font > Leading
+ */
+$font--leading--tight: rem-calc(2px);
+/**
+ * Font leading loose
+ *
+ * @nuclide Font-Leading-Loose
+ * @section Font > Leading
+ */
+$font--leading--loose: rem-calc(5px);
 
 /**
  * Form default width
