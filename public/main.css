@@ -737,13 +737,13 @@ ol {
     list-style: decimal;
 }
 
-ul.none {
+ul.list--none {
     list-style: none;
     margin-left: 0;
     padding-left: 0;
 }
 
-ul.square {
+ul.list--square {
     list-style: square outside;
 }
 
