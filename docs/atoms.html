@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><title>Nucleus::Atoms</title>
+<head><title>Style Guide::Atoms</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/app.css" rel="stylesheet">
-    <link href="../build/main.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body class="SG-page">
 <div class="SG-header">
     <a class="SG-logo" href="index.html">
-        <span class="SG-logo__icon SG-ico SG-ico--logo"></span><span class="SG-logo__name">Nucleus</span></a>
+        <span class="SG-logo__icon SG-ico SG-ico--logo"></span><span class="SG-logo__name">Style Guide</span></a>
     <ul class="SG-nav">
         <li>
             <a class="SG-nav__item" href="nuclides.html">Nuclides</a>
@@ -2321,6 +2321,52 @@
             'location': 'nuclides.html',
             'hash': '98b1004999d9b4ad289854098ab145b3cbdcd0bd',
         },
+    },
+    {
+        'name': 'Button',
+        'type': 'atom',
+        'section': 'Atoms > Buttons',
+        'description': '',
+        'descriptor': '.button,\nbutton,\ninput[type="submit"],\ninput[type="reset"],\ninput[type="button"]',
+        'location': 'atoms.html#ad0cc9f1b3b78bd5c458c82c4f9464e2ffbfff6e',
+        'style': {
+            'name': 'Button',
+            'descriptor': '.button,\nbutton,\ninput[type="submit"],\ninput[type="reset"],\ninput[type="button"]',
+            'type': 'atom',
+            'section': 'Atoms > Buttons',
+            'description': '',
+            'modifiers': [
+                {'class': '.button--active', 'description': 'The active state of the button'},
+                {'class': '.button--disabled', 'description': 'The disabled state of the button'},
+                {'class': '.button--affirmative', 'description': 'An encouraging button'},
+                {'class': '.button--destructive', 'description': 'A dangerous button'}],
+            'markup': '<button class="button">\n  A button\n</button>\n<button class="button button--active">\n  An active button\n</button>\n<button class="button button--disabled">\n  A disabled button\n</button>\n<button class="button button--affirmative">\n  An affirmative button\n</button>\n<button class="button button--destructive">\n  A destructive button\n</button>',
+            'script': false,
+            'deprecated': false,
+            'location': 'atoms.html',
+            'hash': 'ad0cc9f1b3b78bd5c458c82c4f9464e2ffbfff6e',
+        },
+    },
+    {
+        'name': 'Switch',
+        'type': 'atom',
+        'section': 'Atoms > Buttons',
+        'description': '',
+        'descriptor': 'button.button--switch',
+        'location': 'atoms.html#667f53521e168c47eec825a1dc7b98c4308d76b9',
+        'style': {
+            'name': 'Switch',
+            'descriptor': 'button.button--switch',
+            'type': 'atom',
+            'section': 'Atoms > Buttons',
+            'description': '',
+            'modifiers': [{'class': '.switch--on', 'description': 'Button toggled on'}],
+            'markup': '<button class="button--switch"></button>\n<button class="button--switch button--switch--on"></button>',
+            'script': false,
+            'deprecated': false,
+            'location': 'atoms.html',
+            'hash': '667f53521e168c47eec825a1dc7b98c4308d76b9',
+        },
     }];</script>
 <div class="SG-search">
     <div class="SG-search__overlay"></div>
@@ -2340,7 +2386,13 @@
         </div>
     </div>
     <div class="SG-row">
-        <div class="SG-gr-6 SG-toc"></div>
+        <div class="SG-gr-6 SG-toc">
+            <ul>
+                <li>
+                    <a class="SG-a" href="#_Buttons">Buttons</a>
+                </li>
+            </ul>
+        </div>
         <div class="SG-gr-6">
             <div class="SG-p">Atoms are the very basic elements of the stylesheet. Imagine every single-class element or
                               selector rules as an atom. Examples could be buttons, links, headlines, inputs ... you get
@@ -2348,6 +2400,184 @@
             </div>
             <div class="SG-p">To mark an element as an atom, annotate it with the <span class="SG-strong">@atom</span>
                               tag, followed by the name of the component. Special atoms are <span class="SG-strong">@icons</span>.
+            </div>
+        </div>
+    </div>
+    <div class="SG-row">
+        <div class="SG-gr-12">
+            <div class="SG-h2" id="_Buttons">Buttons</div>
+        </div>
+    </div>
+    <div class="SG-component">
+        <a class="SG-anchor" name="ad0cc9f1b3b78bd5c458c82c4f9464e2ffbfff6e"></a>
+        <div class="SG-row">
+            <div class="SG-gr-8">
+                <div class="SG-component__title">Button</div>
+            </div>
+            <div class="SG-gr-4 SG-txt-right">
+                <div class="SG-button SG-button--ico" data-d-code-preview-toggle="data-d-code-preview-toggle"><span
+                        class="SG-ico SG-ico--code"
+                ></span>Show example
+                </div>&nbsp;<div
+                    class="SG-button SG-button--ico"
+                    data-d-copy="data-d-copy"
+                    data-clipboard-text="&lt;button class=&quot;button&quot;&gt;
+  A button
+&lt;/button&gt;
+&lt;button class=&quot;button button--active&quot;&gt;
+  An active button
+&lt;/button&gt;
+&lt;button class=&quot;button button--disabled&quot;&gt;
+  A disabled button
+&lt;/button&gt;
+&lt;button class=&quot;button button--affirmative&quot;&gt;
+  An affirmative button
+&lt;/button&gt;
+&lt;button class=&quot;button button--destructive&quot;&gt;
+  A destructive button
+&lt;/button&gt;"
+            ><span class="SG-ico SG-ico--copy"></span>Copy markup
+            </div>
+            </div>
+        </div>
+        <div class="SG-row">
+            <div class="SG-gr-12 SG-nogutter">
+                <div class="SG-p SG-component__preview--description"></div>
+            </div>
+        </div>
+        <div class="SG-row">
+            <div class="SG-gr-12 SG-component__preview page">
+                <button class="button">
+                    A button
+                </button>
+                <button class="button button--active">
+                    An active button
+                </button>
+                <button class="button button--disabled">
+                    A disabled button
+                </button>
+                <button class="button button--affirmative">
+                    An affirmative button
+                </button>
+                <button class="button button--destructive">
+                    A destructive button
+                </button>
+            </div>
+        </div>
+        <div class="SG-row">
+            <div class="SG-gr-12"><h4 class="SG-h5">Button Modifiers</h4>
+                <div class="SG-row SG-table">
+                    <div class="SG-gr-3">
+                        <div class="SG-table__head SG-table__cell">Modifier</div>
+                    </div>
+                    <div class="SG-gr-9">
+                        <div class="SG-table__head SG-table__cell">Description</div>
+                    </div>
+                </div>
+                <div class="SG-row SG-table">
+                    <div class="SG-gr-3">
+                        <div class="SG-table__cell">.button--active</div>
+                    </div>
+                    <div class="SG-gr-9">
+                        <div class="SG-table__cell">The active state of the button</div>
+                    </div>
+                </div>
+                <div class="SG-row SG-table">
+                    <div class="SG-gr-3">
+                        <div class="SG-table__cell">.button--disabled</div>
+                    </div>
+                    <div class="SG-gr-9">
+                        <div class="SG-table__cell">The disabled state of the button</div>
+                    </div>
+                </div>
+                <div class="SG-row SG-table">
+                    <div class="SG-gr-3">
+                        <div class="SG-table__cell">.button--affirmative</div>
+                    </div>
+                    <div class="SG-gr-9">
+                        <div class="SG-table__cell">An encouraging button</div>
+                    </div>
+                </div>
+                <div class="SG-row SG-table">
+                    <div class="SG-gr-3">
+                        <div class="SG-table__cell">.button--destructive</div>
+                    </div>
+                    <div class="SG-gr-9">
+                        <div class="SG-table__cell">A dangerous button</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="SG-row">
+            <div class="SG-gr-12 SG-nogutter">
+                <div
+                        class="SG-code SG-code--hidden SG-component__markup language-html"
+                        data-d-code-preview="data-d-code-preview"
+                ><code>&lt;button class=&quot;button&quot;&gt; A button &lt;/button&gt; &lt;button class=&quot;button
+                       button--active&quot;&gt; An active button &lt;/button&gt; &lt;button class=&quot;button
+                       button--disabled&quot;&gt; A disabled button &lt;/button&gt; &lt;button class=&quot;button
+                       button--affirmative&quot;&gt; An affirmative button &lt;/button&gt; &lt;button class=&quot;button
+                       button--destructive&quot;&gt; A destructive button &lt;/button&gt;</code></div>
+            </div>
+        </div>
+    </div>
+    <div class="SG-component">
+        <a class="SG-anchor" name="667f53521e168c47eec825a1dc7b98c4308d76b9"></a>
+        <div class="SG-row">
+            <div class="SG-gr-8">
+                <div class="SG-component__title">Switch</div>
+            </div>
+            <div class="SG-gr-4 SG-txt-right">
+                <div class="SG-button SG-button--ico" data-d-code-preview-toggle="data-d-code-preview-toggle"><span
+                        class="SG-ico SG-ico--code"
+                ></span>Show example
+                </div>&nbsp;<div
+                    class="SG-button SG-button--ico"
+                    data-d-copy="data-d-copy"
+                    data-clipboard-text="&lt;button class=&quot;button--switch&quot;&gt;&lt;/button&gt;
+&lt;button class=&quot;button--switch button--switch--on&quot;&gt;&lt;/button&gt;"
+            ><span class="SG-ico SG-ico--copy"></span>Copy markup
+            </div>
+            </div>
+        </div>
+        <div class="SG-row">
+            <div class="SG-gr-12 SG-nogutter">
+                <div class="SG-p SG-component__preview--description"></div>
+            </div>
+        </div>
+        <div class="SG-row">
+            <div class="SG-gr-12 SG-component__preview page">
+                <button class="button--switch"></button>
+                <button class="button--switch button--switch--on"></button>
+            </div>
+        </div>
+        <div class="SG-row">
+            <div class="SG-gr-12"><h4 class="SG-h5">Switch Modifiers</h4>
+                <div class="SG-row SG-table">
+                    <div class="SG-gr-3">
+                        <div class="SG-table__head SG-table__cell">Modifier</div>
+                    </div>
+                    <div class="SG-gr-9">
+                        <div class="SG-table__head SG-table__cell">Description</div>
+                    </div>
+                </div>
+                <div class="SG-row SG-table">
+                    <div class="SG-gr-3">
+                        <div class="SG-table__cell">.switch--on</div>
+                    </div>
+                    <div class="SG-gr-9">
+                        <div class="SG-table__cell">Button toggled on</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="SG-row">
+            <div class="SG-gr-12 SG-nogutter">
+                <div
+                        class="SG-code SG-code--hidden SG-component__markup language-html"
+                        data-d-code-preview="data-d-code-preview"
+                ><code>&lt;button class=&quot;button--switch&quot;&gt;&lt;/button&gt; &lt;button class=&quot;button--switch
+                       button--switch--on&quot;&gt;&lt;/button&gt;</code></div>
             </div>
         </div>
     </div>
