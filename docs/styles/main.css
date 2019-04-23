@@ -700,7 +700,7 @@ html, body {
   font-family: "Roboto", "Avenir", "Verdana", sans-serif;
   font-weight: 400;
   font-size: 16px;
-    line-height: 1.25;
+  line-height: 1.25;
   color: #414141;
   background-color: #fcfcfc;
   height: 100%; }
@@ -911,7 +911,7 @@ form {
  * Define consistent border, margin, and padding.
  */
 fieldset {
-  border: 1px solid #b3b3b3;
+  border: 1px solid #c4c4c4;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
@@ -1366,33 +1366,27 @@ table {
 
 .text--seven {
   font-size: 4.23607rem;
-    line-height: 4.36107rem;
-}
+  line-height: 4.36107rem; }
 
 .text--eight {
   font-size: 5.29509rem;
-    line-height: 5.42009rem;
-}
+  line-height: 5.42009rem; }
 
 .text--nine {
   font-size: 6.8541rem;
-    line-height: 6.8541rem;
-}
+  line-height: 6.8541rem; }
 
 .text--ten {
   font-size: 8.56763rem;
-    line-height: 8.56763rem;
-}
+  line-height: 8.56763rem; }
 
 .text--eleven {
   font-size: 11.09017rem;
-    line-height: 11.09017rem;
-}
+  line-height: 11.09017rem; }
 
 .text--twelve {
   font-size: 13.86271rem;
-    line-height: 13.86271rem;
-}
+  line-height: 13.86271rem; }
 
 p, ul, ol, dl {
   margin-top: 0;
@@ -1452,7 +1446,7 @@ h4, h5, h6,
  */
 .pretitle {
   font-size: 1rem;
-    line-height: 1.3125rem;
+  line-height: 1.3125rem;
   margin-bottom: 0; }
 
 /**
@@ -1558,7 +1552,7 @@ q {
  *  <hr>
  */
 hr, .rule {
-  border: solid #b3b3b3;
+  border: solid #c4c4c4;
   border-width: 1px 0 0;
   clear: both;
   margin: 0 0 1.25rem;
@@ -1670,7 +1664,7 @@ li, dt, dd {
  *  <code class="code--block">// Code goes here</code>
  */
 code {
-  background-color: #dadada;
+  background-color: #dfdfdf;
   color: #414141;
   padding: 1px 3px;
   border-radius: 2px; }
@@ -1678,12 +1672,15 @@ code {
     display: block;
     padding: 0.625rem;
     background-color: #414141;
-    color: #b3b3b3;
+    color: #c4c4c4;
     border-radius: 3px; }
 
 /**
- * @atom Tables
- * @section Tables
+ * @atom Table
+ * @section Table
+ * @modifiers
+ *  .table--alternating-rows Striped rows
+ *  .table--alternating-columns Striped columns
  * @markup
  *  <table>
  *      <thead>
@@ -1723,38 +1720,86 @@ code {
  *      </tr>
  *      </tbody>
  *  </table>
+ *
+ *  <table class="table--alternating-rows">
+ *      <thead>
+ *      <tr>
+ *          <th>Table Heading 1</th>
+ *          <th>Table Heading 2</th>
+ *          <th>Table Heading 3</th>
+ *      </tr>
+ *      </thead>
+ *      <tbody>
+ *      <tr>
+ *          <td>Table Cell 1</td>
+ *          <td>Table Cell 2</td>
+ *          <td>Table Cell 3</td>
+ *      </tr>
+ *      <tr>
+ *          <td>Table Cell 1</td>
+ *          <td>Table Cell 2</td>
+ *          <td>Table Cell 3</td>
+ *      </tr>
+ *      <tr>
+ *          <td>Table Cell 1</td>
+ *          <td>Table Cell 2</td>
+ *          <td>Table Cell 3</td>
+ *      </tr>
+ *      <tr>
+ *          <td>Table Cell 1</td>
+ *          <td>Table Cell 2</td>
+ *          <td>Table Cell 3</td>
+ *      </tr>
+ *      </tbody>
+ *  </table>
+ *
+ *  <table class="table--alternating-columns">
+ *      <thead>
+ *      <tr>
+ *          <th>Table Heading 1</th>
+ *          <th>Table Heading 2</th>
+ *          <th>Table Heading 3</th>
+ *      </tr>
+ *      </thead>
+ *      <tbody>
+ *      <tr>
+ *          <td>Table Cell 1</td>
+ *          <td>Table Cell 2</td>
+ *          <td>Table Cell 3</td>
+ *      </tr>
+ *      <tr>
+ *          <td>Table Cell 1</td>
+ *          <td>Table Cell 2</td>
+ *          <td>Table Cell 3</td>
+ *      </tr>
+ *      </tbody>
+ *  </table>
  */
 table {
   width: 100%;
   margin: 0 0 1.25rem; }
-
-th {
-  text-align: left;
-  font-weight: 700; }
-
-tr:nth-child(odd) td:nth-child(odd) {
-  background-color: #dadada; }
-
-tr:nth-child(even) td:nth-child(odd) {
-  background-color: #e8e8e8; }
-
-tr:nth-child(odd) td:nth-child(even) {
-  background-color: #dadada; }
-
-tr:nth-child(even) td:nth-child(even) {
-  background-color: #e8e8e8; }
-
-td, th {
-  padding: 0.20833rem 0.3125rem;
-  border: none;
-  border-bottom: 1px solid #b3b3b3; }
-
-td {
-  text-align: left;
-  font-weight: 400; }
-
-fieldset {
-  margin-bottom: 1.25rem; }
+  table th {
+    text-align: left;
+    font-weight: 700; }
+  table td, table th {
+    padding: 0.20833rem 0.3125rem;
+    border: none;
+    border-bottom: 1px solid #c4c4c4; }
+  table td {
+    text-align: left;
+    font-weight: 400; }
+  table.table--alternating-rows tr:nth-child(odd) td:nth-child(odd) {
+    background-color: #dfdfdf; }
+  table.table--alternating-rows tr:nth-child(even) td:nth-child(odd) {
+    background-color: #eeeeee; }
+  table.table--alternating-rows tr:nth-child(odd) td:nth-child(even) {
+    background-color: #dfdfdf; }
+  table.table--alternating-rows tr:nth-child(even) td:nth-child(even) {
+    background-color: #eeeeee; }
+  table.table--alternating-columns td:nth-child(odd) {
+    background-color: #dfdfdf; }
+  table.table--alternating-columns td:nth-child(even) {
+    background-color: #eeeeee; }
 
 /**
  * @atom Input
@@ -1764,15 +1809,15 @@ fieldset {
  *  .input--valid Input is valid
  *  .input--error Input has an error
  * @markup
- *   <p>
- *     <input type="text"  placeholder="Text Input">
- *   </p>
- *   <p>
- *     <input class="input--valid" type="text"  placeholder="Valid Text Input">
- *   </p>
- *   <p>
- *     <input class="input--error" type="text"  placeholder="Error Text Input">
- *   </p>
+ *   <div class="form-field">
+ *       <input type="text"  placeholder="Text Input">
+ *   </div>
+ *   <div class="form-field">
+ *       <input class="input--valid" type="text"  placeholder="Valid Text Input">
+ *   </div>
+ *   <div class="form-field">
+ *       <input class="input--error" type="text"  placeholder="Error Text Input">
+ *   </div>
  */
 
 input,
@@ -1789,7 +1834,7 @@ input[type="color"],
 textarea,
 select {
   box-sizing: border-box;
-  border: 1px solid #b3b3b3;
+  border: 1px solid #c4c4c4;
   padding: 0.25rem 0.375rem;
   outline: none;
   font-size: 1rem;
@@ -1859,8 +1904,8 @@ select {
   input[type="color"][readonly],
   textarea[readonly],
   select[readonly] {
-    background-color: #b3b3b3;
-    border: 1px solid #b3b3b3; }
+    background-color: #c4c4c4;
+    border: 1px solid #c4c4c4; }
   input:focus,
   input[type="text"]:focus,
   input[type="password"]:focus,
@@ -1889,8 +1934,41 @@ select {
   input[type="color"]:disabled,
   textarea:disabled,
   select:disabled {
-    background-color: #b3b3b3; }
+    background-color: #c4c4c4; }
 
+/**
+ * @atom Input
+ * @section Forms > Inputs
+ * @modifiers
+ *  .input--inline Inline Input
+ *  .input--valid Input is valid
+ *  .input--error Input has an error
+ * @markup
+ *   <div class="form-field">
+ *       <select>
+ *           <option value="-1">Please Choose</option>
+ *           <option value="1">Choice One</option>
+ *           <option value="2">Choice Two</option>
+ *           <option value="3">Choice Three</option>
+ *       </select>
+ *   </div>
+ *   <div class="form-field">
+ *       <select class="input--valid">
+ *           <option value="-1">Please Choose</option>
+ *           <option value="1" selected>Choice One</option>
+ *           <option value="2">Choice Two</option>
+ *           <option value="3">Choice Three</option>
+ *       </select>
+ *   </div>
+ *   <div class="form-field">
+ *       <select class="input--error">
+ *           <option value="-1">Please Choose</option>
+ *           <option value="1">Choice One</option>
+ *           <option value="2">Choice Two</option>
+ *           <option value="3">Choice Three</option>
+ *       </select>
+ *   </div>
+ */
 select {
   padding: 0.25rem 0.375rem; }
 
@@ -1913,12 +1991,7 @@ input[type="radio"] {
   width: auto; }
   input[type="checkbox"]:disabled,
   input[type="radio"]:disabled {
-    background-color: #b3b3b3; }
-
-legend span {
-  font-weight: normal;
-  font-size: 1rem;
-  color: #414141; }
+    background-color: #c4c4c4; }
 
 /**
  * @atom Label
@@ -1936,16 +2009,31 @@ label.label--text {
 label.label--inline {
   display: inline; }
 
+/**
+ * Wrapper for form fields
+ * @atom Form Field
+ * @section Forms > Field
+ * @modifiers
+ *  .label--text Label text
+ *  .label--inline Inline label
+ * @markup
+ *  <div class="form-field">
+ *      <label class="label--text">Label Text</label>
+ *      <input type="text"  placeholder="Text Input">
+ *  </div>
+ */
 .form-field {
-  padding-bottom: 1.25rem; }
+  margin-bottom: 1.25rem; }
 
 /**
  * @atom Field Error
  * @section Forms > Validation
  * @markup
- *  <label class="label--text">Label Text</label>
- *  <input type="text" placeholder="Text Input">
- *  <p class="field--error">Oh no!</p>
+ *  <div class="form-field">
+ *      <label class="label--text">Label Text</label>
+ *      <input type="text" placeholder="Text Input">
+ *      <p class="field--error">Oh no!</p>
+ *  </div>
  */
 .field--error {
   padding-top: 0.625rem;
@@ -1953,6 +2041,44 @@ label.label--inline {
   margin-bottom: 0;
   font-size: 0.77254rem;
   color: #c62d32; }
+
+/**
+ * @atom Fieldset
+ * @section Forms > Form Group
+ * @markup
+ *  <fieldset>
+ *      <div class="form-field">
+ *          <label class="label--text">Label One</label>
+ *          <input type="text" placeholder="Enter Text">
+ *      </div>
+ *      <div class="form-field">
+ *          <label class="label--text">Label Two</label>
+ *          <input type="text" placeholder="Enter Text">
+ *      </div>
+ *  </fieldset>
+ */
+fieldset {
+  padding: 1.25rem 0.625rem;
+  margin-bottom: 1.25rem;
+  border-radius: 3px; }
+  fieldset .form-field:last-of-type {
+    margin-bottom: 0; }
+
+/**
+ * @atom Legend
+ * @section Forms > Form Group
+ * @markup
+ *  <fieldset>
+ *      <legend>Fieldset Legend</legend>
+ *      <div class="form-field">
+ *          <label class="label--text">Label</label>
+ *          <input type="text" placeholder="Enter Text">
+ *      </div>
+ *  </fieldset>
+ */
+legend {
+  font-size: 1rem;
+  color: #414141; }
 
 /**
  * @atom Button
@@ -1988,17 +2114,16 @@ input[type="button"] {
   background: #1c1c1c;
   border: 1px solid #1c1c1c;
   color: #fcfcfc;
-    font-weight: 500;
+  font-weight: 500;
   text-decoration: none;
   cursor: pointer;
-    line-height: 1.25;
+  line-height: 1.25;
   padding: 0.3125rem 0.75rem 0.3125rem;
   font-family: "Roboto", "Avenir", "Verdana", sans-serif;
   transition: background-color 340ms ease, border-color 340ms ease;
   border-radius: 3px;
   -webkit-appearance: none; }
-
-.button.button--active, .pagination .button--active.pagination--button, .button:hover, .pagination .pagination--button:hover, .pagination .pagination--current, .button:focus, .pagination .pagination--button:focus, .button:active, .pagination .pagination--button:active,
+  .button.button--active, .pagination .button--active.pagination--button, .button:hover, .pagination .pagination--button:hover, .pagination .pagination--current, .button:focus, .pagination .pagination--button:focus, .button:active, .pagination .pagination--button:active,
   button.button--active,
   button:hover,
   button:focus,
@@ -2019,8 +2144,7 @@ input[type="button"] {
     background: #808080;
     border: 1px solid #808080;
     text-decoration: none; }
-
-.button.button--disabled, .pagination .button--disabled.pagination--button, .button:disabled, .pagination .pagination--button:disabled, .pagination .pagination--disabled,
+  .button.button--disabled, .pagination .button--disabled.pagination--button, .button:disabled, .pagination .pagination--button:disabled, .pagination .pagination--disabled,
   button.button--disabled,
   button:disabled,
   input[type="submit"].button--disabled,
@@ -2030,11 +2154,10 @@ input[type="button"] {
   input[type="button"].button--disabled,
   input[type="button"]:disabled {
     cursor: default;
-    border: 1px solid #b3b3b3;
-    color: #dadada;
-    background-color: #b3b3b3; }
-
-.button.button--disabled:hover, .pagination .button--disabled.pagination--button:hover, .pagination .button--disabled.pagination--current, .button.button--disabled:active, .pagination .button--disabled.pagination--button:active, .button:disabled:hover, .pagination .pagination--button:disabled:hover, .pagination .pagination--current:disabled, .pagination .pagination--disabled:hover, .button:disabled:active, .pagination .pagination--button:disabled:active, .pagination .pagination--disabled:active,
+    border: 1px solid #c4c4c4;
+    color: #dfdfdf;
+    background-color: #c4c4c4; }
+    .button.button--disabled:hover, .pagination .button--disabled.pagination--button:hover, .pagination .button--disabled.pagination--current, .button.button--disabled:active, .pagination .button--disabled.pagination--button:active, .button:disabled:hover, .pagination .pagination--button:disabled:hover, .pagination .pagination--current:disabled, .pagination .pagination--disabled:hover, .button:disabled:active, .pagination .pagination--button:disabled:active, .pagination .pagination--disabled:active,
     button.button--disabled:hover,
     button.button--disabled:active,
     button:disabled:hover,
@@ -2052,11 +2175,10 @@ input[type="button"] {
     input[type="button"]:disabled:hover,
     input[type="button"]:disabled:active {
       cursor: default;
-      border: 1px solid #b3b3b3;
-      color: #dadada;
-      background-color: #b3b3b3; }
-
-.button.button--destructive, .pagination .button--destructive.pagination--button,
+      border: 1px solid #c4c4c4;
+      color: #dfdfdf;
+      background-color: #c4c4c4; }
+  .button.button--destructive, .pagination .button--destructive.pagination--button,
   button.button--destructive,
   input[type="submit"].button--destructive,
   input[type="reset"].button--destructive,
@@ -2064,16 +2186,14 @@ input[type="button"] {
     border-color: #c62d32;
     background-color: #c62d32;
     color: #fcfcfc; }
-
-.button.button--destructive:hover, .pagination .button--destructive.pagination--button:hover, .pagination .button--destructive.pagination--current,
+    .button.button--destructive:hover, .pagination .button--destructive.pagination--button:hover, .pagination .button--destructive.pagination--current,
     button.button--destructive:hover,
     input[type="submit"].button--destructive:hover,
     input[type="reset"].button--destructive:hover,
     input[type="button"].button--destructive:hover {
       border-color: #ee393c;
       background-color: #ee393c; }
-
-.button.button--affirmative, .pagination .button--affirmative.pagination--button,
+  .button.button--affirmative, .pagination .button--affirmative.pagination--button,
   button.button--affirmative,
   input[type="submit"].button--affirmative,
   input[type="reset"].button--affirmative,
@@ -2081,8 +2201,7 @@ input[type="button"] {
     border-color: #35c13a;
     background-color: #35c13a;
     color: #fcfcfc; }
-
-.button.button--affirmative:hover, .pagination .button--affirmative.pagination--button:hover, .pagination .button--affirmative.pagination--current,
+    .button.button--affirmative:hover, .pagination .button--affirmative.pagination--button:hover, .pagination .button--affirmative.pagination--current,
     button.button--affirmative:hover,
     input[type="submit"].button--affirmative:hover,
     input[type="reset"].button--affirmative:hover,
@@ -2125,12 +2244,7 @@ button.button--switch {
     left: 1.3125rem; }
 
 /**
- * @atom Pagination
- * @section Buttons > Pagination
- * @modifiers
- *  .pagination--button Apply to all pagination items
- *  .pagination--current Apply to current page
- *  .pagination--disabled Apply to non link spacers
+ * @molecule Pagination
  * @markup
  *  <nav class="pagination">
  *    <a href="#" class="pagination--button">&lt;&lt;</a>
@@ -2145,31 +2259,21 @@ button.button--switch {
  *  </nav>
  */
 .pagination {
-    margin-bottom: 0.625rem;
-    display: flex;
-    flex: 1 0 auto;
-    flex-wrap: nowrap;
-}
-
-.pagination .pagination--button {
+  margin-bottom: 0.625rem;
+  display: flex;
+  flex: 1 0 auto;
+  flex-wrap: nowrap; }
+  .pagination .pagination--button {
     color: #fcfcfc;
-    margin: 0 0.3125rem;
-}
-
-.pagination .pagination--button:first-child {
-    margin-left: 0;
-}
-
-.pagination .pagination--button:last-child {
-    margin-right: 0;
-}
-
-.pagination .pagination--current {
+    margin: 0 0.3125rem; }
+    .pagination .pagination--button:first-child {
+      margin-left: 0; }
+    .pagination .pagination--button:last-child {
+      margin-right: 0; }
+  .pagination .pagination--current {
     padding: 0.3125rem 0.75rem 0.3125rem;
-    cursor: default;
-}
-
-.pagination .pagination--disabled {
+    cursor: default; }
+  .pagination .pagination--disabled {
     padding: 0.3125rem 0.75rem 0.3125rem;
     cursor: default; }
 
@@ -2191,20 +2295,20 @@ button.button--switch {
 .modal-header {
   padding-bottom: 0.625rem;
   margin-bottom: 0.625rem;
-  border-bottom: 1px solid #b3b3b3; }
+  border-bottom: 1px solid #c4c4c4; }
 
 .modal-footer {
   margin-top: 0.625rem;
   padding-top: 0.625rem;
-  border-top: 1px solid #b3b3b3; }
+  border-top: 1px solid #c4c4c4; }
 
 .logo {
   width: 12.5rem;
   height: 4.375rem; }
 
 .panel {
-  background-color: #e8e8e8;
-  border: 1px solid #b3b3b3;
+  background-color: #eeeeee;
+  border: 1px solid #c4c4c4;
   border-radius: 3px;
   padding: 0.625rem; }
 
@@ -2239,22 +2343,22 @@ button.button--switch {
   color: #808080; }
 
 .bc-light-grey {
-  background-color: #b3b3b3; }
+  background-color: #c4c4c4; }
 
 .color-light-grey {
-  color: #b3b3b3; }
+  color: #c4c4c4; }
 
 .bc-lighter-grey {
-  background-color: #dadada; }
+  background-color: #dfdfdf; }
 
 .color-lighter-grey {
-  color: #dadada; }
+  color: #dfdfdf; }
 
 .bc-lightest-grey {
-  background-color: #e8e8e8; }
+  background-color: #eeeeee; }
 
 .color-lightest-grey {
-  color: #e8e8e8; }
+  color: #eeeeee; }
 
 .bc-white {
   background-color: #fcfcfc; }
