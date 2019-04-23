@@ -1,7 +1,3 @@
-fieldset {
-  margin-bottom: $gutter;
-}
-
 /**
  * @atom Input
  * @section Forms > Inputs
@@ -10,15 +6,15 @@ fieldset {
  *  .input--valid Input is valid
  *  .input--error Input has an error
  * @markup
- *   <p>
- *     <input type="text"  placeholder="Text Input">
- *   </p>
- *   <p>
- *     <input class="input--valid" type="text"  placeholder="Valid Text Input">
- *   </p>
- *   <p>
- *     <input class="input--error" type="text"  placeholder="Error Text Input">
- *   </p>
+ *   <div class="form-field">
+ *       <input type="text"  placeholder="Text Input">
+ *   </div>
+ *   <div class="form-field">
+ *       <input class="input--valid" type="text"  placeholder="Valid Text Input">
+ *   </div>
+ *   <div class="form-field">
+ *       <input class="input--error" type="text"  placeholder="Error Text Input">
+ *   </div>
  */
 input,
 input[type="text"],
@@ -77,6 +73,39 @@ select {
   }
 }
 
+/**
+ * @atom Input
+ * @section Forms > Inputs
+ * @modifiers
+ *  .input--inline Inline Input
+ *  .input--valid Input is valid
+ *  .input--error Input has an error
+ * @markup
+ *   <div class="form-field">
+ *       <select>
+ *           <option value="-1">Please Choose</option>
+ *           <option value="1">Choice One</option>
+ *           <option value="2">Choice Two</option>
+ *           <option value="3">Choice Three</option>
+ *       </select>
+ *   </div>
+ *   <div class="form-field">
+ *       <select class="input--valid">
+ *           <option value="-1">Please Choose</option>
+ *           <option value="1" selected>Choice One</option>
+ *           <option value="2">Choice Two</option>
+ *           <option value="3">Choice Three</option>
+ *       </select>
+ *   </div>
+ *   <div class="form-field">
+ *       <select class="input--error">
+ *           <option value="-1">Please Choose</option>
+ *           <option value="1">Choice One</option>
+ *           <option value="2">Choice Two</option>
+ *           <option value="3">Choice Three</option>
+ *       </select>
+ *   </div>
+ */
 select {
   padding: $select--padding;
 }
@@ -110,12 +139,6 @@ input[type="radio"] {
   }
 }
 
-legend span {
-  font-weight: normal;
-  font-size: $font--size--one;
-  color: $text--color;
-}
-
 /**
  * @atom Label
  * @section Forms > Labels
@@ -136,17 +159,32 @@ label {
   }
 }
 
+/**
+ * Wrapper for form fields
+ * @atom Form Field
+ * @section Forms > Field
+ * @modifiers
+ *  .label--text Label text
+ *  .label--inline Inline label
+ * @markup
+ *  <div class="form-field">
+ *      <label class="label--text">Label Text</label>
+ *      <input type="text"  placeholder="Text Input">
+ *  </div>
+ */
 .form-field {
-  padding-bottom: $gutter;
+  margin-bottom: $gutter;
 }
 
 /**
  * @atom Field Error
  * @section Forms > Validation
  * @markup
- *  <label class="label--text">Label Text</label>
- *  <input type="text" placeholder="Text Input">
- *  <p class="field--error">Oh no!</p>
+ *  <div class="form-field">
+ *      <label class="label--text">Label Text</label>
+ *      <input type="text" placeholder="Text Input">
+ *      <p class="field--error">Oh no!</p>
+ *  </div>
  */
 .field--error {
   padding-top: $gutter--half;
@@ -154,4 +192,45 @@ label {
   margin-bottom: 0;
   font-size: $font--size--minus-one;
   color: $color--red;
+}
+
+/**
+ * @atom Fieldset
+ * @section Forms > Form Group
+ * @markup
+ *  <fieldset>
+ *      <div class="form-field">
+ *          <label class="label--text">Label One</label>
+ *          <input type="text" placeholder="Enter Text">
+ *      </div>
+ *      <div class="form-field">
+ *          <label class="label--text">Label Two</label>
+ *          <input type="text" placeholder="Enter Text">
+ *      </div>
+ *  </fieldset>
+ */
+fieldset {
+  padding: $gutter $gutter--half;
+  margin-bottom: $gutter;
+  border-radius: $border--radius;
+  .form-field:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+/**
+ * @atom Legend
+ * @section Forms > Form Group
+ * @markup
+ *  <fieldset>
+ *      <legend>Fieldset Legend</legend>
+ *      <div class="form-field">
+ *          <label class="label--text">Label</label>
+ *          <input type="text" placeholder="Enter Text">
+ *      </div>
+ *  </fieldset>
+ */
+legend {
+  font-size: $font--size--one;
+  color: $text--color;
 }
