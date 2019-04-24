@@ -1,8 +1,34 @@
+/**
+ * @atom Container
+ * @section Layout > Container
+ * @markup
+ *  <div class="container">
+ *      <div class="row">
+ *          <div class="column col-12">
+ *              <div class="panel">
+ *                  <p class="margin-bottom--none">Container wrapping row block</p>
+ *              </div>
+ *          </div>
+ *      </div>
+ *  </div>
+ */
 .container {
   padding: 0;
   margin: 0;
 }
 
+/**
+ * @atom Row
+ * @section Layout > Grid
+ * @markup
+ *  <div class="row">
+ *      <div class="column col-12">
+ *          <div class="panel">
+ *              <p class="margin-bottom--none">Row wrapping column block</p>
+ *          </div>
+ *      </div>
+ *  </div>
+ */
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -11,6 +37,165 @@
   margin-right: -$gutter--half;
 }
 
+/**
+ * @atom Column
+ * @section Layout > Grid
+ * @modifiers
+ *  .col-1 span one column
+ *  .col-2 span two columns
+ *  .col-3 span three columns
+ *  .col-4 span four columns
+ *  .col-5 span five columns
+ *  .col-6 span six columns
+ *  .col-7 span seven columns
+ *  .col-8 span eight columns
+ *  .col-9 span nine columns
+ *  .col-10 span ten columns
+ *  .col-11 span eleven columns
+ *  .col-12 span twelve columns
+ *  .col-xsml-1 span one column up to xsml breakpoint
+ *  .col-xsml-2 span two columns up to xsml breakpoint
+ *  .col-xsml-3 span three columns up to xsml breakpoint
+ *  .col-xsml-4 span four columns up to xsml breakpoint
+ *  .col-xsml-5 span five columns up to xsml breakpoint
+ *  .col-xsml-6 span six columns up to xsml breakpoint
+ *  .col-xsml-7 span seven columns up to xsml breakpoint
+ *  .col-xsml-8 span eight columns up to xsml breakpoint
+ *  .col-xsml-9 span nine columns up to xsml breakpoint
+ *  .col-xsml-10 span ten columns up to xsml breakpoint
+ *  .col-xsml-11 span eleven columns up to xsml breakpoint
+ *  .col-xsml-12 span twelve columns up to xsml breakpoint
+ *  .col-sml-1 span one column up to sml breakpoint
+ *  .col-sml-2 span two columns up to sml breakpoint
+ *  .col-sml-3 span three columns up to sml breakpoint
+ *  .col-sml-4 span four columns up to sml breakpoint
+ *  .col-sml-5 span five columns up to sml breakpoint
+ *  .col-sml-6 span six columns up to sml breakpoint
+ *  .col-sml-7 span seven columns up to sml breakpoint
+ *  .col-sml-8 span eight columns up to sml breakpoint
+ *  .col-sml-9 span nine columns up to sml breakpoint
+ *  .col-sml-10 span ten columns up to sml breakpoint
+ *  .col-sml-11 span eleven columns up to sml breakpoint
+ *  .col-sml-12 span twelve columns up to sml breakpoint
+ *  .col-med-1 span one column up to med breakpoint
+ *  .col-med-2 span two columns up to med breakpoint
+ *  .col-med-3 span three columns up to med breakpoint
+ *  .col-med-4 span four columns up to med breakpoint
+ *  .col-med-5 span five columns up to med breakpoint
+ *  .col-med-6 span six columns up to med breakpoint
+ *  .col-med-7 span seven columns up to med breakpoint
+ *  .col-med-8 span eight columns up to med breakpoint
+ *  .col-med-9 span nine columns up to med breakpoint
+ *  .col-med-10 span ten columns up to med breakpoint
+ *  .col-med-11 span eleven columns up to med breakpoint
+ *  .col-med-12 span twelve columns up to med breakpoint
+ *  .col-lrg-1 span one column up to lrg breakpoint
+ *  .col-lrg-2 span two columns up to lrg breakpoint
+ *  .col-lrg-3 span three columns up to lrg breakpoint
+ *  .col-lrg-4 span four columns up to lrg breakpoint
+ *  .col-lrg-5 span five columns up to lrg breakpoint
+ *  .col-lrg-6 span six columns up to lrg breakpoint
+ *  .col-lrg-7 span seven columns up to lrg breakpoint
+ *  .col-lrg-8 span eight columns up to lrg breakpoint
+ *  .col-lrg-9 span nine columns up to lrg breakpoint
+ *  .col-lrg-10 span ten columns up to lrg breakpoint
+ *  .col-lrg-11 span eleven columns up to lrg breakpoint
+ *  .col-lrg-12 span twelve columns up to lrg breakpoint
+ *  .col-xlrg-1 span one column up to xlrg breakpoint
+ *  .col-xlrg-2 span two columns up to xlrg breakpoint
+ *  .col-xlrg-3 span three columns up to xlrg breakpoint
+ *  .col-xlrg-4 span four columns up to xlrg breakpoint
+ *  .col-xlrg-5 span five columns up to xlrg breakpoint
+ *  .col-xlrg-6 span six columns up to xlrg breakpoint
+ *  .col-xlrg-7 span seven columns up to xlrg breakpoint
+ *  .col-xlrg-8 span eight columns up to xlrg breakpoint
+ *  .col-xlrg-9 span nine columns up to xlrg breakpoint
+ *  .col-xlrg-10 span ten columns up to xlrg breakpoint
+ *  .col-xlrg-11 span eleven columns up to xlrg breakpoint
+ *  .col-xlrg-12 span twelve columns up to xlrg breakpoint
+ * @markup
+ *  <div class="container">
+ *      <div class="row">
+ *          <div class="column col-12">
+ *              <div class="panel">
+ *                  <p class="margin-bottom--none text--minus-one">Col 12</p>
+ *              </div>
+ *          </div>
+ *      </div>
+ *      <div class="row">
+ *          <div class="column col-11 col-xsml-12 col-sml-8 col-med-9 col-lrg-10">
+ *              <div class="panel">
+ *                  <p class="margin-bottom--none text--minus-one">Col 11</p>
+ *              </div>
+ *          </div>
+ *          <div class="column col-1 col-xsml-12 col-sml-4 col-med-3 col-lrg-2">
+ *              <div class="panel">
+ *                  <p class="margin-bottom--none text--minus-one">Col 1</p>
+ *              </div>
+ *          </div>
+ *      </div>
+ *      <div class="row">
+ *          <div class="column col-10 col-xsml-12 col-sml-7 col-med-8 col-lrg-9">
+ *              <div class="panel">
+ *                  <p class="margin-bottom--none text--minus-one">Col 10</p>
+ *              </div>
+ *          </div>
+ *          <div class="column col-2 col-xsml-12 col-sml-5 col-med-4 col-lrg-3">
+ *              <div class="panel">
+ *                  <p class="margin-bottom--none text--minus-one">Col 2</p>
+ *              </div>
+ *          </div>
+ *      </div>
+ *      <div class="row">
+ *          <div class="column col-9 col-xsml-12 col-sml-6 col-med-7 col-lrg-8">
+ *              <div class="panel">
+ *                  <p class="margin-bottom--none text--minus-one">Col 9</p>
+ *              </div>
+ *          </div>
+ *          <div class="column col-3 col-xsml-12 col-sml-6 col-med-5 col-lrg-4">
+ *              <div class="panel">
+ *                  <p class="margin-bottom--none text--minus-one">Col 3</p>
+ *              </div>
+ *          </div>
+ *      </div>
+ *      <div class="row">
+ *          <div class="column col-8 col-xsml-12 col-sml-6 col-lrg-7">
+ *              <div class="panel">
+ *                  <p class="margin-bottom--none text--minus-one">Col 8</p>
+ *              </div>
+ *          </div>
+ *          <div class="column col-4 col-xsml-12 col-sml-6 col-lrg-5">
+ *              <div class="panel">
+ *                  <p class="margin-bottom--none text--minus-one">Col 4</p>
+ *              </div>
+ *          </div>
+ *      </div>
+ *      <div class="row">
+ *          <div class="column col-7 col-xsml-12 col-sml-6">
+ *              <div class="panel">
+ *                  <p class="margin-bottom--none text--minus-one">Col 7</p>
+ *              </div>
+ *          </div>
+ *          <div class="column col-5 col-xsml-12 col-sml-6">
+ *              <div class="panel">
+ *                  <p class="margin-bottom--none text--minus-one">Col 5</p>
+ *              </div>
+ *          </div>
+ *      </div>
+ *      <div class="row">
+ *          <div class="column col-6 col-xsml-12">
+ *              <div class="panel">
+ *                  <p class="margin-bottom--none text--minus-one">Col 6</p>
+ *              </div>
+ *          </div>
+ *          <div class="column col-6 col-xsml-12">
+ *              <div class="panel">
+ *                  <p class="margin-bottom--none text--minus-one">Col 6</p>
+ *              </div>
+ *          </div>
+ *      </div>
+ *  </div>
+ */
 .column {
   box-sizing: border-box;
   flex: 0 1 auto;
@@ -109,6 +294,57 @@
 
 .push-11 {
   margin-left: 91.6666%;
+}
+
+@media #{$xlarge-down} {
+
+  .col-xlrg-1 {
+    width: 8.3333%;
+  }
+
+  .col-xlrg-2 {
+    width: 16.6666%;
+  }
+
+  .col-xlrg-3 {
+    width: 25%;
+  }
+
+  .col-xlrg-4 {
+    width: 33.3333%;
+  }
+
+  .col-xlrg-5 {
+    width: 41.6666%;
+  }
+
+  .col-xlrg-6 {
+    width: 50%;
+  }
+
+  .col-xlrg-7 {
+    width: 58.3333%;
+  }
+
+  .col-xlrg-8 {
+    width: 66.6666%;
+  }
+
+  .col-xlrg-9 {
+    width: 75%;
+  }
+
+  .col-xlrg-10 {
+    width: 83.3333%;
+  }
+
+  .col-xlrg-11 {
+    width: 91.6666%;
+  }
+
+  .col-xlrg-12 {
+    width: 100%;
+  }
 }
 
 @media #{$large-down} {
