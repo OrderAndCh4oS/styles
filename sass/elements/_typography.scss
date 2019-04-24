@@ -185,9 +185,9 @@ q {
  * @markup
  *  <hr>
  */
-hr, .rule {
-  border: solid $border--color;
-  border-width: 1px 0 0;
+hr {
+  border: $border--stroke $border--color;
+  border-width: $border--width 0 0;
   clear: both;
   margin: 0 0 $gutter;
   height: 0;

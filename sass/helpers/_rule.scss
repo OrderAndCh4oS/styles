@@ -1,0 +1,99 @@
+/**
+ * @atom Border
+ * @section Typography > Borders
+ * @modifiers
+ *  .border--tight
+ *  .border
+ * @markup
+ *  <p class="border--bottom">Border Bottom</p>
+ *  <p class="border--bottom border--tight">Border Bottom Tight</p>
+ *  <p class="border--bottom border--loose">Border Bottom Loose</p>
+ *  <p class="border--bottom border--thick">Border Bottom Thick</p>
+ *  <p class="border--bottom border--thicker">Border Bottom Thicker</p>
+ *  <p class="border--bottom border--thickest">Border Bottom Thickest</p>
+ *  <p class="border--right">Border Right</p>
+ *  <p class="border--right border--tight">Border Right Tight</p>
+ *  <p class="border--right border--loose">Border Right Loose</p>
+ *  <p class="border--left">Border Left</p>
+ *  <p class="border--left border--tight">Border Left Tight</p>
+ *  <p class="border--left border--loose">Border Left Loose</p>
+ *  <p class="border--top">Border Top</p>
+ *  <p class="border--top border--tight">Border Top Tight</p>
+ *  <p class="border--top border--loose">Border Top Loose</p>
+ */
+
+.border--bottom {
+  border-bottom: $border;
+  padding-bottom: $gutter;
+  margin-bottom: $gutter;
+
+  &.border--tight {
+    padding-bottom: $gutter--half;
+    margin-bottom: $gutter--half;
+  }
+
+  &.border--loose {
+    padding-bottom: $gutter--double;
+    margin-bottom: $gutter--double;
+  }
+}
+
+.border--top {
+  border-top: $border;
+  padding-top: $gutter;
+  margin-top: $gutter;
+
+  &.border--tight {
+    padding-top: $gutter--half;
+    margin-top: $gutter--half;
+  }
+
+  &.border--loose {
+    padding-top: $gutter--double;
+    margin-top: $gutter--double;
+  }
+}
+
+.border--left {
+  border-left: $border;
+  padding-left: $gutter;
+  margin-left: $gutter;
+
+  &.border--tight {
+    padding-left: $gutter--half;
+    margin-left: $gutter--half;
+  }
+
+  &.border--loose {
+    padding-left: $gutter--double;
+    margin-left: $gutter--double;
+  }
+}
+
+.border--right {
+  border-right: $border;
+  padding-right: $gutter;
+  margin-right: $gutter;
+
+  &.border--tight {
+    padding-right: $gutter--half;
+    margin-right: $gutter--half;
+  }
+
+  &.border--loose {
+    padding-right: $gutter--double;
+    margin-right: $gutter--double;
+  }
+}
+
+&.border--thick {
+  border-width: $border--width * 2;
+}
+
+&.border--thicker {
+  border-width: $border--width * 3;
+}
+
+&.border--thickest {
+  border-width: $border--width * 4;
+}
