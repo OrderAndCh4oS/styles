@@ -1468,9 +1468,6 @@ table {
   min-height: 100%;
   padding: 2.5rem 3.75rem; }
 
-.main-header {
-  margin-bottom: 1.25rem; }
-
 .panel {
   background-color: #eeeeee;
   border: 1px solid #c4c4c4;
@@ -2544,106 +2541,149 @@ button.button--switch {
   width: 12.5rem;
   height: 4.375rem; }
 
-.bc-black {
+/**
+ * @atom Colour
+ * @section Colours
+ * @modifiers
+ *  .c--white White text
+ *  .c--lightest-grey Lightest grey text
+ *  .c--lighter-grey Lighter grey text
+ *  .c--light-grey Light grey text
+ *  .c--grey Grey text
+ *  .c--dark-grey Dark grey text
+ *  .c--darker-grey Darker grey text
+ *  .c--darkest-grey Darkest grey text
+ *  .c--black Darkest grey text
+ *  .c--green Green text
+ *  .c--lighter-green Light green text
+ *  .c--red Red text
+ *  .c--lighter-red Light red text
+ *  .bc--white White background
+ *  .bc--lightest-grey Lightest grey background
+ *  .bc--lighter-grey Lighter grey background
+ *  .bc--light-grey Light grey background
+ *  .bc--grey Grey background
+ *  .bc--dark-grey Dark grey background
+ *  .bc--darker-grey Darker grey background
+ *  .bc--darkest-grey Darkest grey background
+ *  .bc--black Darkest grey background
+ *  .bc--green Green background
+ *  .bc--lighter-green Light green background
+ *  .bc--red Red background
+ *  .bc--lighter-red Light red background
+ * @markup
+ *  <p class="c--white bc--dark-grey">Dark grey background with white text</p>
+ *  <p class="c--lightest-grey bc--darker-grey">Darker grey background with lightest grey text</p>
+ *  <p class="c--lighter-grey bc--darkest-grey">Darkest grey background with lighter grey text</p>
+ *  <p class="c--light-grey bc--black">Black background with light grey text</p>
+ *  <p class="c--grey">Grey text</p>
+ *  <p class="c--dark-grey bc--white">Dark grey text</p>
+ *  <p class="c--darker-grey bc--lightest-grey">Lightest grey background with darker grey text</p>
+ *  <p class="c--darkest-grey bc--lighter-grey">Lighter grey background darkest grey text</p>
+ *  <p class="c--black bc--light-grey">Light grey background black text</p>
+ *  <p class="c--green">Green text</p>
+ *  <p class="c--red">Red text</p>
+ */
+.bc--black {
   background-color: #1c1c1c; }
 
-.color-black {
+.c--black {
   color: #1c1c1c; }
 
-.bc-darkest-grey {
+.bc--darkest-grey {
   background-color: #363636; }
 
-.color-darkest-grey {
+.c--darkest-grey {
   color: #363636; }
 
-.bc-darker-grey {
+.bc--darker-grey {
   background-color: #414141; }
 
-.color-darker-grey {
+.c--darker-grey {
   color: #414141; }
 
-.bc-dark-grey {
+.bc--dark-grey {
   background-color: #525252; }
 
-.color-dark-grey {
+.c--dark-grey {
   color: #525252; }
 
-.bc-grey {
+.bc--grey {
   background-color: #808080; }
 
-.color-grey {
+.c--grey {
   color: #808080; }
 
-.bc-light-grey {
+.bc--light-grey {
   background-color: #c4c4c4; }
 
-.color-light-grey {
+.c--light-grey {
   color: #c4c4c4; }
 
-.bc-lighter-grey {
+.bc--lighter-grey {
   background-color: #dfdfdf; }
 
-.color-lighter-grey {
+.c--lighter-grey {
   color: #dfdfdf; }
 
-.bc-lightest-grey {
+.bc--lightest-grey {
   background-color: #eeeeee; }
 
-.color-lightest-grey {
+.c--lightest-grey {
   color: #eeeeee; }
 
-.bc-white {
+.bc--white {
   background-color: #fcfcfc; }
 
-.color-white {
+.c--white {
   color: #fcfcfc; }
 
-.bc-green {
+.bc--green {
   background-color: #35c13a; }
 
-.color-green {
+.c--green {
   color: #35c13a; }
 
-.bc-red {
+.bc--red {
   background-color: #c62d32; }
 
-.color-red {
+.c--red {
   color: #c62d32; }
 
-.bc-lighter-green {
+.bc--lighter-green {
   background-color: #3be541; }
 
-.color-lighter-green {
+.c--lighter-green {
   color: #3be541; }
 
-.bc-lighter-red {
+.bc--lighter-red {
   background-color: #ee393c; }
 
-.color-lighter-red {
+.c--lighter-red {
   color: #ee393c; }
 
-.bc-primary {
+.bc--primary {
   background-color: #1c1c1c; }
 
-.color-primary {
+.c--primary {
   color: #1c1c1c; }
 
-.bc-secondary {
+.bc--secondary {
   background-color: #525252; }
 
-.color-secondary {
+.c--secondary {
   color: #525252; }
 
-.bc-error {
+.bc--error {
   background-color: #c62d32; }
 
-.color-error {
+.c--error {
   color: #c62d32; }
 
-.bc-valid {
+.bc--valid {
   background-color: #35c13a; }
 
-.color-valid {
+.c--valid {
   color: #35c13a; }
 
 /**
