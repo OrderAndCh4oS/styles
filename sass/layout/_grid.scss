@@ -252,50 +252,6 @@
   width: 100%;
 }
 
-.push-1 {
-  margin-left: 8.3333%;
-}
-
-.push-2 {
-  margin-left: 16.6666%;
-}
-
-.push-3 {
-  margin-left: 25%;
-}
-
-.push-4 {
-  margin-left: 33.3333%;
-}
-
-.push-5 {
-  margin-left: 41.6666%;
-}
-
-.push-6 {
-  margin-left: 50%;
-}
-
-.push-7 {
-  margin-left: 58.3333%;
-}
-
-.push-8 {
-  margin-left: 66.6666%;
-}
-
-.push-9 {
-  margin-left: 75%;
-}
-
-.push-10 {
-  margin-left: 83.3333%;
-}
-
-.push-11 {
-  margin-left: 91.6666%;
-}
-
 @media #{$xlarge-down} {
 
   .col-xlrg-1 {
@@ -498,6 +454,7 @@
   .col-sml-12 {
     width: 100%;
   }
+
 }
 
 @media #{$xsmall-down} {
