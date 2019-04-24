@@ -3,13 +3,6 @@
   height: rem-calc(70px);
 }
 
-.panel {
-  background-color: $color--lightest-grey;
-  border: $border--width $border--stroke $color--light-grey;
-  border-radius: $border--radius;
-  padding: $gutter--half;
-}
-
 @media #{$small-up} {
 
 }
