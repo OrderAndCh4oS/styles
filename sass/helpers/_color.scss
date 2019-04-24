@@ -1,9 +1,51 @@
-
+/**
+ * @atom Colour
+ * @section Colours
+ * @modifiers
+ *  .c--white White text
+ *  .c--lightest-grey Lightest grey text
+ *  .c--lighter-grey Lighter grey text
+ *  .c--light-grey Light grey text
+ *  .c--grey Grey text
+ *  .c--dark-grey Dark grey text
+ *  .c--darker-grey Darker grey text
+ *  .c--darkest-grey Darkest grey text
+ *  .c--black Darkest grey text
+ *  .c--green Green text
+ *  .c--lighter-green Light green text
+ *  .c--red Red text
+ *  .c--lighter-red Light red text
+ *  .bc--white White background
+ *  .bc--lightest-grey Lightest grey background
+ *  .bc--lighter-grey Lighter grey background
+ *  .bc--light-grey Light grey background
+ *  .bc--grey Grey background
+ *  .bc--dark-grey Dark grey background
+ *  .bc--darker-grey Darker grey background
+ *  .bc--darkest-grey Darkest grey background
+ *  .bc--black Darkest grey background
+ *  .bc--green Green background
+ *  .bc--lighter-green Light green background
+ *  .bc--red Red background
+ *  .bc--lighter-red Light red background
+ * @markup
+ *  <p class="c--white bc--dark-grey">Dark grey background with white text</p>
+ *  <p class="c--lightest-grey bc--darker-grey">Darker grey background with lightest grey text</p>
+ *  <p class="c--lighter-grey bc--darkest-grey">Darkest grey background with lighter grey text</p>
+ *  <p class="c--light-grey bc--black">Black background with light grey text</p>
+ *  <p class="c--grey">Grey text</p>
+ *  <p class="c--dark-grey bc--white">Dark grey text</p>
+ *  <p class="c--darker-grey bc--lightest-grey">Lightest grey background with darker grey text</p>
+ *  <p class="c--darkest-grey bc--lighter-grey">Lighter grey background darkest grey text</p>
+ *  <p class="c--black bc--light-grey">Light grey background black text</p>
+ *  <p class="c--green">Green text</p>
+ *  <p class="c--red">Red text</p>
+ */
 @each $i in $colors {
-  .bc-#{nth($i,1)} {
+  .bc--#{nth($i,1)} {
     background-color: #{nth($i,2)};
   }
-  .color-#{nth($i,1)} {
+  .c--#{nth($i,1)} {
     color: #{nth($i,2)};
   }
 }
