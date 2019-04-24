@@ -1,0 +1,90 @@
+/**
+ * @molecule Item List
+ * @section List
+ * @markup
+ *  <section class="container item-list">
+ *      <div class="row item-list--row">
+ *          <div class="column item-list--column col-1">
+ *              <input type="checkbox" name="item-one-select"/>
+ *          </div>
+ *          <div class="column item-list--column col-2">
+ *              <p class="body-text item-list--text"><a href="#">Item Link</a></p>
+ *          </div>
+ *          <div class="column item-list--column col-6">
+ *              <p class="body-text item-list--text">The items description can go here, the height will expand to accommodate it, so it can be quite long if it needs to be.</p>
+ *          </div>
+ *          <div class="column item-list--column col-3">
+ *              <p class="body-text item-list--text text--align-right">
+ *                  <button>Edit</button>
+ *                  <button class="button--destructive ">X</button>
+ *              </p>
+ *          </div>
+ *      </div>
+ *      <div class="row item-list--row">
+ *          <div class="column item-list--column col-1">
+ *              <input type="checkbox" name="item-one-select"/>
+ *          </div>
+ *          <div class="column item-list--column col-2">
+ *              <p class="body-text item-list--text"><a href="#">Item Link</a></p>
+ *          </div>
+ *          <div class="column item-list--column col-6">
+ *              <p class="body-text item-list--text">The items description can go here, the height will expand to accommodate it, so it can be quite long if it needs to be.</p>
+ *          </div>
+ *          <div class="column item-list--column col-3">
+ *              <p class="body-text item-list--text text--align-right">
+ *                  <button>Edit</button>
+ *                  <button class="button--destructive ">X</button>
+ *              </p>
+ *          </div>
+ *      </div>
+ *      <div class="row item-list--row">
+ *          <div class="column item-list--column col-1">
+ *              <input class="item-list--input" type="checkbox" name="item-one-select"/>
+ *          </div>
+ *          <div class="column item-list--column col-2">
+ *              <p class="body-text item-list--text"><a href="#">Item Link</a></p>
+ *          </div>
+ *          <div class="column item-list--column col-6">
+ *              <p class="body-text item-list--text">The items description can go here, the height will expand to accommodate it, so it can be quite long if it needs to be.</p>
+ *          </div>
+ *          <div class="column item-list--column col-3">
+ *              <p class="body-text item-list--text text--align-right">
+ *                  <button>Edit</button>
+ *                  <button class="button--destructive ">X</button>
+ *              </p>
+ *          </div>
+ *      </div>
+ *  </section>
+ */
+.item-list {
+  flex-wrap: nowrap;
+  .item-list--row {
+    border-bottom: $border;
+    margin-bottom: $gutter--half;
+  }
+  .item-list--column {
+    margin-bottom: $gutter--half;
+  }
+  .item-list--input {
+    margin-bottom: 0;
+  }
+  .item-list--text {
+    margin-bottom: 0;
+  }
+}
+
+@media #{$small-up} {
+
+}
+
+@media #{$medium-up} {
+
+}
+
+@media #{$large-up} {
+
+}
+
+@media #{$xlarge-up} {
+
+}
