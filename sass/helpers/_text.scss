@@ -148,3 +148,28 @@
   font-size: $font--size--twelve;
   line-height: $font--size--twelve;
 }
+
+/**
+ * @atom Text Align Left
+ * @section Typography > Alignment
+ * @modifiers
+ *  .text--align-left Left aligned text
+ *  .text--align-right Right aligned text
+ *  .text--align-center Center aligned text
+ * @markup
+ *  <p class="text--align-left">Left aligned text</p>
+ *  <p class="text--align-center">Center aligned text</p>
+ *  <p class="text--align-right">Right aligned text</p>
+ */
+.text--align-left {
+    text-align: left;
+}
+
+.text--align-right {
+  text-align: right;
+}
+
+.text--align-center {
+    text-align: center;
+}
+
