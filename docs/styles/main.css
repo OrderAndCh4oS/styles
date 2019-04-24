@@ -1335,54 +1335,30 @@ table {
   margin-left: 91.6666%; }
 
 @media only screen and (max-width: 1599px) {
-    .col-xlrg-1 {
-        width: 8.3333%;
-    }
-
-    .col-xlrg-2 {
-        width: 16.6666%;
-    }
-
-    .col-xlrg-3 {
-        width: 25%;
-    }
-
-    .col-xlrg-4 {
-        width: 33.3333%;
-    }
-
-    .col-xlrg-5 {
-        width: 41.6666%;
-    }
-
-    .col-xlrg-6 {
-        width: 50%;
-    }
-
-    .col-xlrg-7 {
-        width: 58.3333%;
-    }
-
-    .col-xlrg-8 {
-        width: 66.6666%;
-    }
-
-    .col-xlrg-9 {
-        width: 75%;
-    }
-
-    .col-xlrg-10 {
-        width: 83.3333%;
-    }
-
-    .col-xlrg-11 {
-        width: 91.6666%;
-    }
-
-    .col-xlrg-12 {
-        width: 100%;
-    }
-}
+  .col-xlrg-1 {
+    width: 8.3333%; }
+  .col-xlrg-2 {
+    width: 16.6666%; }
+  .col-xlrg-3 {
+    width: 25%; }
+  .col-xlrg-4 {
+    width: 33.3333%; }
+  .col-xlrg-5 {
+    width: 41.6666%; }
+  .col-xlrg-6 {
+    width: 50%; }
+  .col-xlrg-7 {
+    width: 58.3333%; }
+  .col-xlrg-8 {
+    width: 66.6666%; }
+  .col-xlrg-9 {
+    width: 75%; }
+  .col-xlrg-10 {
+    width: 83.3333%; }
+  .col-xlrg-11 {
+    width: 91.6666%; }
+  .col-xlrg-12 {
+    width: 100%; } }
 
 @media only screen and (max-width: 1439px) {
   .col-lrg-1 {
@@ -1494,6 +1470,12 @@ table {
 
 .main-header {
   margin-bottom: 1.25rem; }
+
+.panel {
+  background-color: #eeeeee;
+  border: 1px solid #c4c4c4;
+  border-radius: 3px;
+  padding: 0.625rem; }
 
 /**
  * @atom Font Weights
@@ -2562,12 +2544,6 @@ button.button--switch {
   width: 12.5rem;
   height: 4.375rem; }
 
-.panel {
-  background-color: #eeeeee;
-  border: 1px solid #c4c4c4;
-  border-radius: 3px;
-  padding: 0.625rem; }
-
 .bc-black {
   background-color: #1c1c1c; }
 
@@ -2848,11 +2824,5 @@ button.button--switch {
 .relative {
   position: relative; }
 
-.text-color {
+.text--color {
   color: #414141; }
-
-.align-right {
-  text-align: right; }
-
-.align-left {
-  text-align: left; }
