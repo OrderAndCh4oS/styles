@@ -5,7 +5,7 @@
   ],
   "target": "docs",
   "css": [
-    "styles/main.css",
+    "styles/styles.css",
     "styles/override.css"
   ],
   "namespace": "page",

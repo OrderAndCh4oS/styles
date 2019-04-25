@@ -4,10 +4,9 @@
   "description": "Stylesheets framework",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "http-server -o",
-    "css": "node-sass sass/main.scss -o dist --output-style=compressed --precision=4",
-    "watch": "node-sass sass/main.scss -o public -w -r --output-style=compact --source-map=true --precision=4",
-    "styleguide": "npm run css && node-sass sass/main.scss -o docs/styles && nucleus --title 'Style Guide' --config config.nucleus.json"
+    "css": "node-sass sass/styles.scss -o dist --output-style=compressed --precision=4",
+    "watch": "node-sass sass/styles.scss -o public -w -r --output-style=compact --source-map=true --precision=4",
+    "styleguide": "npm run css && node-sass sass/styles.scss -o docs/styles && nucleus --title 'Style Guide' --config config.nucleus.json"
   },
   "keywords": [
     "sass",
