@@ -1945,6 +1945,8 @@ button.button--switch {
 /**
  * @atom Container
  * @section Layout > Container
+ * @modifiers
+ *  .container--full-width Make the container full width and hide horizontal overflow to counter row negative margins
  * @markup
  *  <div class="container">
  *      <div class="row">
@@ -1957,8 +1959,12 @@ button.button--switch {
  *  </div>
  */
 .container {
+  max-width: 120rem;
   padding: 0;
   margin: 0; }
+  .container.container--full-width {
+    max-width: none;
+    overflow-x: hidden; }
 
 /**
  * @atom Row
@@ -2616,8 +2622,7 @@ button.button--switch {
     margin-left: 91.6666%; } }
 
 .page-wrapper {
-  min-height: 100%;
-  padding: 2.5rem 3.75rem; }
+  min-height: 100%; }
 
 .panel {
   background-color: #eeeeee;
