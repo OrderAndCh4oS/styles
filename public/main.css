@@ -855,8 +855,8 @@ h4, h5, h6, .header-four, .header-five, .header-six {
     margin-bottom: 0;
 }
 
-/** @atom Body Text @section Typography > Text @markup <p class="body-text">Earum dicta animi autem veritatis et ratione sed. Quisquam est neque quis ullam inventore odit ex sit. Sed voluptatem voluptatem quia rerum qui. Quaerat provident ipsa laudantium ut ipsa.</p> <p class="body-text">A non et iure non fuga. Quia quaerat ut autem id iste et maxime. Qui id consequatur recusandae qui vel et odio aliquam.</p> */
-p, .body-text {
+/** @atom Body Text @section Typography > Text @markup <p class="text--body">Earum dicta animi autem veritatis et ratione sed. Quisquam est neque quis ullam inventore odit ex sit. Sed voluptatem voluptatem quia rerum qui. Quaerat provident ipsa laudantium ut ipsa.</p> <p class="text--body">A non et iure non fuga. Quia quaerat ut autem id iste et maxime. Qui id consequatur recusandae qui vel et odio aliquam.</p> */
+p, .text--body {
     color: #414141;
     font-size: 1rem;
     font-weight: 400;
@@ -864,13 +864,13 @@ p, .body-text {
     line-height: 1.1875rem;
 }
 
-/** @atom Intro Text @section Typography > Text @markup <p class="intro-text">Veritatis et ratione sed. Quisquam est neque quis ullam inventore odit ex sit. Sed voluptatem voluptatem quia rerum qui. Quaerat provident ipsa laudantium ut ipsa.</p> */
-.intro-text {
+/** @atom Intro Text @section Typography > Text @markup <p class="text--intro">Veritatis et ratione sed. Quisquam est neque quis ullam inventore odit ex sit. Sed voluptatem voluptatem quia rerum qui. Quaerat provident ipsa laudantium ut ipsa.</p> */
+.text--intro {
     font-size: 1.25rem;
     line-height: 1.4375rem;
 }
 
-/** @atom Link @section Typography > Inline Text @markup <p class="body-text"><a href="#">Link Text</a></p> */
+/** @atom Link @section Typography > Inline Text @markup <p class="text--body"><a href="#">Link Text</a></p> */
 a, a:visited {
     color: #525252;
     outline: 0;
@@ -1137,7 +1137,7 @@ label.label--inline {
 }
 
 /** @atom Field Error @section Forms > Validation @markup <label class="label--text">Label Text</label> <input type="text" placeholder="Text Input"> <p class="field--error">Oh no!</p> */
-.field--error {
+.form-field--error {
     padding-top: 0.625rem;
     padding-bottom: 0;
     margin-bottom: 0;

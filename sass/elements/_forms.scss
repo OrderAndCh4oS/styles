@@ -183,10 +183,10 @@ label {
  *  <div class="form-field">
  *      <label class="label--text">Label Text</label>
  *      <input type="text" placeholder="Text Input">
- *      <p class="field--error">Oh no!</p>
+ *      <p class="form-field--error">Oh no!</p>
  *  </div>
  */
-.field--error {
+.form-field--error {
   padding-top: $gutter--half;
   padding-bottom: 0;
   margin-bottom: 0;
