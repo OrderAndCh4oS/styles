@@ -1,6 +1,13 @@
+
+.SG-toc > ul > li > ul {
+    margin-bottom: 0;
+    list-style: none;
+}
+
 .SG-toc > ul > li, .SG-toc > ul > li > ul li {
     font-size: 14px !important;
 }
+
 
 .SG-a {
     text-decoration: none;
