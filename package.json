@@ -2,6 +2,10 @@
   "name": "@orderandchaos/styles",
   "version": "1.0.0",
   "description": "Stylesheets framework",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sarcoma/orderandchaos-styles"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "css": "node-sass sass/styles.scss -o dist --output-style=compressed --precision=4",
@@ -10,7 +14,6 @@
   },
   "keywords": [
     "sass",
-    "framework",
     "css",
     "styles"
   ],
