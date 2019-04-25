@@ -1127,10 +1127,10 @@ h4, h5, h6,
  * @atom Body Text
  * @section Typography > Text
  * @markup
- *  <p class="body-text">Earum dicta animi autem veritatis et ratione sed. Quisquam est neque quis ullam inventore odit ex sit. Sed voluptatem voluptatem quia rerum qui. Quaerat provident ipsa laudantium ut ipsa.</p>
- *  <p class="body-text">A non et iure non fuga. Quia quaerat ut autem id iste et maxime. Qui id consequatur recusandae qui vel et odio aliquam.</p>
+ *  <p class="text--body">Earum dicta animi autem veritatis et ratione sed. Quisquam est neque quis ullam inventore odit ex sit. Sed voluptatem voluptatem quia rerum qui. Quaerat provident ipsa laudantium ut ipsa.</p>
+ *  <p class="text--body">A non et iure non fuga. Quia quaerat ut autem id iste et maxime. Qui id consequatur recusandae qui vel et odio aliquam.</p>
  */
-p, .body-text {
+p, .text--body {
   color: #414141;
   font-size: 1rem;
   font-weight: 400;
@@ -1141,9 +1141,9 @@ p, .body-text {
  * @atom Intro Text
  * @section Typography > Text
  * @markup
- *  <p class="intro-text">Veritatis et ratione sed. Quisquam est neque quis ullam inventore odit ex sit. Sed voluptatem voluptatem quia rerum qui. Quaerat provident ipsa laudantium ut ipsa.</p>
+ *  <p class="text--intro">Veritatis et ratione sed. Quisquam est neque quis ullam inventore odit ex sit. Sed voluptatem voluptatem quia rerum qui. Quaerat provident ipsa laudantium ut ipsa.</p>
  */
-.intro-text {
+.text--intro {
   font-size: 1.25rem;
   line-height: 1.4375rem; }
 
@@ -1151,7 +1151,7 @@ p, .body-text {
  * @atom Link
  * @section Typography > Inline Text
  * @markup
- *  <p class="body-text"><a href="#">Link Text</a></p>
+ *  <p class="text--body"><a href="#">Link Text</a></p>
  */
 a, a:visited {
   color: #525252;
@@ -1706,10 +1706,10 @@ label.label--inline {
  *  <div class="form-field">
  *      <label class="label--text">Label Text</label>
  *      <input type="text" placeholder="Text Input">
- *      <p class="field--error">Oh no!</p>
+ *      <p class="form-field--error">Oh no!</p>
  *  </div>
  */
-.field--error {
+.form-field--error {
   padding-top: 0.625rem;
   padding-bottom: 0;
   margin-bottom: 0;
@@ -2635,13 +2635,13 @@ button.button--switch {
  *              <input type="checkbox" name="item-one-select"/>
  *          </div>
  *          <div class="column item-list--column col-2">
- *              <p class="body-text item-list--text"><a href="#">Item Link</a></p>
+ *              <p class="text--body item-list--text"><a href="#">Item Link</a></p>
  *          </div>
  *          <div class="column item-list--column col-6">
- *              <p class="body-text item-list--text">The items description can go here, the height will expand to accommodate it, so it can be quite long if it needs to be.</p>
+ *              <p class="text--body item-list--text">The items description can go here, the height will expand to accommodate it, so it can be quite long if it needs to be.</p>
  *          </div>
  *          <div class="column item-list--column col-3">
- *              <p class="body-text item-list--text text--align-right">
+ *              <p class="text--body item-list--text text--align-right">
  *                  <button>Edit</button>
  *                  <button class="button--destructive ">X</button>
  *              </p>
@@ -2652,13 +2652,13 @@ button.button--switch {
  *              <input type="checkbox" name="item-one-select"/>
  *          </div>
  *          <div class="column item-list--column col-2">
- *              <p class="body-text item-list--text"><a href="#">Item Link</a></p>
+ *              <p class="text--body item-list--text"><a href="#">Item Link</a></p>
  *          </div>
  *          <div class="column item-list--column col-6">
- *              <p class="body-text item-list--text">The items description can go here, the height will expand to accommodate it, so it can be quite long if it needs to be.</p>
+ *              <p class="text--body item-list--text">The items description can go here, the height will expand to accommodate it, so it can be quite long if it needs to be.</p>
  *          </div>
  *          <div class="column item-list--column col-3">
- *              <p class="body-text item-list--text text--align-right">
+ *              <p class="text--body item-list--text text--align-right">
  *                  <button>Edit</button>
  *                  <button class="button--destructive ">X</button>
  *              </p>
@@ -2669,13 +2669,13 @@ button.button--switch {
  *              <input class="item-list--input" type="checkbox" name="item-one-select"/>
  *          </div>
  *          <div class="column item-list--column col-2">
- *              <p class="body-text item-list--text"><a href="#">Item Link</a></p>
+ *              <p class="text--body item-list--text"><a href="#">Item Link</a></p>
  *          </div>
  *          <div class="column item-list--column col-6">
- *              <p class="body-text item-list--text">The items description can go here, the height will expand to accommodate it, so it can be quite long if it needs to be.</p>
+ *              <p class="text--body item-list--text">The items description can go here, the height will expand to accommodate it, so it can be quite long if it needs to be.</p>
  *          </div>
  *          <div class="column item-list--column col-3">
- *              <p class="body-text item-list--text text--align-right">
+ *              <p class="text--body item-list--text text--align-right">
  *                  <button>Edit</button>
  *                  <button class="button--destructive ">X</button>
  *              </p>

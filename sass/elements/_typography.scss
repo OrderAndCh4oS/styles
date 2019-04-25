@@ -71,10 +71,10 @@ h4, h5, h6,
  * @atom Body Text
  * @section Typography > Text
  * @markup
- *  <p class="body-text">Earum dicta animi autem veritatis et ratione sed. Quisquam est neque quis ullam inventore odit ex sit. Sed voluptatem voluptatem quia rerum qui. Quaerat provident ipsa laudantium ut ipsa.</p>
- *  <p class="body-text">A non et iure non fuga. Quia quaerat ut autem id iste et maxime. Qui id consequatur recusandae qui vel et odio aliquam.</p>
+ *  <p class="text--body">Earum dicta animi autem veritatis et ratione sed. Quisquam est neque quis ullam inventore odit ex sit. Sed voluptatem voluptatem quia rerum qui. Quaerat provident ipsa laudantium ut ipsa.</p>
+ *  <p class="text--body">A non et iure non fuga. Quia quaerat ut autem id iste et maxime. Qui id consequatur recusandae qui vel et odio aliquam.</p>
  */
-p, .body-text {
+p, .text--body {
   color: $text--color;
   font-size: $font--size--one;
   font-weight: $font--weight--regular;
@@ -86,9 +86,9 @@ p, .body-text {
  * @atom Intro Text
  * @section Typography > Text
  * @markup
- *  <p class="intro-text">Veritatis et ratione sed. Quisquam est neque quis ullam inventore odit ex sit. Sed voluptatem voluptatem quia rerum qui. Quaerat provident ipsa laudantium ut ipsa.</p>
+ *  <p class="text--intro">Veritatis et ratione sed. Quisquam est neque quis ullam inventore odit ex sit. Sed voluptatem voluptatem quia rerum qui. Quaerat provident ipsa laudantium ut ipsa.</p>
  */
-.intro-text {
+.text--intro {
   font-size: $font--size--two;
   line-height: $font--size--two + $font--leading;
 }
@@ -97,7 +97,7 @@ p, .body-text {
  * @atom Link
  * @section Typography > Inline Text
  * @markup
- *  <p class="body-text"><a href="#">Link Text</a></p>
+ *  <p class="text--body"><a href="#">Link Text</a></p>
  */
 a, a:visited {
   color: $link--color;

@@ -1,6 +1,9 @@
+
 /**
  * @atom Container
  * @section Layout > Container
+ * @modifiers
+ *  .container--full-width Make the container full width and hide horizontal overflow to counter row negative margins
  * @markup
  *  <div class="container">
  *      <div class="row">
@@ -13,8 +16,14 @@
  *  </div>
  */
 .container {
+  max-width: rem-calc($wrapper-width);
   padding: 0;
   margin: 0;
+
+  &.container--full-width {
+    max-width: none;
+    overflow-x: hidden;
+  }
 }
 
 /**
