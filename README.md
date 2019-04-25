@@ -8,4 +8,5 @@ Style Guide: https://sarcoma.github.io/orderandchaos-styles/
 
 ## Import
 
-Sass import: `@import ~@orderandchaos/sass/styles`
+Sass import: `@import "~@orderandchaos/styles/sass/styles";
+`
