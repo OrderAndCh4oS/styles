@@ -4,6 +4,8 @@
  * @section Layout > Container
  * @modifiers
  *  .container--full-width Make the container full width and hide horizontal overflow to counter row negative margins
+ *  .container--tight Reduce the top and bottom padding of the container
+ *  .container--loose Increase the top and bottom padding of the container
  * @markup
  *  <div class="container">
  *      <div class="row">
@@ -17,8 +19,18 @@
  */
 .container {
   max-width: rem-calc($wrapper-width);
-  padding: 0;
-  margin: 0;
+  padding: $gutter $gutter--double;
+  margin: 0 0 -$gutter;
+
+  &.container--tight {
+    padding-top: $gutter--half;
+    padding-bottom: $gutter--half;
+  }
+
+  &.container--loose {
+    padding-top: $gutter--double;
+    padding-bottom: $gutter--double;
+  }
 
   &.container--full-width {
     max-width: none;
@@ -261,7 +273,7 @@
   width: 100%;
 }
 
-@media #{$xlarge-down} {
+@media #{$xlrg-down} {
 
   .col-xlrg-1 {
     width: 8.3333%;
@@ -312,7 +324,7 @@
   }
 }
 
-@media #{$large-down} {
+@media #{lrg-down} {
 
   .col-lrg-1 {
     width: 8.3333%;
@@ -363,7 +375,7 @@
   }
 }
 
-@media #{$medium-down} {
+@media #{med-down} {
 
   .col-med-1 {
     width: 8.3333%;
@@ -414,7 +426,7 @@
   }
 }
 
-@media #{$small-down} {
+@media #{$sml-down} {
 
   .col-sml-1 {
     width: 8.3333%;
@@ -466,7 +478,7 @@
 
 }
 
-@media #{$xsmall-down} {
+@media #{$xsml-down} {
 
   .col-xsml-1 {
     width: 8.3333%;

@@ -550,7 +550,7 @@
 /**
  * Media query medium range upper bound
  *
- * @nuclide Medium-Range-Upper-Bound
+ * @nuclide Med-Range-Upper-Bound
  * @section Media Queries > Bounds
  */
 /**
@@ -628,19 +628,19 @@
 /**
  * Media medium up
  *
- * @nuclide Medium-Up
+ * @nuclide Med-Up
  * @section Media Queries > Helpers
  */
 /**
  * Media medium down
  *
- * @nuclide Medium-Down
+ * @nuclide Med-Down
  * @section Media Queries > Helpers
  */
 /**
  * Media medium only
  *
- * @nuclide Medium-Only
+ * @nuclide Med-Only
  * @section Media Queries > Helpers
  */
 /**
@@ -1947,6 +1947,8 @@ button.button--switch {
  * @section Layout > Container
  * @modifiers
  *  .container--full-width Make the container full width and hide horizontal overflow to counter row negative margins
+ *  .container--tight Reduce the top and bottom padding of the container
+ *  .container--loose Increase the top and bottom padding of the container
  * @markup
  *  <div class="container">
  *      <div class="row">
@@ -1960,8 +1962,14 @@ button.button--switch {
  */
 .container {
   max-width: 120rem;
-  padding: 0;
-  margin: 0; }
+  padding: 1.25rem 2.5rem;
+  margin: 0 -1.25rem; }
+  .container.container--tight {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem; }
+  .container.container--loose {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem; }
   .container.container--full-width {
     max-width: none;
     overflow-x: hidden; }
@@ -2213,7 +2221,7 @@ button.button--switch {
   .col-xlrg-12 {
     width: 100%; } }
 
-@media only screen and (max-width: 1439px) {
+@media lrg-down {
   .col-lrg-1 {
     width: 8.3333%; }
   .col-lrg-2 {
@@ -2239,7 +2247,7 @@ button.button--switch {
   .col-lrg-12 {
     width: 100%; } }
 
-@media only screen and (max-width: 1239px) {
+@media med-down {
   .col-med-1 {
     width: 8.3333%; }
   .col-med-2 {
@@ -2525,7 +2533,7 @@ button.button--switch {
   .push-xlrg-11 {
     margin-left: 91.6666%; } }
 
-@media only screen and (max-width: 1439px) {
+@media lrg-down {
   .push-lrg-1 {
     margin-left: 8.3333%; }
   .push-lrg-2 {
@@ -2549,7 +2557,7 @@ button.button--switch {
   .push-lrg-11 {
     margin-left: 91.6666%; } }
 
-@media only screen and (max-width: 1239px) {
+@media med-down {
   .push-med-1 {
     margin-left: 8.3333%; }
   .push-med-2 {
