@@ -20,7 +20,7 @@
 .container {
   max-width: rem-calc($wrapper-width);
   padding: $gutter $gutter--double;
-  margin: 0 0 -$gutter;
+  margin: 0 auto;
 
   &.container--tight {
     padding-top: $gutter--half;
