@@ -149,30 +149,41 @@ em,
 
 /**
  * @atom Block Quote
- * @section Typography > Text
+ * @section Typography > Quote
  * @markup
- *  <blockquote><p>Ipsam reprehenderit molestiae sit. Autem tempore dicta aspernatur voluptate recusandae aut fugit. Et vitae aut perferendis quas eum similique est ducimus. Recusandae ut est aut quas qui neque tenetur. Molestias veniam est modi tempore qui placeat quasi sed. Aliquid provident optio harum consectetur quo.</p></blockquote>
+ *  <blockquote><p>Ipsam reprehenderit molestiae sit. Autem tempore dicta aspernatur voluptate recusandae aut fugit. Et vitae aut perferendis quas eum similique est ducimus. Recusandae ut est aut quas qui neque tenetur. Molestias veniam est modi tempore qui placeat quasi sed. Aliquid provident optio harum consectetur quo.</p><p class="citation"><cite>Quote Source Title</cite> by Author Name</p></blockquote>
  */
-blockquote {
+blockquote, .blockquote {
   margin: 0 0 $gutter;
   padding: 0 $gutter;
-  border-left: 3px solid $color--primary;
+  border-left: $border--width--thicker $border--stroke $text--color;
+
+  p:first-of-type:before {
+    content: "\201C";
+  }
+
+  p:last-of-type:after {
+    content: "\201D";
+  }
+
+
 }
 
-blockquote p:first-of-type:before {
-  content: "\201C";
-}
-
-blockquote p:last-of-type:after {
-  content: "\201D";
-}
-
-blockquote cite {
+/**
+ * @atom Citation
+ * @section Typography > Quote
+ * @markup
+ *  <p class="citation"><cite>Quote Source Title</cite> by Author Name</p>
+ */
+.citation {
   font-style: normal;
-
   &:before {
     content: "\2014\2009";
   }
+}
+
+cite, .cite {
+  font-style: $font--emphasis;
 }
 
 q {

@@ -210,6 +210,7 @@ $link--decoration--hover: underline;
  * @section General > Border
  */
 $border--color: $color--light-grey;
+
 /**
  * The default border width
  *
@@ -217,6 +218,31 @@ $border--color: $color--light-grey;
  * @section General > Border
  */
 $border--width: 1px;
+
+/**
+ * The thick border width
+ *
+ * @nuclide Border-Width-Thick
+ * @section General > Border
+ */
+$border--width--thick: $border--width * 2;
+
+/**
+ * The thicker border width
+ *
+ * @nuclide Border-Width-Thicker
+ * @section General > Border
+ */
+$border--width--thicker: $border--width * 3;
+
+/**
+ * The thickest border width
+ *
+ * @nuclide Border-Width-Thickest
+ * @section General > Border
+ */
+$border--width--thickest: $border--width * 4;
+
 /**
  * The default border stroke
  *
@@ -224,6 +250,7 @@ $border--width: 1px;
  * @section General > Border
  */
 $border--stroke: solid;
+
 /**
  * The default border
  *
