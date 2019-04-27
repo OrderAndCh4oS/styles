@@ -20,28 +20,28 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $font--weight--bold;
   font-family: $font--family;
   margin-top: 0;
-  margin-bottom: $gutter--half;
+  margin-bottom: $gutter;
 }
 
 h1, .header-one {
   font-size: $font--size--five;
   font-weight: $font--weight--bold;
   line-height: $font--size--five + $font--leading;
-  margin-bottom: $gutter--half;
+  margin-bottom: $gutter;
 }
 
 h2, .header-two {
   font-size: $font--size--four;
   font-weight: $font--weight--bold;
   line-height: $font--size--four + $font--leading;
-  margin-bottom: $gutter--half;
+  margin-bottom: $gutter;
 }
 
 h3, .header-three {
   font-size: $font--size--three;
   font-weight: $font--weight--bold;
   line-height: $font--size--three + $font--leading;
-  margin-bottom: $gutter--half;
+  margin-bottom: $gutter;
 }
 
 h4, h5, h6,
@@ -49,7 +49,7 @@ h4, h5, h6,
   font-size: $font--size--one;
   font-weight: $font--weight--bold;
   line-height: $font--size--one + $font--leading;
-  margin-bottom: $gutter--half;
+  margin-bottom: $gutter;
 }
 
 /**
