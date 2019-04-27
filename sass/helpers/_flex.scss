@@ -1,0 +1,204 @@
+/**
+ * @atom Flex
+ * @section Flex
+ * @modifiers
+ *  .flex--row Flex direction row
+ *  .flex--row-reverse Flex direction row reverse
+ *  .flex--column Flex direction column
+ *  .flex--column-reverse Flex direction column reverse
+ *  .flex--xlrg--row Flex direction row xlrg and down
+ *  .flex--xlrg--row-reverse Flex direction row reverse xlrg and down
+ *  .flex--xlrg--column Flex direction column xlrg and down
+ *  .flex--xlrg--column-reverse Flex direction column reverse xlrg and down
+ *  .flex--lrg--row Flex direction row lrg and down
+ *  .flex--lrg--row-reverse Flex direction row reverse lrg and down
+ *  .flex--lrg--column Flex direction column lrg and down
+ *  .flex--lrg--column-reverse Flex direction column reverse lrg and down
+ *  .flex--med--row Flex direction row med and down
+ *  .flex--med--row-reverse Flex direction row reverse med and down
+ *  .flex--med--column Flex direction column med and down
+ *  .flex--med--column-reverse Flex direction column reverse med and down
+ *  .flex--sml--row Flex direction row sml and down
+ *  .flex--sml--row-reverse Flex direction row reverse sml and down
+ *  .flex--sml--column Flex direction column sml and down
+ *  .flex--sml--column-reverse Flex direction column reverse sml and down
+ *  .flex--xsml--row Flex direction row xsml and down
+ *  .flex--xsml--row-reverse Flex direction row reverse xsml and down
+ *  .flex--xsml--column Flex direction column xsml and down
+ *  .flex--xsml--column-reverse Flex direction column reverse xsml and down
+ * @markup
+ *  <div class="row flex--row">
+ *      <div class="column col-4">
+ *          <div class="panel">
+ *              <p class="margin-bottom--none text--minus-one">Col One</p>
+ *          </div>
+ *      </div>
+ *      <div class="column col-4">
+ *          <div class="panel">
+ *            <p class="margin-bottom--none text--minus-one">Col Two</p>
+ *          </div>
+ *      </div>
+ *      <div class="column col-4">
+ *          <div class="panel">
+ *            <p class="margin-bottom--none text--minus-one">Col Three</p>
+ *          </div>
+ *      </div>
+ *  </div>
+ *  <div class="row flex--row-reverse">
+ *      <div class="column col-4">
+ *          <div class="panel">
+ *              <p class="margin-bottom--none text--minus-one">Col One</p>
+ *          </div>
+ *      </div>
+ *      <div class="column col-4">
+ *          <div class="panel">
+ *            <p class="margin-bottom--none text--minus-one">Col Two</p>
+ *          </div>
+ *      </div>
+ *      <div class="column col-4">
+ *          <div class="panel">
+ *            <p class="margin-bottom--none text--minus-one">Col Three</p>
+ *          </div>
+ *      </div>
+ *  </div>
+ *  <div class="row flex--column">
+ *      <div class="column col-4">
+ *          <div class="panel">
+ *              <p class="margin-bottom--none text--minus-one">Col One</p>
+ *          </div>
+ *      </div>
+ *      <div class="column col-4">
+ *          <div class="panel">
+ *            <p class="margin-bottom--none text--minus-one">Col Two</p>
+ *          </div>
+ *      </div>
+ *      <div class="column col-4">
+ *          <div class="panel">
+ *            <p class="margin-bottom--none text--minus-one">Col Three</p>
+ *          </div>
+ *      </div>
+ *  </div>
+ *  <div class="row flex--column-reverse">
+ *      <div class="column col-4">
+ *          <div class="panel">
+ *              <p class="margin-bottom--none text--minus-one">Col One</p>
+ *          </div>
+ *      </div>
+ *      <div class="column col-4">
+ *          <div class="panel">
+ *            <p class="margin-bottom--none text--minus-one">Col Two</p>
+ *          </div>
+ *      </div>
+ *      <div class="column col-4">
+ *          <div class="panel">
+ *            <p class="margin-bottom--none text--minus-one">Col Three</p>
+ *          </div>
+ *      </div>
+ *  </div>
+ */
+
+.flex--row {
+  flex-direction: row;
+}
+
+.flex--row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex--column {
+  flex-direction: column;
+}
+
+.flex--column-reverse {
+  flex-direction: column-reverse;
+}
+
+@media #{$xlrg-down} {
+  .flex--xlrg--row {
+    flex-direction: row;
+  }
+
+  .flex--xlrg--row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .flex--xlrg--column {
+    flex-direction: column;
+  }
+
+  .flex--xlrg--column-reverse {
+    flex-direction: column-reverse;
+  }
+}
+
+@media #{$lrg-down} {
+  .flex--lrg--row {
+    flex-direction: row;
+  }
+
+  .flex--lrg--row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .flex--lrg--column {
+    flex-direction: column;
+  }
+
+  .flex--lrg--column-reverse {
+    flex-direction: column-reverse;
+  }
+}
+
+@media #{$med-down} {
+  .flex--med--row {
+    flex-direction: row;
+  }
+
+  .flex--med--row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .flex--med--column {
+    flex-direction: column;
+  }
+
+  .flex--med--column-reverse {
+    flex-direction: column-reverse;
+  }
+}
+
+@media #{$sml-down} {
+  .flex--sml--row {
+    flex-direction: row;
+  }
+
+  .flex--sml--row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .flex--sml--column {
+    flex-direction: column;
+  }
+
+  .flex--sml--column-reverse {
+    flex-direction: column-reverse;
+  }
+}
+
+@media #{$xsml-down} {
+  .flex--xsml--row {
+    flex-direction: row;
+  }
+
+  .flex--xsml--row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .flex--xsml--column {
+    flex-direction: column;
+  }
+
+  .flex--xsml--column-reverse {
+    flex-direction: column-reverse;
+  }
+}
