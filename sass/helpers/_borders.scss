@@ -93,13 +93,13 @@
 }
 
 .border--thick {
-    border-width: $border--width * 2;
+    border-width: $border--width--thick;
 }
 
 .border--thicker {
-    border-width: $border--width * 3;
+    border-width: $border--width--thicker;
 }
 
 .border--thickest {
-    border-width: $border--width * 4;
+    border-width: $border--width--thickest;
 }

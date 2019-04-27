@@ -182,6 +182,24 @@
  * @section General > Border
  */
 /**
+ * The thick border width
+ *
+ * @nuclide Border-Width-Thick
+ * @section General > Border
+ */
+/**
+ * The thicker border width
+ *
+ * @nuclide Border-Width-Thicker
+ * @section General > Border
+ */
+/**
+ * The thickest border width
+ *
+ * @nuclide Border-Width-Thickest
+ * @section General > Border
+ */
+/**
  * The default border stroke
  *
  * @nuclide Border-Stroke
@@ -1064,8 +1082,7 @@ table {
 
 p, ul, ol, dl {
   margin-top: 0;
-    margin-bottom: 1.1875rem;
-}
+  margin-bottom: 1.1875rem; }
 
 /**
  * @atom Headers
@@ -1083,37 +1100,32 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   font-family: "Roboto", "Avenir", "Verdana", sans-serif;
   margin-top: 0;
-    margin-bottom: 1.1875rem;
-}
+  margin-bottom: 1.1875rem; }
 
 h1, .header-one {
   font-size: 2.61803rem;
   font-weight: 700;
   line-height: 2.80553rem;
-    margin-bottom: 1.1875rem;
-}
+  margin-bottom: 1.1875rem; }
 
 h2, .header-two {
   font-size: 2.02254rem;
   font-weight: 700;
   line-height: 2.21004rem;
-    margin-bottom: 1.1875rem;
-}
+  margin-bottom: 1.1875rem; }
 
 h3, .header-three {
   font-size: 1.61803rem;
   font-weight: 700;
   line-height: 1.80553rem;
-    margin-bottom: 1.1875rem;
-}
+  margin-bottom: 1.1875rem; }
 
 h4, h5, h6,
 .header-four, .header-five, .header-six {
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.1875rem;
-    margin-bottom: 1.1875rem;
-}
+  margin-bottom: 1.1875rem; }
 
 /**
  * @atom Pretitle
@@ -1202,25 +1214,32 @@ em,
 
 /**
  * @atom Block Quote
- * @section Typography > Text
+ * @section Typography > Quote
  * @markup
- *  <blockquote><p>Ipsam reprehenderit molestiae sit. Autem tempore dicta aspernatur voluptate recusandae aut fugit. Et vitae aut perferendis quas eum similique est ducimus. Recusandae ut est aut quas qui neque tenetur. Molestias veniam est modi tempore qui placeat quasi sed. Aliquid provident optio harum consectetur quo.</p></blockquote>
+ *  <blockquote><p>Ipsam reprehenderit molestiae sit. Autem tempore dicta aspernatur voluptate recusandae aut fugit. Et vitae aut perferendis quas eum similique est ducimus. Recusandae ut est aut quas qui neque tenetur. Molestias veniam est modi tempore qui placeat quasi sed. Aliquid provident optio harum consectetur quo.</p><p class="citation"><cite>Quote Source Title</cite> by Author Name</p></blockquote>
  */
-blockquote {
-    margin: 0 0 1.1875rem;
-    padding: 0 1.1875rem;
-  border-left: 3px solid #1c1c1c; }
+blockquote, .blockquote {
+  margin: 0 0 1.1875rem;
+  padding: 0 1.1875rem;
+  border-left: 3px solid #414141; }
+  blockquote p:first-of-type:before, .blockquote p:first-of-type:before {
+    content: "\201C"; }
+  blockquote p:last-of-type:after, .blockquote p:last-of-type:after {
+    content: "\201D"; }
 
-blockquote p:first-of-type:before {
-  content: "\201C"; }
-
-blockquote p:last-of-type:after {
-  content: "\201D"; }
-
-blockquote cite {
+/**
+ * @atom Citation
+ * @section Typography > Quote
+ * @markup
+ *  <p class="citation"><cite>Quote Source Title</cite> by Author Name</p>
+ */
+.citation {
   font-style: normal; }
-  blockquote cite:before {
+  .citation:before {
     content: "\2014\2009"; }
+
+cite, .cite {
+  font-style: italic; }
 
 q {
   font-style: italic; }
@@ -1235,14 +1254,13 @@ hr {
   border: solid #c4c4c4;
   border-width: 1px 0 0;
   clear: both;
-    margin: 0 0 1.1875rem;
+  margin: 0 0 1.1875rem;
   height: 0; }
 
 ul, ol {
-    margin-left: 0.59375rem;
-    padding-left: 0.59375rem;
-    margin-bottom: 1.1875rem;
-}
+  margin-left: 0.59375rem;
+  padding-left: 0.59375rem;
+  margin-bottom: 1.1875rem; }
 
 /**
  * @atom Unordered List
@@ -1327,8 +1345,7 @@ ul.list--disc {
 
 ul ul, ul ol,
 ol ol, ol ul {
-    margin: 0 0 0 1.1875rem;
-}
+  margin: 0 0 0 1.1875rem; }
 
 li, dt, dd {
   font-size: 1rem;
@@ -1352,7 +1369,7 @@ code {
   border-radius: 2px; }
   code.code--block {
     display: block;
-      padding: 0.59375rem;
+    padding: 0.59375rem;
     background-color: #414141;
     color: #c4c4c4;
     border-radius: 3px; }
@@ -1459,13 +1476,12 @@ code {
  */
 table {
   width: 100%;
-    margin: 0 0 1.1875rem;
-}
+  margin: 0 0 1.1875rem; }
   table th {
     text-align: left;
     font-weight: 700; }
   table td, table th {
-      padding: 0.19792rem 0.29688rem;
+    padding: 0.19792rem 0.29688rem;
     border: none;
     border-bottom: 1px solid #c4c4c4; }
   table td {
@@ -1687,8 +1703,7 @@ input[type="radio"] {
  *  <input type="text"  placeholder="Text Input">
  */
 label.label--text {
-    margin-bottom: 0.59375rem;
-}
+  margin-bottom: 0.59375rem; }
 
 label.label--inline {
   display: inline; }
@@ -1707,8 +1722,7 @@ label.label--inline {
  *  </div>
  */
 .form-field {
-    margin-bottom: 1.1875rem;
-}
+  margin-bottom: 1.1875rem; }
 
 /**
  * @atom Field Error
@@ -1721,7 +1735,7 @@ label.label--inline {
  *  </div>
  */
 .form-field--error {
-    padding-top: 0.59375rem;
+  padding-top: 0.59375rem;
   padding-bottom: 0;
   margin-bottom: 0;
   font-size: 0.77254rem;
@@ -1743,8 +1757,8 @@ label.label--inline {
  *  </fieldset>
  */
 fieldset {
-    padding: 1.1875rem 0.59375rem;
-    margin-bottom: 1.1875rem;
+  padding: 1.1875rem 0.59375rem;
+  margin-bottom: 1.1875rem;
   border-radius: 3px; }
   fieldset .form-field:last-of-type {
     margin-bottom: 0; }
@@ -1944,13 +1958,13 @@ button.button--switch {
   transform: translate(-50%, -50%); }
 
 .modal-header {
-    padding-bottom: 0.59375rem;
-    margin-bottom: 0.59375rem;
+  padding-bottom: 0.59375rem;
+  margin-bottom: 0.59375rem;
   border-bottom: 1px solid #c4c4c4; }
 
 .modal-footer {
-    margin-top: 0.59375rem;
-    padding-top: 0.59375rem;
+  margin-top: 0.59375rem;
+  padding-top: 0.59375rem;
   border-top: 1px solid #c4c4c4; }
 
 /**
@@ -1973,17 +1987,14 @@ button.button--switch {
  */
 .container {
   max-width: 120rem;
-    padding: 1.1875rem 2.375rem;
-    margin: 0 auto;
-}
+  padding: 1.1875rem 2.375rem;
+  margin: 0 auto; }
   .container.container--tight {
-      padding-top: 0.59375rem;
-      padding-bottom: 0.59375rem;
-  }
+    padding-top: 0.59375rem;
+    padding-bottom: 0.59375rem; }
   .container.container--loose {
-      padding-top: 2.375rem;
-      padding-bottom: 2.375rem;
-  }
+    padding-top: 2.375rem;
+    padding-bottom: 2.375rem; }
   .container.container--full-width {
     max-width: none;
     overflow-x: hidden; }
@@ -2004,9 +2015,8 @@ button.button--switch {
   display: flex;
   flex-wrap: wrap;
   flex: 1;
-    margin-left: -0.59375rem;
-    margin-right: -0.59375rem;
-}
+  margin-left: -0.59375rem;
+  margin-right: -0.59375rem; }
 
 /**
  * @atom Column
@@ -2170,10 +2180,9 @@ button.button--switch {
 .column {
   box-sizing: border-box;
   flex: 0 1 auto;
-    padding-left: 0.59375rem;
-    padding-right: 0.59375rem;
-    margin-bottom: 1.1875rem;
-}
+  padding-left: 0.59375rem;
+  padding-right: 0.59375rem;
+  margin-bottom: 1.1875rem; }
 
 .col-1 {
   width: 8.3333%; }
@@ -2652,8 +2661,7 @@ button.button--switch {
   background-color: #eeeeee;
   border: 1px solid #c4c4c4;
   border-radius: 3px;
-    padding: 0.59375rem;
-}
+  padding: 0.59375rem; }
 
 /**
  * @molecule Item List
@@ -2717,11 +2725,9 @@ button.button--switch {
   flex-wrap: nowrap; }
   .item-list .item-list--row {
     border-bottom: 1px solid #c4c4c4;
-      margin-bottom: 0.59375rem;
-  }
+    margin-bottom: 0.59375rem; }
   .item-list .item-list--column {
-      margin-bottom: 0.59375rem;
-  }
+    margin-bottom: 0.59375rem; }
   .item-list .item-list--input {
     margin-bottom: 0; }
   .item-list .item-list--text {
@@ -2745,14 +2751,13 @@ button.button--switch {
  *  </nav>
  */
 .pagination {
-    margin-bottom: 0.59375rem;
+  margin-bottom: 0.59375rem;
   display: flex;
   flex: 1 0 auto;
   flex-wrap: nowrap; }
   .pagination .pagination--button {
     color: #fcfcfc;
-      margin: 0 0.29688rem;
-  }
+    margin: 0 0.29688rem; }
     .pagination .pagination--button:first-child {
       margin-left: 0; }
     .pagination .pagination--button:last-child {
@@ -3095,53 +3100,41 @@ button.button--switch {
  */
 .border--bottom {
   border-bottom: 1px solid #c4c4c4;
-    padding-bottom: 1.1875rem;
-    margin-bottom: 1.1875rem;
-}
+  padding-bottom: 1.1875rem;
+  margin-bottom: 1.1875rem; }
   .border--bottom.border--tight {
-      padding-bottom: 0.59375rem;
-      margin-bottom: 0.59375rem;
-  }
+    padding-bottom: 0.59375rem;
+    margin-bottom: 0.59375rem; }
   .border--bottom.border--loose {
-      padding-bottom: 2.375rem;
-      margin-bottom: 2.375rem;
-  }
+    padding-bottom: 2.375rem;
+    margin-bottom: 2.375rem; }
 
 .border--top {
   border-top: 1px solid #c4c4c4;
-    padding-top: 1.1875rem;
-    margin-top: 1.1875rem;
-}
+  padding-top: 1.1875rem;
+  margin-top: 1.1875rem; }
   .border--top.border--tight {
-      padding-top: 0.59375rem;
-      margin-top: 0.59375rem;
-  }
+    padding-top: 0.59375rem;
+    margin-top: 0.59375rem; }
   .border--top.border--loose {
-      padding-top: 2.375rem;
-      margin-top: 2.375rem;
-  }
+    padding-top: 2.375rem;
+    margin-top: 2.375rem; }
 
 .border--left {
   border-left: 1px solid #c4c4c4;
-    padding-left: 1.1875rem;
-}
+  padding-left: 1.1875rem; }
   .border--left.border--tight {
-      padding-left: 0.59375rem;
-  }
+    padding-left: 0.59375rem; }
   .border--left.border--loose {
-      padding-left: 2.375rem;
-  }
+    padding-left: 2.375rem; }
 
 .border--right {
   border-right: 1px solid #c4c4c4;
-    padding-right: 1.1875rem;
-}
+  padding-right: 1.1875rem; }
   .border--right.border--tight {
-      padding-right: 0.59375rem;
-  }
+    padding-right: 0.59375rem; }
   .border--right.border--loose {
-      padding-right: 2.375rem;
-  }
+    padding-right: 2.375rem; }
 
 .border--thick {
   border-width: 2px; }
@@ -3183,84 +3176,64 @@ button.button--switch {
   margin-left: 0; }
 
 .padding--half-gutter {
-    padding: 0.59375rem;
-}
+  padding: 0.59375rem; }
 
 .padding-top--half-gutter {
-    padding-top: 0.59375rem;
-}
+  padding-top: 0.59375rem; }
 
 .padding-left--half-gutter {
-    padding-left: 0.59375rem;
-}
+  padding-left: 0.59375rem; }
 
 .padding-right--half-gutter {
-    padding-right: 0.59375rem;
-}
+  padding-right: 0.59375rem; }
 
 .padding-bottom--half-gutter {
-    padding-bottom: 0.59375rem;
-}
+  padding-bottom: 0.59375rem; }
 
 .padding--gutter {
-    padding: 1.1875rem;
-}
+  padding: 1.1875rem; }
 
 .padding-top--gutter {
-    padding-top: 1.1875rem;
-}
+  padding-top: 1.1875rem; }
 
 .padding-left--gutter {
-    padding-left: 1.1875rem;
-}
+  padding-left: 1.1875rem; }
 
 .padding-right--gutter {
-    padding-right: 1.1875rem;
-}
+  padding-right: 1.1875rem; }
 
 .padding-bottom--gutter {
-    padding-bottom: 1.1875rem;
-}
+  padding-bottom: 1.1875rem; }
 
 .margin--half-gutter {
-    margin: 0.59375rem;
-}
+  margin: 0.59375rem; }
 
 .margin-top--half-gutter {
-    margin-top: 0.59375rem;
-}
+  margin-top: 0.59375rem; }
 
 .margin-left--half-gutter {
-    margin-left: 0.59375rem;
-}
+  margin-left: 0.59375rem; }
 
 .margin-right--half-gutter {
-    margin-right: 0.59375rem;
-}
+  margin-right: 0.59375rem; }
 
 .margin-bottom--half-gutter {
-    margin-bottom: 0.59375rem;
-}
+  margin-bottom: 0.59375rem; }
 
 .margin--gutter {
-    margin: 1.1875rem;
-}
+  margin: 1.1875rem; }
 
 .margin-top--gutter {
-    margin-top: 1.1875rem;
-}
+  margin-top: 1.1875rem; }
 
 .margin-left--gutter {
-    margin-left: 1.1875rem;
-}
+  margin-left: 1.1875rem; }
 
 .margin-right--gutter {
-    margin-right: 1.1875rem;
-}
+  margin-right: 1.1875rem; }
 
 .margin-bottom--gutter {
-    margin-bottom: 1.1875rem;
-}
+  margin-bottom: 1.1875rem; }
 
 .hide {
   display: none; }
