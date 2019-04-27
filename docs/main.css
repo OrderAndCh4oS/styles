@@ -1454,10 +1454,10 @@ h4, h5, h6,
  * @atom Body Text
  * @section Typography > Text
  * @markup
- *  <p class="text--body">Earum dicta animi autem veritatis et ratione sed. Quisquam est neque quis ullam inventore odit ex sit. Sed voluptatem voluptatem quia rerum qui. Quaerat provident ipsa laudantium ut ipsa.</p>
- *  <p class="text--body">A non et iure non fuga. Quia quaerat ut autem id iste et maxime. Qui id consequatur recusandae qui vel et odio aliquam.</p>
+ *  <p class="text">Earum dicta animi autem veritatis et ratione sed. Quisquam est neque quis ullam inventore odit ex sit. Sed voluptatem voluptatem quia rerum qui. Quaerat provident ipsa laudantium ut ipsa.</p>
+ *  <p class="text">A non et iure non fuga. Quia quaerat ut autem id iste et maxime. Qui id consequatur recusandae qui vel et odio aliquam.</p>
  */
-p, .text--body {
+p, .text {
   color: #414141;
   font-size: 1rem;
   font-weight: 400;
@@ -1478,7 +1478,7 @@ p, .text--body {
  * @atom Link
  * @section Typography > Inline Text
  * @markup
- *  <p class="text--body"><a href="#">Link Text</a></p>
+ *  <p class="text"><a href="#">Link Text</a></p>
  */
 a, a:visited {
   color: #525252;
