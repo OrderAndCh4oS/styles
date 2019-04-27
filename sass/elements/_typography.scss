@@ -71,10 +71,10 @@ h4, h5, h6,
  * @atom Body Text
  * @section Typography > Text
  * @markup
- *  <p class="text--body">Earum dicta animi autem veritatis et ratione sed. Quisquam est neque quis ullam inventore odit ex sit. Sed voluptatem voluptatem quia rerum qui. Quaerat provident ipsa laudantium ut ipsa.</p>
- *  <p class="text--body">A non et iure non fuga. Quia quaerat ut autem id iste et maxime. Qui id consequatur recusandae qui vel et odio aliquam.</p>
+ *  <p class="text">Earum dicta animi autem veritatis et ratione sed. Quisquam est neque quis ullam inventore odit ex sit. Sed voluptatem voluptatem quia rerum qui. Quaerat provident ipsa laudantium ut ipsa.</p>
+ *  <p class="text">A non et iure non fuga. Quia quaerat ut autem id iste et maxime. Qui id consequatur recusandae qui vel et odio aliquam.</p>
  */
-p, .text--body {
+p, .text, .citation {
   color: $text--color;
   font-size: $font--size--one;
   font-weight: $font--weight--regular;
@@ -97,7 +97,7 @@ p, .text--body {
  * @atom Link
  * @section Typography > Inline Text
  * @markup
- *  <p class="text--body"><a href="#">Link Text</a></p>
+ *  <p class="text"><a href="#">Link Text</a></p>
  */
 a, a:visited {
   color: $link--color;
@@ -151,22 +151,32 @@ em,
  * @atom Block Quote
  * @section Typography > Quote
  * @markup
- *  <blockquote><p>Ipsam reprehenderit molestiae sit. Autem tempore dicta aspernatur voluptate recusandae aut fugit. Et vitae aut perferendis quas eum similique est ducimus. Recusandae ut est aut quas qui neque tenetur. Molestias veniam est modi tempore qui placeat quasi sed. Aliquid provident optio harum consectetur quo.</p><p class="citation"><cite>Quote Source Title</cite> by Author Name</p></blockquote>
+ *  <blockquote>
+ *      <p class="text">Ipsam reprehenderit molestiae sit. Autem tempore dicta aspernatur voluptate recusandae aut fugit. Et vitae aut perferendis quas eum similique est ducimus. Recusandae ut est aut quas qui neque tenetur. Molestias veniam est modi tempore qui placeat quasi sed.</p>
+ *      <p class="text">Recusandae aut fugit. Et vitae aut perferendis quas eum similique est ducimus quasi sed. Recusandae ut est aut quas qui neque tenetur.</p>
+ *      <span class="citation"><cite>Quote Source Title</cite> by Author Name</p>
+ *  </blockquote>
  */
 blockquote, .blockquote {
   margin: 0 0 $gutter;
   padding: 0 $gutter;
   border-left: $border--width--thicker $border--stroke $text--color;
 
-  p:first-of-type:before {
-    content: "\201C";
+  .text {
+    position: relative;
   }
 
-  p:last-of-type:after {
+  .text:before {
+    content: "\201C";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 100%;
+  }
+
+  .text:last-of-type:after {
     content: "\201D";
   }
-
-
 }
 
 /**
@@ -176,6 +186,7 @@ blockquote, .blockquote {
  *  <p class="citation"><cite>Quote Source Title</cite> by Author Name</p>
  */
 .citation {
+  font-size: $font--size--one;
   font-style: normal;
   &:before {
     content: "\2014\2009";
