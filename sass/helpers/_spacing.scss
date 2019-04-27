@@ -1,3 +1,43 @@
+/**
+ * @atom Padding
+ * @section Spacing > Padding
+ * @modifiers
+ *  .padding--none Remove all padding
+ *  .padding-top--none Remove top padding
+ *  .padding-right--none Remove right padding
+ *  .padding-bottom--none Remove bottom padding
+ *  .padding-left--none Remove left padding
+ *  .padding--gutter Gutter sized padding
+ *  .padding-top--gutter Gutter sized padding top
+ *  .padding-right--gutter Gutter sized padding right
+ *  .padding-bottom--gutter Gutter sized padding bottom
+ *  .padding-left--gutter Gutter sized padding left
+ *  .padding-top--half-gutter Half gutter sized padding top
+ *  .padding-right--half-gutter Half gutter sized padding right
+ *  .padding-bottom--half-gutter Half gutter sized padding bottom
+ *  .padding-left--half-gutter Half gutter sized padding left
+ *  .padding-top--double-gutter Double gutter sized padding top
+ *  .padding-right--double-gutter Double gutter sized padding right
+ *  .padding-bottom--double-gutter Double gutter sized padding bottom
+ *  .padding-left--double-gutter Double gutter sized padding left
+ * @markup
+ *  <div class="panel padding--none">
+ *      <p class="text--minus-one margin-bottom--none">No padding</p>
+ *  </div>
+ *  <div class="panel padding-top--none">
+ *      <p class="text--minus-one margin-bottom--none">No top padding</p>
+ *  </div>
+ *  <div class="panel padding-right--none">
+ *      <p class="text--minus-one margin-bottom--none">No right padding</p>
+ *  </div>
+ *  <div class="panel padding-bottom--none">
+ *      <p class="text--minus-one margin-bottom--none">No bottom padding</p>
+ *  </div>
+ *  <div class="panel padding-left--none">
+ *      <p class="text--minus-one margin-bottom--none">No left padding</p>
+ *  </div>
+ */
+
 .padding--none {
   padding: 0;
 }
@@ -16,46 +56,6 @@
 
 .padding-left--none {
   padding-left: 0;
-}
-
-.margin--none {
-  margin: 0;
-}
-
-.margin-top--none {
-  margin-top: 0;
-}
-
-.margin-right--none {
-  margin-right: 0;
-}
-
-.margin-bottom--none {
-  margin-bottom: 0;
-}
-
-.margin-left--none {
-  margin-left: 0;
-}
-
-.padding--half-gutter {
-  padding: $gutter--half;
-}
-
-.padding-top--half-gutter {
-  padding-top: $gutter--half;
-}
-
-.padding-left--half-gutter {
-  padding-left: $gutter--half;
-}
-
-.padding-right--half-gutter {
-  padding-right: $gutter--half;
-}
-
-.padding-bottom--half-gutter {
-  padding-bottom: $gutter--half;
 }
 
 .padding--gutter {
@@ -78,24 +78,104 @@
   padding-bottom: $gutter;
 }
 
-.margin--half-gutter {
-  margin: $gutter--half;
+.padding--half-gutter {
+  padding: $gutter--half;
 }
 
-.margin-top--half-gutter {
-  margin-top: $gutter--half;
+.padding-top--half-gutter {
+  padding-top: $gutter--half;
 }
 
-.margin-left--half-gutter {
-  margin-left: $gutter--half;
+.padding-left--half-gutter {
+  padding-left: $gutter--half;
 }
 
-.margin-right--half-gutter {
-  margin-right: $gutter--half;
+.padding-right--half-gutter {
+  padding-right: $gutter--half;
 }
 
-.margin-bottom--half-gutter {
-  margin-bottom: $gutter--half;
+.padding-bottom--half-gutter {
+  padding-bottom: $gutter--half;
+}
+
+.padding--double-gutter {
+  padding: $gutter--double;
+}
+
+.padding-top--double-gutter {
+  padding-top: $gutter--double;
+}
+
+.padding-left--double-gutter {
+  padding-left: $gutter--double;
+}
+
+.padding-right--double-gutter {
+  padding-right: $gutter--double;
+}
+
+.padding-bottom--double-gutter {
+  padding-bottom: $gutter--double;
+}
+
+/**
+ * @atom Margin
+ * @section Spacing > Margin
+ * @modifiers
+ *  .margin--none Remove all margins
+ *  .margin-top--none Remove top margin
+ *  .margin-right--none Remove right margin
+ *  .margin-bottom--none Remove bottom margin
+ *  .margin-left--none Remove left margin
+ *  .margin--gutter Gutter sized margins
+ *  .margin-top--gutter Gutter sized margin top
+ *  .margin-right--gutter Gutter sized margin right
+ *  .margin-bottom--gutter Gutter sized margin bottom
+ *  .margin-left--gutter Gutter sized margin left
+ *  .margin-top--half-gutter Half gutter sized margin top
+ *  .margin-right--half-gutter Half gutter sized margin right
+ *  .margin-bottom--half-gutter Half gutter sized margin bottom
+ *  .margin-left--half-gutter Half gutter sized margin left
+ *  .margin-top--double-gutter Double gutter sized margin top
+ *  .margin-right--double-gutter Double gutter sized margin right
+ *  .margin-bottom--double-gutter Double gutter sized margin bottom
+ *  .margin-left--double-gutter Double gutter sized margin left
+ * @markup
+ *  <div class="panel margin--gutter">
+ *      <p class="text--minus-one margin-bottom--none">Margin gutter</p>
+ *  </div>
+ *  <div class="panel margin-top--gutter">
+ *      <p class="text--minus-one margin-bottom--none">Top margin gutter</p>
+ *  </div>
+ *  <div class="panel margin-right--gutter">
+ *      <p class="text--minus-one margin-bottom--none">Right margin gutter</p>
+ *  </div>
+ *  <div class="panel margin-bottom--gutter">
+ *      <p class="text--minus-one margin-bottom--none">Bottom margin gutter</p>
+ *  </div>
+ *  <div class="panel margin-left--gutter">
+ *      <p class="text--minus-one margin-bottom--none">Left margin gutter</p>
+ *  </div>
+ */
+
+.margin--none {
+  margin: 0;
+}
+
+.margin-top--none {
+  margin-top: 0;
+}
+
+.margin-right--none {
+  margin-right: 0;
+}
+
+.margin-bottom--none {
+  margin-bottom: 0;
+}
+
+.margin-left--none {
+  margin-left: 0;
 }
 
 .margin--gutter {
@@ -116,4 +196,44 @@
 
 .margin-bottom--gutter {
   margin-bottom: $gutter;
+}
+
+.margin--half-gutter {
+  margin: $gutter--half;
+}
+
+.margin-top--half-gutter {
+  margin-top: $gutter--half;
+}
+
+.margin-left--half-gutter {
+  margin-left: $gutter--half;
+}
+
+.margin-right--half-gutter {
+  margin-right: $gutter--half;
+}
+
+.margin-bottom--half-gutter {
+  margin-bottom: $gutter--half;
+}
+
+.margin--double-gutter {
+  margin: $gutter--double;
+}
+
+.margin-top--double-gutter {
+  margin-top: $gutter--double;
+}
+
+.margin-left--double-gutter {
+  margin-left: $gutter--double;
+}
+
+.margin-right--double-gutter {
+  margin-right: $gutter--double;
+}
+
+.margin-bottom--double-gutter {
+  margin-bottom: $gutter--double;
 }
