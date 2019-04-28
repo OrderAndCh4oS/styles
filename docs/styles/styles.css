@@ -1383,11 +1383,11 @@ code {
     padding: 0.59375rem;
     background-color: #414141;
     color: #c4c4c4;
-    border-radius: 3px; }
+    border-radius: 4px; }
 
 /**
  * @atom Table
- * @section Table
+ * @section Elements > Table
  * @modifiers
  *  .table--alternating-rows Striped rows
  *  .table--alternating-columns Striped columns
@@ -1555,7 +1555,7 @@ select {
   max-width: 100%;
   display: block;
   background: #fcfcfc;
-  border-radius: 3px;
+  border-radius: 4px;
   margin: 0;
   transition: background-color 280ms ease-in-out, border-color 400ms ease-in-out; }
   input.input--inline,
@@ -1770,7 +1770,7 @@ label.label--inline {
 fieldset {
   padding: 1.1875rem 0.59375rem;
   margin-bottom: 1.1875rem;
-  border-radius: 3px; }
+  border-radius: 4px; }
   fieldset .form-field:last-of-type {
     margin-bottom: 0; }
 
@@ -1792,7 +1792,7 @@ legend {
 
 /**
  * @atom Button
- * @section Buttons
+ * @section Elements > Buttons
  * @modifiers
  *  .button--active The active state of the button
  *  .button--disabled The disabled state of the button
@@ -1831,7 +1831,7 @@ input[type="button"] {
   padding: 0.3125rem 0.75rem 0.3125rem;
   font-family: "Roboto", "Avenir", "Verdana", sans-serif;
   transition: background-color 340ms ease, border-color 340ms ease;
-  border-radius: 3px;
+  border-radius: 4px;
   -webkit-appearance: none; }
   .button.button--active, .pagination .button--active.pagination--button, .button:hover, .pagination .pagination--button:hover, .pagination .pagination--current, .button:focus, .pagination .pagination--button:focus, .button:active, .pagination .pagination--button:active,
   button.button--active,
@@ -1921,7 +1921,7 @@ input[type="button"] {
 
 /**
  * @atom Switch
- * @section Buttons
+ * @section Elements > Buttons
  * @modifiers
  *  .button--switch--on Button toggled on
  * @markup
@@ -2368,6 +2368,166 @@ button.button--switch {
     width: 100%; } }
 
 /**
+ * @atom Flex
+ * @section Layout > Flex
+ * @modifiers
+ *  .flex--row Flex direction row
+ *  .flex--row-reverse Flex direction row reverse
+ *  .flex--column Flex direction column
+ *  .flex--column-reverse Flex direction column reverse
+ *  .flex--xlrg--row Flex direction row xlrg and down
+ *  .flex--xlrg--row-reverse Flex direction row reverse xlrg and down
+ *  .flex--xlrg--column Flex direction column xlrg and down
+ *  .flex--xlrg--column-reverse Flex direction column reverse xlrg and down
+ *  .flex--lrg--row Flex direction row lrg and down
+ *  .flex--lrg--row-reverse Flex direction row reverse lrg and down
+ *  .flex--lrg--column Flex direction column lrg and down
+ *  .flex--lrg--column-reverse Flex direction column reverse lrg and down
+ *  .flex--med--row Flex direction row med and down
+ *  .flex--med--row-reverse Flex direction row reverse med and down
+ *  .flex--med--column Flex direction column med and down
+ *  .flex--med--column-reverse Flex direction column reverse med and down
+ *  .flex--sml--row Flex direction row sml and down
+ *  .flex--sml--row-reverse Flex direction row reverse sml and down
+ *  .flex--sml--column Flex direction column sml and down
+ *  .flex--sml--column-reverse Flex direction column reverse sml and down
+ *  .flex--xsml--row Flex direction row xsml and down
+ *  .flex--xsml--row-reverse Flex direction row reverse xsml and down
+ *  .flex--xsml--column Flex direction column xsml and down
+ *  .flex--xsml--column-reverse Flex direction column reverse xsml and down
+ * @markup
+ *  <div class="row flex--row">
+ *      <div class="column col-4">
+ *          <div class="panel">
+ *              <p class="margin-bottom--none text--minus-one">Col One</p>
+ *          </div>
+ *      </div>
+ *      <div class="column col-4">
+ *          <div class="panel">
+ *            <p class="margin-bottom--none text--minus-one">Col Two</p>
+ *          </div>
+ *      </div>
+ *      <div class="column col-4">
+ *          <div class="panel">
+ *            <p class="margin-bottom--none text--minus-one">Col Three</p>
+ *          </div>
+ *      </div>
+ *  </div>
+ *  <div class="row flex--row-reverse">
+ *      <div class="column col-4">
+ *          <div class="panel">
+ *              <p class="margin-bottom--none text--minus-one">Col One</p>
+ *          </div>
+ *      </div>
+ *      <div class="column col-4">
+ *          <div class="panel">
+ *            <p class="margin-bottom--none text--minus-one">Col Two</p>
+ *          </div>
+ *      </div>
+ *      <div class="column col-4">
+ *          <div class="panel">
+ *            <p class="margin-bottom--none text--minus-one">Col Three</p>
+ *          </div>
+ *      </div>
+ *  </div>
+ *  <div class="row flex--column">
+ *      <div class="column col-4">
+ *          <div class="panel">
+ *              <p class="margin-bottom--none text--minus-one">Col One</p>
+ *          </div>
+ *      </div>
+ *      <div class="column col-4">
+ *          <div class="panel">
+ *            <p class="margin-bottom--none text--minus-one">Col Two</p>
+ *          </div>
+ *      </div>
+ *      <div class="column col-4">
+ *          <div class="panel">
+ *            <p class="margin-bottom--none text--minus-one">Col Three</p>
+ *          </div>
+ *      </div>
+ *  </div>
+ *  <div class="row flex--column-reverse">
+ *      <div class="column col-4">
+ *          <div class="panel">
+ *              <p class="margin-bottom--none text--minus-one">Col One</p>
+ *          </div>
+ *      </div>
+ *      <div class="column col-4">
+ *          <div class="panel">
+ *            <p class="margin-bottom--none text--minus-one">Col Two</p>
+ *          </div>
+ *      </div>
+ *      <div class="column col-4">
+ *          <div class="panel">
+ *            <p class="margin-bottom--none text--minus-one">Col Three</p>
+ *          </div>
+ *      </div>
+ *  </div>
+ */
+.flex--row {
+  flex-direction: row; }
+
+.flex--row-reverse {
+  flex-direction: row-reverse; }
+
+.flex--column {
+  flex-direction: column; }
+
+.flex--column-reverse {
+  flex-direction: column-reverse; }
+
+@media only screen and (max-width: 1599px) {
+  .flex--xlrg--row {
+    flex-direction: row; }
+  .flex--xlrg--row-reverse {
+    flex-direction: row-reverse; }
+  .flex--xlrg--column {
+    flex-direction: column; }
+  .flex--xlrg--column-reverse {
+    flex-direction: column-reverse; } }
+
+@media only screen and (max-width: 1439px) {
+  .flex--lrg--row {
+    flex-direction: row; }
+  .flex--lrg--row-reverse {
+    flex-direction: row-reverse; }
+  .flex--lrg--column {
+    flex-direction: column; }
+  .flex--lrg--column-reverse {
+    flex-direction: column-reverse; } }
+
+@media only screen and (max-width: 1239px) {
+  .flex--med--row {
+    flex-direction: row; }
+  .flex--med--row-reverse {
+    flex-direction: row-reverse; }
+  .flex--med--column {
+    flex-direction: column; }
+  .flex--med--column-reverse {
+    flex-direction: column-reverse; } }
+
+@media only screen and (max-width: 1023px) {
+  .flex--sml--row {
+    flex-direction: row; }
+  .flex--sml--row-reverse {
+    flex-direction: row-reverse; }
+  .flex--sml--column {
+    flex-direction: column; }
+  .flex--sml--column-reverse {
+    flex-direction: column-reverse; } }
+
+@media only screen and (max-width: 767px) {
+  .flex--xsml--row {
+    flex-direction: row; }
+  .flex--xsml--row-reverse {
+    flex-direction: row-reverse; }
+  .flex--xsml--column {
+    flex-direction: column; }
+  .flex--xsml--column-reverse {
+    flex-direction: column-reverse; } }
+
+/**
  * @atom Push
  * @section Layout > Grid
  * @modifiers
@@ -2671,14 +2831,356 @@ button.button--switch {
   .push-xsml-11 {
     margin-left: 91.6666%; } }
 
+/**
+ * @atom Panel
+ * @section Layout > Panels
+ * @modifiers
+ *  .panel--tight Panel with tight padding
+ *  .panel--loose Panel with loose padding
+ *  .panel--flat Remove the border radius on all sides
+ *  .panel--top--flat Remove the border radius on the top side
+ *  .panel--right--flat Remove the border radius on the right side
+ *  .panel--bottom--flat Remove the border radius on the bottom side
+ *  .panel--left--flat Remove the border radius on the left side
+ * @markup
+ *  <div class="panel margin-bottom--gutter"><p class="margin-bottom--none">Panel</p></div>
+ *  <div class="panel panel--tight margin-bottom--gutter"><p class="margin-bottom--none">Panel Tight</p></div>
+ *  <div class="panel panel--loose margin-bottom--gutter"><p class="margin-bottom--none">Panel Loose</p></div>
+ *  <div class="panel panel--flat margin-bottom--gutter"><p class="margin-bottom--none">Panel Flat</p></div>
+ *  <div class="panel panel--flat--top margin-bottom--gutter"><p class="margin-bottom--none">Panel Flat Top</p></div>
+ *  <div class="panel panel--flat--right margin-bottom--gutter"><p class="margin-bottom--none">Panel Flat Right</p></div>
+ *  <div class="panel panel--flat--bottom margin-bottom--gutter"><p class="margin-bottom--none">Panel Flat Bottom</p></div>
+ *  <div class="panel panel--flat--left margin-bottom--gutter"><p class="margin-bottom--none">Panel Flat Left</p></div>
+ */
+.panel {
+  border: 1px solid #c4c4c4;
+  border-radius: 4px;
+  padding: 1.1875rem; }
+  .panel.panel--tight {
+    padding: 0.59375rem; }
+  .panel.panel--loose {
+    padding: 2.375rem; }
+  .panel.panel--flat {
+    border-radius: 0; }
+  .panel.panel--flat--top {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
+  .panel.panel--flat--right {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+  .panel.panel--flat--bottom {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0; }
+  .panel.panel--flat--left {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0; }
+
+/**
+ * @atom Border
+ * @section Layout > Borders
+ * @modifiers
+ *  .border--tight Border with tighter padding and margin
+ *  .border--loose Border with looser padding and margin
+ *  .border--thick Border with thick stroke width
+ *  .border--thicker Border with thicker stroke width
+ *  .border--thickest Border with thickest stroke width
+ *  .border--none Remove the border on all sides
+ *  .border--top--none Remove the border on the top side
+ *  .border--right--none Remove the border on the right side
+ *  .border--bottom--none Remove the border on the bottom side
+ *  .border--left--none Remove the border on the left side
+ * @markup
+ *  <div class="border--bottom"><p>Border Bottom</p></div>
+ *  <div class="border--bottom border--tight"><p>Border Bottom Tight</p></div>
+ *  <div class="border--bottom border--loose"><p>Border Bottom Loose</p></div>
+ *  <div class="border--bottom border--thick"><p>Border Bottom Thick</p></div>
+ *  <div class="border--bottom border--thicker"><p>Border Bottom Thicker</p></div>
+ *  <div class="border--bottom border--thickest"><p>Border Bottom Thickest</p></div>
+ *  <div class="border--right text--align-right"><p>Border Right</p></div>
+ *  <div class="border--right border--tight text--align-right"><p>Border Right Tight</p></div>
+ *  <div class="border--right border--loose text--align-right"><p>Border Right Loose</p></div>
+ *  <div class="border--right border--thick text--align-right"><p>Border Right Thick</p></div>
+ *  <div class="border--right border--thicker text--align-right"><p>Border Right Thicker</p></div>
+ *  <div class="border--right border--thickest text--align-right"><p>Border Right Thickest</p></div>
+ *  <div class="border--left"><p>Border Left</p></div>
+ *  <div class="border--left border--tight"><p>Border Left Tight</p></div>
+ *  <div class="border--left border--loose"><p>Border Left Loose</p></div>
+ *  <div class="border--left border--thick"><p>Border Left Thick</p></div>
+ *  <div class="border--left border--thicker"><p>Border Left Thicker</p></div>
+ *  <div class="border--left border--thickest"><p>Border Left Thickest</p></div>
+ *  <div class="border--top"><p>Border Top</p></div>
+ *  <div class="border--top border--tight"><p>Border Top Tight</p></div>
+ *  <div class="border--top border--loose"><p>Border Top Loose</p></div>
+ *  <div class="border--top border--thick"><p>Border Top Thick</p></div>
+ *  <div class="border--top border--thicker"><p>Border Top Thicker</p></div>
+ *  <div class="border--top border--thickest"><p>Border Top Thickest</p></div>
+ */
+.border--bottom {
+  border-bottom: 1px solid #c4c4c4;
+  padding-bottom: 1.1875rem;
+  margin-bottom: 1.1875rem; }
+  .border--bottom.border--tight {
+    padding-bottom: 0.59375rem;
+    margin-bottom: 0.59375rem; }
+  .border--bottom.border--loose {
+    padding-bottom: 2.375rem;
+    margin-bottom: 2.375rem; }
+
+.border--top {
+  border-top: 1px solid #c4c4c4;
+  padding-top: 1.1875rem;
+  margin-top: 1.1875rem; }
+  .border--top.border--tight {
+    padding-top: 0.59375rem;
+    margin-top: 0.59375rem; }
+  .border--top.border--loose {
+    padding-top: 2.375rem;
+    margin-top: 2.375rem; }
+
+.border--left {
+  border-left: 1px solid #c4c4c4;
+  padding-left: 1.1875rem; }
+  .border--left.border--tight {
+    padding-left: 0.59375rem; }
+  .border--left.border--loose {
+    padding-left: 2.375rem; }
+
+.border--right {
+  border-right: 1px solid #c4c4c4;
+  padding-right: 1.1875rem; }
+  .border--right.border--tight {
+    padding-right: 0.59375rem; }
+  .border--right.border--loose {
+    padding-right: 2.375rem; }
+
+.border--top--none {
+  border-top: 0; }
+
+.border--right--none {
+  border-right: 0; }
+
+.border--bottom--none {
+  border-bottom: 0; }
+
+.border--left--none {
+  border-left: 0; }
+
+.border--none {
+  border: 0; }
+
+.border--thick {
+  border-width: 2px; }
+
+.border--thicker {
+  border-width: 3px; }
+
+.border--thickest {
+  border-width: 4px; }
+
+/**
+ * @atom Padding
+ * @section Layout > Padding
+ * @modifiers
+ *  .padding--none Remove all padding
+ *  .padding-top--none Remove top padding
+ *  .padding-right--none Remove right padding
+ *  .padding-bottom--none Remove bottom padding
+ *  .padding-left--none Remove left padding
+ *  .padding--gutter Gutter sized padding
+ *  .padding-top--gutter Gutter sized padding top
+ *  .padding-right--gutter Gutter sized padding right
+ *  .padding-bottom--gutter Gutter sized padding bottom
+ *  .padding-left--gutter Gutter sized padding left
+ *  .padding--half-gutter Half gutter sized padding
+ *  .padding-top--half-gutter Half gutter sized padding top
+ *  .padding-right--half-gutter Half gutter sized padding right
+ *  .padding-bottom--half-gutter Half gutter sized padding bottom
+ *  .padding-left--half-gutter Half gutter sized padding left
+ *  .padding--double-gutter Double gutter sized padding
+ *  .padding-top--double-gutter Double gutter sized padding top
+ *  .padding-right--double-gutter Double gutter sized padding right
+ *  .padding-bottom--double-gutter Double gutter sized padding bottom
+ *  .padding-left--double-gutter Double gutter sized padding left
+ * @markup
+ *  <div class="panel padding--none">
+ *      <p class="text--minus-one margin-bottom--none">No padding</p>
+ *  </div>
+ *  <div class="panel padding-top--none">
+ *      <p class="text--minus-one margin-bottom--none">No top padding</p>
+ *  </div>
+ *  <div class="panel padding-right--none">
+ *      <p class="text--minus-one margin-bottom--none">No right padding</p>
+ *  </div>
+ *  <div class="panel padding-bottom--none">
+ *      <p class="text--minus-one margin-bottom--none">No bottom padding</p>
+ *  </div>
+ *  <div class="panel padding-left--none">
+ *      <p class="text--minus-one margin-bottom--none">No left padding</p>
+ *  </div>
+ */
+.padding--none {
+  padding: 0; }
+
+.padding-top--none {
+  padding-top: 0; }
+
+.padding-right--none {
+  padding-right: 0; }
+
+.padding-bottom--none {
+  padding-bottom: 0; }
+
+.padding-left--none {
+  padding-left: 0; }
+
+.padding--gutter {
+  padding: 1.1875rem; }
+
+.padding-top--gutter {
+  padding-top: 1.1875rem; }
+
+.padding-left--gutter {
+  padding-left: 1.1875rem; }
+
+.padding-right--gutter {
+  padding-right: 1.1875rem; }
+
+.padding-bottom--gutter {
+  padding-bottom: 1.1875rem; }
+
+.padding--half-gutter {
+  padding: 0.59375rem; }
+
+.padding-top--half-gutter {
+  padding-top: 0.59375rem; }
+
+.padding-left--half-gutter {
+  padding-left: 0.59375rem; }
+
+.padding-right--half-gutter {
+  padding-right: 0.59375rem; }
+
+.padding-bottom--half-gutter {
+  padding-bottom: 0.59375rem; }
+
+.padding--double-gutter {
+  padding: 2.375rem; }
+
+.padding-top--double-gutter {
+  padding-top: 2.375rem; }
+
+.padding-left--double-gutter {
+  padding-left: 2.375rem; }
+
+.padding-right--double-gutter {
+  padding-right: 2.375rem; }
+
+.padding-bottom--double-gutter {
+  padding-bottom: 2.375rem; }
+
+/**
+ * @atom Margin
+ * @section Layout > Margin
+ * @modifiers
+ *  .margin--none Remove all margins
+ *  .margin-top--none Remove top margin
+ *  .margin-right--none Remove right margin
+ *  .margin-bottom--none Remove bottom margin
+ *  .margin-left--none Remove left margin
+ *  .margin--gutter Gutter sized margins
+ *  .margin-top--gutter Gutter sized margin top
+ *  .margin-right--gutter Gutter sized margin right
+ *  .margin-bottom--gutter Gutter sized margin bottom
+ *  .margin-left--gutter Gutter sized margin left
+ *  .margin--half-gutter Half gutter sized margin
+ *  .margin-top--half-gutter Half gutter sized margin top
+ *  .margin-right--half-gutter Half gutter sized margin right
+ *  .margin-bottom--half-gutter Half gutter sized margin bottom
+ *  .margin-left--half-gutter Half gutter sized margin left
+ *  .margin--double-gutter Double gutter sized margin
+ *  .margin-top--double-gutter Double gutter sized margin top
+ *  .margin-right--double-gutter Double gutter sized margin right
+ *  .margin-bottom--double-gutter Double gutter sized margin bottom
+ *  .margin-left--double-gutter Double gutter sized margin left
+ * @markup
+ *  <div class="panel margin--gutter">
+ *      <p class="text--minus-one margin-bottom--none">Margin gutter</p>
+ *  </div>
+ *  <div class="panel margin-top--gutter">
+ *      <p class="text--minus-one margin-bottom--none">Top margin gutter</p>
+ *  </div>
+ *  <div class="panel margin-right--gutter">
+ *      <p class="text--minus-one margin-bottom--none">Right margin gutter</p>
+ *  </div>
+ *  <div class="panel margin-bottom--gutter">
+ *      <p class="text--minus-one margin-bottom--none">Bottom margin gutter</p>
+ *  </div>
+ *  <div class="panel margin-left--gutter">
+ *      <p class="text--minus-one margin-bottom--none">Left margin gutter</p>
+ *  </div>
+ */
+.margin--none {
+  margin: 0; }
+
+.margin-top--none {
+  margin-top: 0; }
+
+.margin-right--none {
+  margin-right: 0; }
+
+.margin-bottom--none {
+  margin-bottom: 0; }
+
+.margin-left--none {
+  margin-left: 0; }
+
+.margin--gutter {
+  margin: 1.1875rem; }
+
+.margin-top--gutter {
+  margin-top: 1.1875rem; }
+
+.margin-left--gutter {
+  margin-left: 1.1875rem; }
+
+.margin-right--gutter {
+  margin-right: 1.1875rem; }
+
+.margin-bottom--gutter {
+  margin-bottom: 1.1875rem; }
+
+.margin--half-gutter {
+  margin: 0.59375rem; }
+
+.margin-top--half-gutter {
+  margin-top: 0.59375rem; }
+
+.margin-left--half-gutter {
+  margin-left: 0.59375rem; }
+
+.margin-right--half-gutter {
+  margin-right: 0.59375rem; }
+
+.margin-bottom--half-gutter {
+  margin-bottom: 0.59375rem; }
+
+.margin--double-gutter {
+  margin: 2.375rem; }
+
+.margin-top--double-gutter {
+  margin-top: 2.375rem; }
+
+.margin-left--double-gutter {
+  margin-left: 2.375rem; }
+
+.margin-right--double-gutter {
+  margin-right: 2.375rem; }
+
+.margin-bottom--double-gutter {
+  margin-bottom: 2.375rem; }
+
 .page-wrapper {
   min-height: 100%; }
-
-.panel {
-  background-color: #eeeeee;
-  border: 1px solid #c4c4c4;
-  border-radius: 3px;
-  padding: 0.59375rem; }
 
 /**
  * @molecule Item List
@@ -2788,7 +3290,7 @@ button.button--switch {
 
 /**
  * @atom Font Weights
- * @section Typography > Code
+ * @section Typography > Font Weights
  * @modifiers
  *  .text--light light font weight
  *  .text--regular regular font weight
@@ -2830,7 +3332,7 @@ button.button--switch {
 
 /**
  * @atom Font Sizes
- * @section Typography > Sizes
+ * @section Typography > Font Sizes
  * @modifiers
  *  .text--minus-two Font size: minus two modular scale notches from base font
  *  .text--minus-one Font size: minus one modular scale notch from base font
@@ -2916,7 +3418,7 @@ button.button--switch {
 
 /**
  * @atom Text Align Left
- * @section Typography > Alignment
+ * @section Typography > Text Alignment
  * @modifiers
  *  .text--align-left Left aligned text
  *  .text--align-right Right aligned text
@@ -2937,7 +3439,7 @@ button.button--switch {
 
 /**
  * @atom Colour
- * @section Colours
+ * @section Helpers > Colours
  * @modifiers
  *  .c--white White text
  *  .c--lightest-grey Lightest grey text
@@ -3079,450 +3581,6 @@ button.button--switch {
 
 .c--valid {
   color: #35c13a; }
-
-/**
- * @atom Border
- * @section Typography > Borders
- * @modifiers
- *  .border--tight Border with tighter padding and margin
- *  .border--loose Border with looser padding and margin
- *  .border--thick Border with thick stroke width
- *  .border--thicker Border with thicker stroke width
- *  .border--thickest Border with thickest stroke width
- * @markup
- *  <div class="border--bottom"><p>Border Bottom</p></div>
- *  <div class="border--bottom border--tight"><p>Border Bottom Tight</p></div>
- *  <div class="border--bottom border--loose"><p>Border Bottom Loose</p></div>
- *  <div class="border--bottom border--thick"><p>Border Bottom Thick</p></div>
- *  <div class="border--bottom border--thicker"><p>Border Bottom Thicker</p></div>
- *  <div class="border--bottom border--thickest"><p>Border Bottom Thickest</p></div>
- *  <div class="border--right text--align-right"><p>Border Right</p></div>
- *  <div class="border--right border--tight text--align-right"><p>Border Right Tight</p></div>
- *  <div class="border--right border--loose text--align-right"><p>Border Right Loose</p></div>
- *  <div class="border--right border--thick text--align-right"><p>Border Right Thick</p></div>
- *  <div class="border--right border--thicker text--align-right"><p>Border Right Thicker</p></div>
- *  <div class="border--right border--thickest text--align-right"><p>Border Right Thickest</p></div>
- *  <div class="border--left"><p>Border Left</p></div>
- *  <div class="border--left border--tight"><p>Border Left Tight</p></div>
- *  <div class="border--left border--loose"><p>Border Left Loose</p></div>
- *  <div class="border--left border--thick"><p>Border Left Thick</p></div>
- *  <div class="border--left border--thicker"><p>Border Left Thicker</p></div>
- *  <div class="border--left border--thickest"><p>Border Left Thickest</p></div>
- *  <div class="border--top"><p>Border Top</p></div>
- *  <div class="border--top border--tight"><p>Border Top Tight</p></div>
- *  <div class="border--top border--loose"><p>Border Top Loose</p></div>
- *  <div class="border--top border--thick"><p>Border Top Thick</p></div>
- *  <div class="border--top border--thicker"><p>Border Top Thicker</p></div>
- *  <div class="border--top border--thickest"><p>Border Top Thickest</p></div>
- */
-.border--bottom {
-  border-bottom: 1px solid #c4c4c4;
-  padding-bottom: 1.1875rem;
-  margin-bottom: 1.1875rem; }
-  .border--bottom.border--tight {
-    padding-bottom: 0.59375rem;
-    margin-bottom: 0.59375rem; }
-  .border--bottom.border--loose {
-    padding-bottom: 2.375rem;
-    margin-bottom: 2.375rem; }
-
-.border--top {
-  border-top: 1px solid #c4c4c4;
-  padding-top: 1.1875rem;
-  margin-top: 1.1875rem; }
-  .border--top.border--tight {
-    padding-top: 0.59375rem;
-    margin-top: 0.59375rem; }
-  .border--top.border--loose {
-    padding-top: 2.375rem;
-    margin-top: 2.375rem; }
-
-.border--left {
-  border-left: 1px solid #c4c4c4;
-  padding-left: 1.1875rem; }
-  .border--left.border--tight {
-    padding-left: 0.59375rem; }
-  .border--left.border--loose {
-    padding-left: 2.375rem; }
-
-.border--right {
-  border-right: 1px solid #c4c4c4;
-  padding-right: 1.1875rem; }
-  .border--right.border--tight {
-    padding-right: 0.59375rem; }
-  .border--right.border--loose {
-    padding-right: 2.375rem; }
-
-.border--thick {
-  border-width: 2px; }
-
-.border--thicker {
-  border-width: 3px; }
-
-.border--thickest {
-  border-width: 4px; }
-
-/**
- * @atom Padding
- * @section Spacing > Padding
- * @modifiers
- *  .padding--none Remove all padding
- *  .padding-top--none Remove top padding
- *  .padding-right--none Remove right padding
- *  .padding-bottom--none Remove bottom padding
- *  .padding-left--none Remove left padding
- *  .padding--gutter Gutter sized padding
- *  .padding-top--gutter Gutter sized padding top
- *  .padding-right--gutter Gutter sized padding right
- *  .padding-bottom--gutter Gutter sized padding bottom
- *  .padding-left--gutter Gutter sized padding left
- *  .padding--half-gutter Half gutter sized padding
- *  .padding-top--half-gutter Half gutter sized padding top
- *  .padding-right--half-gutter Half gutter sized padding right
- *  .padding-bottom--half-gutter Half gutter sized padding bottom
- *  .padding-left--half-gutter Half gutter sized padding left
- *  .padding--double-gutter Double gutter sized padding
- *  .padding-top--double-gutter Double gutter sized padding top
- *  .padding-right--double-gutter Double gutter sized padding right
- *  .padding-bottom--double-gutter Double gutter sized padding bottom
- *  .padding-left--double-gutter Double gutter sized padding left
- * @markup
- *  <div class="panel padding--none">
- *      <p class="text--minus-one margin-bottom--none">No padding</p>
- *  </div>
- *  <div class="panel padding-top--none">
- *      <p class="text--minus-one margin-bottom--none">No top padding</p>
- *  </div>
- *  <div class="panel padding-right--none">
- *      <p class="text--minus-one margin-bottom--none">No right padding</p>
- *  </div>
- *  <div class="panel padding-bottom--none">
- *      <p class="text--minus-one margin-bottom--none">No bottom padding</p>
- *  </div>
- *  <div class="panel padding-left--none">
- *      <p class="text--minus-one margin-bottom--none">No left padding</p>
- *  </div>
- */
-.padding--none {
-  padding: 0; }
-
-.padding-top--none {
-  padding-top: 0; }
-
-.padding-right--none {
-  padding-right: 0; }
-
-.padding-bottom--none {
-  padding-bottom: 0; }
-
-.padding-left--none {
-  padding-left: 0; }
-
-.padding--gutter {
-  padding: 1.1875rem; }
-
-.padding-top--gutter {
-  padding-top: 1.1875rem; }
-
-.padding-left--gutter {
-  padding-left: 1.1875rem; }
-
-.padding-right--gutter {
-  padding-right: 1.1875rem; }
-
-.padding-bottom--gutter {
-  padding-bottom: 1.1875rem; }
-
-.padding--half-gutter {
-  padding: 0.59375rem; }
-
-.padding-top--half-gutter {
-  padding-top: 0.59375rem; }
-
-.padding-left--half-gutter {
-  padding-left: 0.59375rem; }
-
-.padding-right--half-gutter {
-  padding-right: 0.59375rem; }
-
-.padding-bottom--half-gutter {
-  padding-bottom: 0.59375rem; }
-
-.padding--double-gutter {
-  padding: 2.375rem; }
-
-.padding-top--double-gutter {
-  padding-top: 2.375rem; }
-
-.padding-left--double-gutter {
-  padding-left: 2.375rem; }
-
-.padding-right--double-gutter {
-  padding-right: 2.375rem; }
-
-.padding-bottom--double-gutter {
-  padding-bottom: 2.375rem; }
-
-/**
- * @atom Margin
- * @section Spacing > Margin
- * @modifiers
- *  .margin--none Remove all margins
- *  .margin-top--none Remove top margin
- *  .margin-right--none Remove right margin
- *  .margin-bottom--none Remove bottom margin
- *  .margin-left--none Remove left margin
- *  .margin--gutter Gutter sized margins
- *  .margin-top--gutter Gutter sized margin top
- *  .margin-right--gutter Gutter sized margin right
- *  .margin-bottom--gutter Gutter sized margin bottom
- *  .margin-left--gutter Gutter sized margin left
- *  .margin--half-gutter Half gutter sized margin
- *  .margin-top--half-gutter Half gutter sized margin top
- *  .margin-right--half-gutter Half gutter sized margin right
- *  .margin-bottom--half-gutter Half gutter sized margin bottom
- *  .margin-left--half-gutter Half gutter sized margin left
- *  .margin--double-gutter Double gutter sized margin
- *  .margin-top--double-gutter Double gutter sized margin top
- *  .margin-right--double-gutter Double gutter sized margin right
- *  .margin-bottom--double-gutter Double gutter sized margin bottom
- *  .margin-left--double-gutter Double gutter sized margin left
- * @markup
- *  <div class="panel margin--gutter">
- *      <p class="text--minus-one margin-bottom--none">Margin gutter</p>
- *  </div>
- *  <div class="panel margin-top--gutter">
- *      <p class="text--minus-one margin-bottom--none">Top margin gutter</p>
- *  </div>
- *  <div class="panel margin-right--gutter">
- *      <p class="text--minus-one margin-bottom--none">Right margin gutter</p>
- *  </div>
- *  <div class="panel margin-bottom--gutter">
- *      <p class="text--minus-one margin-bottom--none">Bottom margin gutter</p>
- *  </div>
- *  <div class="panel margin-left--gutter">
- *      <p class="text--minus-one margin-bottom--none">Left margin gutter</p>
- *  </div>
- */
-.margin--none {
-  margin: 0; }
-
-.margin-top--none {
-  margin-top: 0; }
-
-.margin-right--none {
-  margin-right: 0; }
-
-.margin-bottom--none {
-  margin-bottom: 0; }
-
-.margin-left--none {
-  margin-left: 0; }
-
-.margin--gutter {
-  margin: 1.1875rem; }
-
-.margin-top--gutter {
-  margin-top: 1.1875rem; }
-
-.margin-left--gutter {
-  margin-left: 1.1875rem; }
-
-.margin-right--gutter {
-  margin-right: 1.1875rem; }
-
-.margin-bottom--gutter {
-  margin-bottom: 1.1875rem; }
-
-.margin--half-gutter {
-  margin: 0.59375rem; }
-
-.margin-top--half-gutter {
-  margin-top: 0.59375rem; }
-
-.margin-left--half-gutter {
-  margin-left: 0.59375rem; }
-
-.margin-right--half-gutter {
-  margin-right: 0.59375rem; }
-
-.margin-bottom--half-gutter {
-  margin-bottom: 0.59375rem; }
-
-.margin--double-gutter {
-  margin: 2.375rem; }
-
-.margin-top--double-gutter {
-  margin-top: 2.375rem; }
-
-.margin-left--double-gutter {
-  margin-left: 2.375rem; }
-
-.margin-right--double-gutter {
-  margin-right: 2.375rem; }
-
-.margin-bottom--double-gutter {
-  margin-bottom: 2.375rem; }
-
-/**
- * @atom Flex
- * @section Flex
- * @modifiers
- *  .flex--row Flex direction row
- *  .flex--row-reverse Flex direction row reverse
- *  .flex--column Flex direction column
- *  .flex--column-reverse Flex direction column reverse
- *  .flex--xlrg--row Flex direction row xlrg and down
- *  .flex--xlrg--row-reverse Flex direction row reverse xlrg and down
- *  .flex--xlrg--column Flex direction column xlrg and down
- *  .flex--xlrg--column-reverse Flex direction column reverse xlrg and down
- *  .flex--lrg--row Flex direction row lrg and down
- *  .flex--lrg--row-reverse Flex direction row reverse lrg and down
- *  .flex--lrg--column Flex direction column lrg and down
- *  .flex--lrg--column-reverse Flex direction column reverse lrg and down
- *  .flex--med--row Flex direction row med and down
- *  .flex--med--row-reverse Flex direction row reverse med and down
- *  .flex--med--column Flex direction column med and down
- *  .flex--med--column-reverse Flex direction column reverse med and down
- *  .flex--sml--row Flex direction row sml and down
- *  .flex--sml--row-reverse Flex direction row reverse sml and down
- *  .flex--sml--column Flex direction column sml and down
- *  .flex--sml--column-reverse Flex direction column reverse sml and down
- *  .flex--xsml--row Flex direction row xsml and down
- *  .flex--xsml--row-reverse Flex direction row reverse xsml and down
- *  .flex--xsml--column Flex direction column xsml and down
- *  .flex--xsml--column-reverse Flex direction column reverse xsml and down
- * @markup
- *  <div class="row flex--row">
- *      <div class="column col-4">
- *          <div class="panel">
- *              <p class="margin-bottom--none text--minus-one">Col One</p>
- *          </div>
- *      </div>
- *      <div class="column col-4">
- *          <div class="panel">
- *            <p class="margin-bottom--none text--minus-one">Col Two</p>
- *          </div>
- *      </div>
- *      <div class="column col-4">
- *          <div class="panel">
- *            <p class="margin-bottom--none text--minus-one">Col Three</p>
- *          </div>
- *      </div>
- *  </div>
- *  <div class="row flex--row-reverse">
- *      <div class="column col-4">
- *          <div class="panel">
- *              <p class="margin-bottom--none text--minus-one">Col One</p>
- *          </div>
- *      </div>
- *      <div class="column col-4">
- *          <div class="panel">
- *            <p class="margin-bottom--none text--minus-one">Col Two</p>
- *          </div>
- *      </div>
- *      <div class="column col-4">
- *          <div class="panel">
- *            <p class="margin-bottom--none text--minus-one">Col Three</p>
- *          </div>
- *      </div>
- *  </div>
- *  <div class="row flex--column">
- *      <div class="column col-4">
- *          <div class="panel">
- *              <p class="margin-bottom--none text--minus-one">Col One</p>
- *          </div>
- *      </div>
- *      <div class="column col-4">
- *          <div class="panel">
- *            <p class="margin-bottom--none text--minus-one">Col Two</p>
- *          </div>
- *      </div>
- *      <div class="column col-4">
- *          <div class="panel">
- *            <p class="margin-bottom--none text--minus-one">Col Three</p>
- *          </div>
- *      </div>
- *  </div>
- *  <div class="row flex--column-reverse">
- *      <div class="column col-4">
- *          <div class="panel">
- *              <p class="margin-bottom--none text--minus-one">Col One</p>
- *          </div>
- *      </div>
- *      <div class="column col-4">
- *          <div class="panel">
- *            <p class="margin-bottom--none text--minus-one">Col Two</p>
- *          </div>
- *      </div>
- *      <div class="column col-4">
- *          <div class="panel">
- *            <p class="margin-bottom--none text--minus-one">Col Three</p>
- *          </div>
- *      </div>
- *  </div>
- */
-.flex--row {
-  flex-direction: row; }
-
-.flex--row-reverse {
-  flex-direction: row-reverse; }
-
-.flex--column {
-  flex-direction: column; }
-
-.flex--column-reverse {
-  flex-direction: column-reverse; }
-
-@media only screen and (max-width: 1599px) {
-  .flex--xlrg--row {
-    flex-direction: row; }
-  .flex--xlrg--row-reverse {
-    flex-direction: row-reverse; }
-  .flex--xlrg--column {
-    flex-direction: column; }
-  .flex--xlrg--column-reverse {
-    flex-direction: column-reverse; } }
-
-@media only screen and (max-width: 1439px) {
-  .flex--lrg--row {
-    flex-direction: row; }
-  .flex--lrg--row-reverse {
-    flex-direction: row-reverse; }
-  .flex--lrg--column {
-    flex-direction: column; }
-  .flex--lrg--column-reverse {
-    flex-direction: column-reverse; } }
-
-@media only screen and (max-width: 1239px) {
-  .flex--med--row {
-    flex-direction: row; }
-  .flex--med--row-reverse {
-    flex-direction: row-reverse; }
-  .flex--med--column {
-    flex-direction: column; }
-  .flex--med--column-reverse {
-    flex-direction: column-reverse; } }
-
-@media only screen and (max-width: 1023px) {
-  .flex--sml--row {
-    flex-direction: row; }
-  .flex--sml--row-reverse {
-    flex-direction: row-reverse; }
-  .flex--sml--column {
-    flex-direction: column; }
-  .flex--sml--column-reverse {
-    flex-direction: column-reverse; } }
-
-@media only screen and (max-width: 767px) {
-  .flex--xsml--row {
-    flex-direction: row; }
-  .flex--xsml--row-reverse {
-    flex-direction: row-reverse; }
-  .flex--xsml--column {
-    flex-direction: column; }
-  .flex--xsml--column-reverse {
-    flex-direction: column-reverse; } }
 
 .hide {
   display: none; }
