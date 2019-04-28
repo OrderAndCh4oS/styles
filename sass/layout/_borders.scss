@@ -1,12 +1,17 @@
 /**
  * @atom Border
- * @section Typography > Borders
+ * @section Layout > Borders
  * @modifiers
  *  .border--tight Border with tighter padding and margin
  *  .border--loose Border with looser padding and margin
  *  .border--thick Border with thick stroke width
  *  .border--thicker Border with thicker stroke width
  *  .border--thickest Border with thickest stroke width
+ *  .border--none Remove the border on all sides
+ *  .border--top--none Remove the border on the top side
+ *  .border--right--none Remove the border on the right side
+ *  .border--bottom--none Remove the border on the bottom side
+ *  .border--left--none Remove the border on the left side
  * @markup
  *  <div class="border--bottom"><p>Border Bottom</p></div>
  *  <div class="border--bottom border--tight"><p>Border Bottom Tight</p></div>
@@ -90,6 +95,26 @@
     &.border--loose {
         padding-right: $gutter--double;
     }
+}
+
+.border--top--none {
+    border-top: 0;
+}
+
+.border--right--none {
+    border-right: 0;
+}
+
+.border--bottom--none {
+    border-bottom: 0;
+}
+
+.border--left--none {
+    border-left: 0;
+}
+
+.border--none {
+    border: 0;
 }
 
 .border--thick {
