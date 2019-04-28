@@ -132,3 +132,11 @@ button.button--switch {
     left: rem-calc(21);
   }
 }
+
+.button--icon-left {
+  padding-right: $gutter--half;
+}
+
+.button--icon-right {
+  padding-left: $gutter--half;
+}
