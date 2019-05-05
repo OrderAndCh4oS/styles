@@ -2855,6 +2855,7 @@ button.button--switch {
 .panel {
   border: 1px solid #c4c4c4;
   border-radius: 4px;
+  height: 100%;
   padding: 1.1875rem; }
   .panel.panel--tight {
     padding: 0.59375rem; }
