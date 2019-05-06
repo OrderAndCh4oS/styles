@@ -93,6 +93,20 @@ p, .text, .citation {
   line-height: $font--size--two + $font--leading;
 }
 
+
+/**
+ * @atom Caption Text
+ * @section Typography > Text
+ * @markup
+ *  <img src='https://placehold.it/400x400' alt='Dummy image'>
+ *  <p class="text--caption">Caption Text</p>
+ */
+.text--caption {
+  font-size: $font--size--one;
+  line-height: $font--size--one + $font--leading;
+  font-style: $font--emphasis;
+}
+
 /**
  * @atom Link
  * @section Typography > Inline Text
