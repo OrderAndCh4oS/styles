@@ -1849,6 +1849,8 @@ legend {
  *  </button>
  */
 .button, .pagination .pagination--button,
+.button:visited,
+.pagination .pagination--button:visited,
 button,
 input[type="submit"],
 input[type="reset"],
@@ -1868,6 +1870,15 @@ input[type="button"] {
   -webkit-appearance: none; }
 
 .button.button--active, .pagination .button--active.pagination--button, .button:hover, .pagination .pagination--button:hover, .pagination .pagination--current, .button:focus, .pagination .pagination--button:focus, .button:active, .pagination .pagination--button:active,
+.button:visited.button--active,
+.pagination .pagination--button:visited.button--active,
+.button:visited:hover,
+.pagination .pagination--button:visited:hover,
+.pagination .pagination--current:visited,
+.button:visited:focus,
+.pagination .pagination--button:visited:focus,
+.button:visited:active,
+.pagination .pagination--button:visited:active,
 button.button--active,
 button:hover,
 button:focus,
@@ -1890,6 +1901,11 @@ input[type="button"]:active {
   text-decoration: none; }
 
 .button.button--disabled, .pagination .button--disabled.pagination--button, .button:disabled, .pagination .pagination--button:disabled, .pagination .pagination--disabled,
+.button:visited.button--disabled,
+.pagination .pagination--button:visited.button--disabled,
+.button:visited:disabled,
+.pagination .pagination--button:visited:disabled,
+.pagination .pagination--disabled:visited,
 button.button--disabled,
 button:disabled,
 input[type="submit"].button--disabled,
@@ -1904,6 +1920,18 @@ input[type="button"]:disabled {
   background-color: #c4c4c4; }
 
 .button.button--disabled:hover, .pagination .button--disabled.pagination--button:hover, .pagination .button--disabled.pagination--current, .button.button--disabled:active, .pagination .button--disabled.pagination--button:active, .button:disabled:hover, .pagination .pagination--button:disabled:hover, .pagination .pagination--current:disabled, .pagination .pagination--disabled:hover, .button:disabled:active, .pagination .pagination--button:disabled:active, .pagination .pagination--disabled:active,
+.button:visited.button--disabled:hover,
+.pagination .pagination--button:visited.button--disabled:hover,
+.pagination .pagination--current:visited.button--disabled,
+.button:visited.button--disabled:active,
+.pagination .pagination--button:visited.button--disabled:active,
+.button:visited:disabled:hover,
+.pagination .pagination--button:visited:disabled:hover,
+.pagination .pagination--current:visited:disabled,
+.pagination .pagination--disabled:visited:hover,
+.button:visited:disabled:active,
+.pagination .pagination--button:visited:disabled:active,
+.pagination .pagination--disabled:visited:active,
 button.button--disabled:hover,
 button.button--disabled:active,
 button:disabled:hover,
@@ -1926,6 +1954,8 @@ input[type="button"]:disabled:active {
   background-color: #c4c4c4; }
 
 .button.button--destructive, .pagination .button--destructive.pagination--button,
+.button:visited.button--destructive,
+.pagination .pagination--button:visited.button--destructive,
 button.button--destructive,
 input[type="submit"].button--destructive,
 input[type="reset"].button--destructive,
@@ -1935,6 +1965,9 @@ input[type="button"].button--destructive {
   color: #fcfcfc; }
 
 .button.button--destructive:hover, .pagination .button--destructive.pagination--button:hover, .pagination .button--destructive.pagination--current,
+.button:visited.button--destructive:hover,
+.pagination .pagination--button:visited.button--destructive:hover,
+.pagination .pagination--current:visited.button--destructive,
 button.button--destructive:hover,
 input[type="submit"].button--destructive:hover,
 input[type="reset"].button--destructive:hover,
@@ -1943,6 +1976,8 @@ input[type="button"].button--destructive:hover {
   background-color: #ee393c; }
 
 .button.button--affirmative, .pagination .button--affirmative.pagination--button,
+.button:visited.button--affirmative,
+.pagination .pagination--button:visited.button--affirmative,
 button.button--affirmative,
 input[type="submit"].button--affirmative,
 input[type="reset"].button--affirmative,
@@ -1952,6 +1987,9 @@ input[type="button"].button--affirmative {
   color: #fcfcfc; }
 
 .button.button--affirmative:hover, .pagination .button--affirmative.pagination--button:hover, .pagination .button--affirmative.pagination--current,
+.button:visited.button--affirmative:hover,
+.pagination .pagination--button:visited.button--affirmative:hover,
+.pagination .pagination--current:visited.button--affirmative,
 button.button--affirmative:hover,
 input[type="submit"].button--affirmative:hover,
 input[type="reset"].button--affirmative:hover,
