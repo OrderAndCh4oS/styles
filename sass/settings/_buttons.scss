@@ -1,0 +1,75 @@
+/**
+ * Button padding
+ *
+ * @nuclide Button-Padding
+ * @section Buttons > Default
+ */
+$button--padding: rem-calc(5) rem-calc(12) rem-calc(5);
+/**
+ * Button color
+ *
+ * @nuclide Button-Color
+ * @section Buttons > Default
+ */
+$button--color: $color--white;
+
+/**
+ * Button color
+ *
+ * @nuclide Button-Color
+ * @section Buttons > Default
+ */
+$button--color--hover: $color--white;
+
+/**
+ * Button background color
+ *
+ * @nuclide Button-Background-Colour
+ * @section Buttons > Default
+ */
+$button--bk-color: $color--primary;
+/**
+ * Button background color when hovered
+ *
+ * @nuclide Button-Background-Colour-Hovered
+ * @section Buttons > Default
+ */
+$button--bk-color--hover: $color--primary--hover;
+
+/**
+ * Button border
+ *
+ * @nuclide Button-Border
+ * @section Buttons > Default
+ */
+$button--border: $border--width $border--stroke $color--primary;
+/**
+ * Button border when hovered
+ *
+ * @nuclide Button-Border-Hover
+ * @section Buttons > Default
+ */
+$button--border--hover: $border--width $border--stroke $color--primary--hover;
+
+/**
+ * Button color disabled
+ *
+ * @nuclide Button-Color-Disabled
+ * @section Buttons > Disabled
+ */
+$button--color--disabled: $color--lighter-grey;
+
+/**
+ * Button background color disabled
+ *
+ * @nuclide Button-Background-Color-Disabled
+ * @section Buttons > Disabled
+ */
+$button--bk-color-disabled: $color--light-grey;
+/**
+ * Button Border disabled
+ *
+ * @nuclide Button-Border-Disabled
+ * @section Buttons > Disabled
+ */
+$button--border--disabled: $border--width $border--stroke $color--light-grey;

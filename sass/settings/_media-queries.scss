@@ -1,0 +1,247 @@
+/**
+ * Media query extra small range
+ *
+ * @nuclide X-Small-Range
+ * @section Media Queries > Ranges
+ */
+$xsml-range: (421px, 767px);
+
+/**
+ * Media query small range
+ *
+ * @nuclide Small-Range
+ * @section Media Queries > Ranges
+ */
+$sml-range: (768px, 1023px);
+
+/**
+ * Media query medium range
+ *
+ * @nuclide Medium-Range
+ * @section Media Queries > Ranges
+ */
+$med-range: (1024px, 1239px);
+
+/**
+ * Media query large range
+ *
+ * @nuclide Large-Range
+ * @section Media Queries > Ranges
+ */
+$lrg-range: (1240px, 1439px);
+
+/**
+ * Media query extra large range
+ *
+ * @nuclide X-Large-Range
+ * @section Media Queries > Ranges
+ */
+$xlrg-range: (1440px, 1599px);
+
+/**
+ * Media query extra extra large range
+ *
+ * @nuclide XX-Large-Range
+ * @section Media Queries > Ranges
+ */
+$xxlrg-range: (1600px);
+
+/**
+ * Media query extra small range upper bound
+ *
+ * @nuclide X-Small-Range-Upper-Bound
+ * @section Media Queries > Bounds
+ */
+$xsml: upper-bound($xsml-range);
+
+/**
+ * Media query small range upper bound
+ *
+ * @nuclide Small-Range-Upper-Bound
+ * @section Media Queries > Bounds
+ */
+$sml: upper-bound($sml-range);
+
+/**
+ * Media query medium range upper bound
+ *
+ * @nuclide Med-Range-Upper-Bound
+ * @section Media Queries > Bounds
+ */
+$med: upper-bound($med-range);
+
+/**
+ * Media query large range upper bound
+ *
+ * @nuclide Large-Range-Upper-Bound
+ * @section Media Queries > Bounds
+ */
+$lrg: upper-bound($lrg-range);
+
+/**
+ * Media query extra large range upper bound
+ *
+ * @nuclide X-Large-Range-Upper-Bound
+ * @section Media Queries > Bounds
+ */
+$xlrg: upper-bound($xlrg-range);
+
+/**
+ * Media query extra extra large range upper bound
+ *
+ * @nuclide XX-Large-Range-Upper-Bound
+ * @section Media Queries > Bounds
+ */
+$xxlrg: upper-bound($xxlrg-range);
+
+/**
+ * Media query screen only
+ *
+ * @nuclide Screen-Only
+ * @section Media Queries > Helpers
+ */
+$screen: "only screen";
+
+/**
+ * Media query landscape
+ *
+ * @nuclide Screen-Only
+ * @section Media Queries > Helpers
+ */
+$landscape: "#{$screen} and (orientation: landscape)";
+
+/**
+ * Media query portrait
+ *
+ * @nuclide Screen-Only
+ * @section Media Queries > Helpers
+ */
+$portrait: "#{$screen} and (orientation: portrait)";
+
+/**
+ * Media extra small up
+ *
+ * @nuclide X-Small-Up
+ * @section Media Queries > Helpers
+ */
+$xsml-up: "#{$screen} and (min-width:#{lower-bound($xsml-range)})";
+
+/**
+ * Media extra small down
+ *
+ * @nuclide X-Small-Down
+ * @section Media Queries > Helpers
+ */
+$xsml-down: "#{$screen} and (max-width:#{lower-bound($xsml)})";
+
+/**
+ * Media extra small only
+ *
+ * @nuclide X-Small-Only
+ * @section Media Queries > Helpers
+ */
+$xsml-only: "#{$screen} and (max-width: #{upper-bound($xsml-range)})";
+
+/**
+ * Media small up
+ *
+ * @nuclide Small-Up
+ * @section Media Queries > Helpers
+ */
+$sml-up: "#{$screen} and (min-width:#{lower-bound($sml-range)})";
+
+/**
+ * Media small down
+ *
+ * @nuclide Small-Down
+ * @section Media Queries > Helpers
+ */
+$sml-down: "#{$screen} and (max-width:#{lower-bound($sml)})";
+
+/**
+ * Media small only
+ *
+ * @nuclide Small-Only
+ * @section Media Queries > Helpers
+ */
+$sml-only: "#{$screen} and (min-width:#{lower-bound($sml-range)}) and (max-width:#{upper-bound($sml-range)})";
+
+/**
+ * Media medium up
+ *
+ * @nuclide Med-Up
+ * @section Media Queries > Helpers
+ */
+$med-up: "#{$screen} and (min-width:#{lower-bound($med-range)})";
+
+/**
+ * Media medium down
+ *
+ * @nuclide Med-Down
+ * @section Media Queries > Helpers
+ */
+$med-down: "#{$screen} and (max-width:#{lower-bound($med)})";
+
+/**
+ * Media medium only
+ *
+ * @nuclide Med-Only
+ * @section Media Queries > Helpers
+ */
+$med-only: "#{$screen} and (min-width:#{lower-bound($med-range)}) and (max-width:#{upper-bound($med-range)})";
+
+/**
+ * Media large up
+ *
+ * @nuclide Large-Up
+ * @section Media Queries > Helpers
+ */
+$lrg-up: "#{$screen} and (min-width:#{lower-bound($lrg-range)})";
+
+/**
+ * Media large down
+ *
+ * @nuclide Large-Down
+ * @section Media Queries > Helpers
+ */
+$lrg-down: "#{$screen} and (max-width:#{lower-bound($lrg)})";
+
+/**
+ * Media large only
+ *
+ * @nuclide Large-Only
+ * @section Media Queries > Helpers
+ */
+$lrg-only: "#{$screen} and (min-width:#{lower-bound($lrg-range)}) and (max-width:#{upper-bound($lrg-range)})";
+
+/**
+ * Media extra large up
+ *
+ * @nuclide X-Large-Up
+ * @section Media Queries > Helpers
+ */
+$xlrg-up: "#{$screen} and (min-width:#{lower-bound($xlrg-range)})";
+
+/**
+ * Media extra large down
+ *
+ * @nuclide X-Large-Down
+ * @section Media Queries > Helpers
+ */
+$xlrg-down: "#{$screen} and (max-width:#{lower-bound($xlrg)})";
+
+/**
+ * Media extra large only
+ *
+ * @nuclide X-Large-Only
+ * @section Media Queries > Helpers
+ */
+$xlrg-only: "#{$screen} and (min-width:#{lower-bound($xlrg-range)}) and (max-width:#{upper-bound($xlrg-range)})";
+
+/**
+ * Media extra extra large up
+ *
+ * @nuclide XX-Large-Up
+ * @section Media Queries > Helpers
+ */
+$xxlrg-up: "#{$screen} and (min-width:#{lower-bound($xxlrg-range)})";

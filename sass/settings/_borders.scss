@@ -1,0 +1,63 @@
+/**
+ * The default border color
+ *
+ * @nuclide Border-Color
+ * @section General > Border
+ */
+$border--color: $color--light-grey;
+
+/**
+ * The default border width
+ *
+ * @nuclide Border-Width
+ * @section General > Border
+ */
+$border--width: 1px;
+
+/**
+ * The thick border width
+ *
+ * @nuclide Border-Width-Thick
+ * @section General > Border
+ */
+$border--width--thick: $border--width * 2;
+
+/**
+ * The thicker border width
+ *
+ * @nuclide Border-Width-Thicker
+ * @section General > Border
+ */
+$border--width--thicker: $border--width * 3;
+
+/**
+ * The thickest border width
+ *
+ * @nuclide Border-Width-Thickest
+ * @section General > Border
+ */
+$border--width--thickest: $border--width * 4;
+
+/**
+ * The default border stroke
+ *
+ * @nuclide Border-Stroke
+ * @section General > Border
+ */
+$border--stroke: solid;
+
+/**
+ * The default border
+ *
+ * @nuclide Border
+ * @section General > Border
+ */
+$border: $border--width $border--stroke $border--color;
+
+/**
+ * Global border radius
+ *
+ * @nuclide Border-Radius
+ * @section General > Miscellaneous
+ */
+$border--radius: 4px;

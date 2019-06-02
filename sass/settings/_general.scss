@@ -1,0 +1,36 @@
+/**
+ * Default transition
+ *
+ * @nuclide Default-Transition
+ * @section General > Miscellaneous
+ */
+$default-transition: all 0.2s ease-in-out;
+/**
+ * Default drop shadow
+ *
+ * @nuclide Drop-Shadow
+ * @section General > Miscellaneous
+ */
+$drop-shadow: rgba(0, 0, 0, .2) 1px 1px 3px;
+/**
+ * The default transparent overlay background color
+ *
+ * @nuclide Modal-Overlay
+ * @section General > Miscellaneous
+ */
+$modal--overlay--bk-color: rgba(238, 238, 238, 0.8);
+/**
+ * Default selection background color
+ *
+ * @nuclide Selection-Background-Color
+ * @section General > Miscellaneous
+ */
+$selection-background-color: $color--primary;
+/**
+ * Default selection color
+ *
+ * @nuclide Selection-Color
+ * @section General > Miscellaneous
+ */
+$selection-color: $color--white;
+

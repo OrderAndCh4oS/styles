@@ -1,0 +1,33 @@
+
+
+/**
+ * Get the lowest value in a range
+ *
+ * @mixin
+ * @section Media Query Mixins
+ * @param $range a list unit values
+ * @example
+ *  @include lower-bound((1024px, 1239px));
+ */
+@function lower-bound($range) {
+  @if length($range) <= 0 {
+    @return 0;
+  }
+  @return nth($range, 1);
+}
+
+/**
+ * Get the highest value in a range
+ *
+ * @mixin
+ * @section Media Query Mixins
+ * @param $range a list unit values
+ * @example
+ *  @include upper-bound((1024px, 1239px));
+ */
+@function upper-bound($range) {
+  @if length($range) < 2 {
+    @return 999999999999;
+  }
+  @return nth($range, 2);
+}
