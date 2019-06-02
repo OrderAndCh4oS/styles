@@ -1,8 +1,8 @@
 @import '~modularscale-sass/stylesheets/modularscale.scss';
 
-@import "functions";
-@import "settings";
-@import "base";
+@import "functions/all";
+@import "settings/all";
+@import "base/all";
 @import "elements/all";
 @import "layout/all";
 @import "components/all";

@@ -1,0 +1,71 @@
+/**
+ * Form default width
+ *
+ * @nuclide Form-Width
+ * @section Form
+ */
+$form--width: 100%;
+/**
+ * Form padding
+ *
+ * @nuclide Form-Padding
+ * @section Form > Input
+ */
+$form--padding: rem-calc(4) rem-calc(6);
+/**
+ * Form border
+ *
+ * @nuclide Form-Border
+ * @section Form
+ */
+$form--border: $border--width $border--stroke $color--light-grey;
+/**
+ * Form border when focused
+ *
+ * @nuclide Form-Border-Focus
+ * @section Form
+ */
+$form--border--focus: $border--width $border--stroke $color--primary;
+/**
+ * Form font size
+ *
+ * @nuclide Form-Font-Size
+ * @section Form
+ */
+$form--font--size: $font--size--one;
+/**
+ * Form input text color
+ *
+ * @nuclide Input-Color
+ * @section Form > Input
+ */
+$input--color: $color--black;
+/**
+ * Form input text focus color
+ *
+ * @nuclide Input-Focus-Color
+ * @section Form > Input
+ */
+$input--focus--color: $color--black;
+/**
+ * Form input background color
+ *
+ * @nuclide Background-Color
+ * @section Form > Input
+ */
+$input--bk-color: $color--white;
+/**
+ * Form input background focus color
+ *
+ * @nuclide Background-Color-Focus
+ * @section Form > Input
+ */
+$input--focus--bk-color: $color--white;
+
+/**
+ * Form select padding, can differ slightly to input padding
+ *
+ * @nuclide Select-Padding
+ * @section Form > Select
+ */
+$select--padding: rem-calc(4) rem-calc(6);

@@ -1,0 +1,169 @@
+/** @color white */
+$color--white: #fcfcfc;
+/** @color lightest-grey */
+$color--lightest-grey: #eeeeee;
+/** @color lighter-grey */
+$color--lighter-grey: #dfdfdf;
+/** @color light-grey */
+$color--light-grey: #c4c4c4;
+/** @color grey */
+$color--grey: #808080;
+/** @color dark-grey */
+$color--dark-grey: #525252;
+/** @color darker-grey */
+$color--darker-grey: #414141;
+/** @color darkest-grey */
+$color--darkest-grey: #363636;
+/** @color black */
+$color--black: #1c1c1c;
+
+/** @color green */
+$color--green: #35c13a;
+/** @color lighter-green */
+$color--lighter-green: #3be541;
+/** @color red */
+$color--red: #c62d32;
+/** @color lighter-red */
+$color--lighter-red: #ee393c;
+
+/**
+ * The main brand color variabled.
+ *
+ * @nuclide Primary-Color
+ * @section Colors > Brand
+ */
+$color--primary: $color--black;
+
+/**
+ * The main brand color variable when hovered.
+ *
+ * @nuclide Primary-Color-Hover
+ * @section Colors > Brand
+ */
+$color--primary--hover: $color--grey;
+
+/**
+ * An alternative brand color variable.
+ *
+ * @nuclide Secondary-Color
+ * @section Colors > Brand
+ */
+$color--secondary: $color--dark-grey;
+
+/**
+ * An alternative brand color variable when hovered.
+ *
+ * @nuclide Secondary-Color-Hover
+ * @section Colors > Brand
+ */
+$color--secondary--hover: $color--light-grey;
+
+/**
+ * The main color for depicting errors or dangerous actions.
+ *
+ * @nuclide Error-Color
+ * @section Colors > Semantic
+ */
+$color--error: $color--red;
+
+/**
+ * The main color for depicting errors or dangerous actions when hovered.
+ *
+ * @nuclide Error-Color-Hover
+ * @section Colors > Semantic
+ */
+$color--error--hover: $color--lighter-red;
+
+/**
+ * The main color for depicting valid states or affirmative actions.
+ *
+ * @nuclide Error-Color-Hover
+ * @section Colors > Semantic
+ */
+$color--valid: $color--green;
+
+/**
+ * The main color for depicting valid states or affirmative actions when hovered.
+ *
+ * @nuclide Error-Color-Hover
+ * @section Colors > Semantic
+ */
+$color--valid--hover: $color--lighter-green;
+
+/**
+ * An array containing all the defined colors
+ *
+ * @nuclide Color-List
+ * @section Colors > List
+ */
+$colors: "black" $color--black,
+"darkest-grey" $color--darkest-grey,
+"darker-grey" $color--darker-grey,
+"dark-grey" $color--dark-grey,
+"grey" $color--grey,
+"light-grey" $color--light-grey,
+"lighter-grey" $color--lighter-grey,
+"lightest-grey" $color--lightest-grey,
+"white" $color--white,
+"green" $color--green,
+"red" $color--red,
+"lighter-green" $color--lighter-green,
+"lighter-red" $color--lighter-red,
+"primary" $color--primary,
+"secondary" $color--secondary,
+"error" $color--error,
+"valid" $color--valid "transparent" transparent;
+
+/**
+ * The default body background colour
+ *
+ * @nuclide Body-Background-Color
+ * @section General > Background Colors
+ */
+$body--bk-color: $color--white;
+
+/**
+ * The default page wrapper background color
+ *
+ * @nuclide Page-Wrapper-Background-Color
+ * @section General > Background Colors
+ */
+$wrapper--bk-color: $color--white;
+
+/**
+ * Header color
+ *
+ * @nuclide Header-Color
+ * @section General > Colors
+ */
+$header--color: $color--black;
+/**
+ * Text color
+ *
+ * @nuclide Text-Color
+ * @section General > Colors
+ */
+$text--color: $color--darker-grey;
+/**
+ * Text color light
+ *
+ * @nuclide Text-Color-Light
+ * @section General > Colors
+ */
+$text--color-light: $color--light-grey;
+
+/**
+ * The default link color
+ *
+ * @nuclide Link-Color
+ * @section General > Links
+ */
+$link--color: $color--dark-grey;
+
+/**
+ * The default link color when hovered
+ *
+ * @nuclide Link-Color-Hover
+ * @section General > Links
+ */
+$link--color--hover: $color--darkest-grey;

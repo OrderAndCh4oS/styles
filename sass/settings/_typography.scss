@@ -1,0 +1,215 @@
+// The default font-size is set to 100% of the browser style sheet (usually 16px)
+// for compatibility with brower-based text zoom or user-set defaults.
+
+// Since the typical default browser font-size is 16px, that makes the calculation for grid size.
+// If you want your base font-size to be different and not have it affect the grid breakpoints,
+// set $rem-base to $base-font-size and make sure $base-font-size is a px value.
+
+$base-font-size: 16px;
+$base-line-height: 1.25;
+$em-base: $base-font-size !default;
+
+$wrapper-width: 1920;
+$gutter: rem-calc($base-font-size + 3);
+$gutter--half: $gutter / 2;
+$gutter--double: $gutter * 2;
+
+$ms-base: $base-font-size 20;
+$ms-ratio: $golden;
+
+
+/**
+ * The base font family
+ *
+ * @nuclide Font-Family
+ * @section Font
+ */
+$font--family: "Avenir", "Verdana", "Helvetica", sans-serif;
+
+/**
+ * The base font family emphasis type oblique/italic
+ *
+ * @nuclide Font-Family-Emphasis
+ * @section Font
+ */
+$font--emphasis: italic;
+
+/**
+ * The base font family weight light
+ *
+ * @nuclide Font-Family-Weight-Light
+ * @section Font > Weights
+ */
+$font--weight--light: 300;
+/**
+ * The base font family weight regular
+ *
+ * @nuclide Font-Family-Weight-Regular
+ * @section Font > Weights
+ */
+$font--weight--regular: 400;
+/**
+ * The base font family weight medium
+ *
+ * @nuclide Font-Family-Weight-Medium
+ * @section Font > Weights
+ */
+$font--weight--medium: 500;
+/**
+ * The base font family weight semi-bold
+ *
+ * @nuclide Font-Family-Weight-Semi-Bold
+ * @section Font > Weights
+ */
+$font--weight--semi-bold: 600;
+/**
+ * The base font family weight bold
+ *
+ * @nuclide Font-Family-Weight-Bold
+ * @section Font > Weights
+ */
+$font--weight--bold: 700;
+/**
+ * The base font family weight black
+ *
+ * @nuclide Font-Family-Weight-Black
+ * @section Font > Weights
+ */
+$font--weight--black: 900;
+
+/**
+ * Extra small font size
+ *
+ * @nuclide Font-Minus-Two
+ * @section Font > Sizes
+ */
+$font--size--minus-two: rem-calc(ms(-2));
+/**
+ * Small font size
+ *
+ * @nuclide Font-Minus-One
+ * @section Font > Sizes
+ */
+$font--size--minus-one: rem-calc(ms(-1));
+/**
+ * Normal font size
+ *
+ * @nuclide Font-One
+ * @section Font > Sizes
+ */
+$font--size--one: rem-calc(ms(0));
+/**
+ * Font size two
+ *
+ * @nuclide Font-Two
+ * @section Font > Sizes
+ */
+$font--size--two: rem-calc(ms(1));
+/**
+ * Font size three
+ *
+ * @nuclide Font-Three
+ * @section Font > Sizes
+ */
+$font--size--three: rem-calc(ms(2));
+/**
+ * Font size four
+ *
+ * @nuclide Font-Four
+ * @section Font > Sizes
+ */
+$font--size--four: rem-calc(ms(3));
+/**
+ * Font size five
+ *
+ * @nuclide Font-Five
+ * @section Font > Sizes
+ */
+$font--size--five: rem-calc(ms(4));
+/**
+ * Font size six
+ *
+ * @nuclide Font-Six
+ * @section Font > Sizes
+ */
+$font--size--six: rem-calc(ms(5));
+/**
+ * Font size seven
+ *
+ * @nuclide Font-Seven
+ * @section Font > Sizes
+ */
+$font--size--seven: rem-calc(ms(6));
+/**
+ * Font size eight
+ *
+ * @nuclide Font-Eight
+ * @section Font > Sizes
+ */
+$font--size--eight: rem-calc(ms(7));
+/**
+ * Font size nine
+ *
+ * @nuclide Font-Nine
+ * @section Font > Sizes
+ */
+$font--size--nine: rem-calc(ms(8));
+/**
+ * Font size ten
+ *
+ * @nuclide Font-Ten
+ * @section Font > Sizes
+ */
+$font--size--ten: rem-calc(ms(9));
+/**
+ * Font size eleven
+ *
+ * @nuclide Font-Eleven
+ * @section Font > Sizes
+ */
+$font--size--eleven: rem-calc(ms(10));
+/**
+ * Font size twelve
+ *
+ * @nuclide Font-Twelve
+ * @section Font > Sizes
+ */
+$font--size--twelve: rem-calc(ms(11));
+
+/**
+ * Font leading
+ *
+ * @nuclide Font-Leading
+ * @section Font > Leading
+ */
+$font--leading: rem-calc(4px);
+/**
+ * Font leading tight
+ *
+ * @nuclide Font-Leading-Tight
+ * @section Font > Leading
+ */
+$font--leading--tight: rem-calc(2px);
+/**
+ * Font leading loose
+ *
+ * @nuclide Font-Leading-Loose
+ * @section Font > Leading
+ */
+$font--leading--loose: rem-calc(6px);
+
+/**
+ * The default link decoration
+ *
+ * @nuclide Link-Decoration
+ * @section General > Links
+ */
+$link--decoration: underline;
+
+/**
+ * The default link decoration when hovered
+ *
+ * @nuclide Link-Decoration
+ * @section General > Links
+ */
+$link--decoration--hover: underline;
