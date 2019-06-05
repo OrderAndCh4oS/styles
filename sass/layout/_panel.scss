@@ -4,20 +4,10 @@
  * @modifiers
  *  .panel--tight Panel with tight padding
  *  .panel--loose Panel with loose padding
- *  .panel--flat Remove the border radius on all sides
- *  .panel--top--flat Remove the border radius on the top side
- *  .panel--right--flat Remove the border radius on the right side
- *  .panel--bottom--flat Remove the border radius on the bottom side
- *  .panel--left--flat Remove the border radius on the left side
  * @markup
  *  <div class="panel margin-bottom--gutter"><p class="margin-bottom--none">Panel</p></div>
  *  <div class="panel panel--tight margin-bottom--gutter"><p class="margin-bottom--none">Panel Tight</p></div>
  *  <div class="panel panel--loose margin-bottom--gutter"><p class="margin-bottom--none">Panel Loose</p></div>
- *  <div class="panel panel--flat margin-bottom--gutter"><p class="margin-bottom--none">Panel Flat</p></div>
- *  <div class="panel panel--flat--top margin-bottom--gutter"><p class="margin-bottom--none">Panel Flat Top</p></div>
- *  <div class="panel panel--flat--right margin-bottom--gutter"><p class="margin-bottom--none">Panel Flat Right</p></div>
- *  <div class="panel panel--flat--bottom margin-bottom--gutter"><p class="margin-bottom--none">Panel Flat Bottom</p></div>
- *  <div class="panel panel--flat--left margin-bottom--gutter"><p class="margin-bottom--none">Panel Flat Left</p></div>
  */
 .panel {
   border: $border;
@@ -31,29 +21,5 @@
 
   &.panel--loose {
     padding: $gutter--double;
-  }
-
-  &.panel--flat {
-    border-radius: 0;
-  }
-
-  &.panel--flat--top {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-  }
-
-  &.panel--flat--right {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-
-  &.panel--flat--bottom {
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-
-  &.panel--flat--left {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
   }
 }

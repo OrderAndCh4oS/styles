@@ -17,16 +17,6 @@
  *   </div>
  */
 input,
-input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="tel"],
-input[type="url"],
-input[type="number"],
-input[type="search"],
-input[type="date"],
-input[type="time"],
-input[type="color"],
 textarea,
 select {
   box-sizing: border-box;
@@ -164,16 +154,24 @@ label {
  * @atom Form Field
  * @section Forms > Field
  * @modifiers
- *  .label--text Label text
- *  .label--inline Inline label
+ *  .form-field--inline Inline form field
  * @markup
  *  <div class="form-field">
+ *      <label class="label--text">Label Text</label>
+ *      <input type="text"  placeholder="Text Input">
+ *  </div>
+ *  <div class="form-field form-field--inline">
  *      <label class="label--text">Label Text</label>
  *      <input type="text"  placeholder="Text Input">
  *  </div>
  */
 .form-field {
   margin-bottom: $gutter;
+}
+
+.form-field--inline {
+  display: flex;
+  flex: 0 1 auto;
 }
 
 /**
