@@ -6,7 +6,6 @@
  */
 $button--padding: rem-calc(5) rem-calc(12) rem-calc(5);
 
-
 /**
  * Button border
  *
@@ -14,6 +13,7 @@ $button--padding: rem-calc(5) rem-calc(12) rem-calc(5);
  * @section Buttons > Default
  */
 $button--border: $border--width $border--stroke $color--primary;
+
 /**
  * Button border when hovered
  *
@@ -23,9 +23,25 @@ $button--border: $border--width $border--stroke $color--primary;
 $button--border--hover: $border--width $border--stroke $color--primary--hover;
 
 /**
- * Button Border disabled
+ * Button border disabled
  *
  * @nuclide Button-Border-Disabled
  * @section Buttons > Disabled
  */
 $button--border--disabled: $border--width $border--stroke $color--light-grey;
+
+/**
+ * Button font family
+ *
+ * @nuclide Button-Font-Family
+ * @section Buttons > Font
+ */
+$button--font-family: $font--family;
+
+/**
+ * Button font weight
+ *
+ * @nuclide Button-Font-Weight
+ * @section Buttons > Font
+ */
+$button--font-weight: $font--weight--bold;
