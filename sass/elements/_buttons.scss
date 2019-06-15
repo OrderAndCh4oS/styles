@@ -35,12 +35,12 @@ input[type="button"] {
   background: $button--bk-color;
   border: $button--border;
   color: $button--color;
-  font-weight: $font--weight--medium;
+  font-weight: $button--font-weight;
   text-decoration: none;
   cursor: pointer;
   line-height: $base-line-height;
   padding: $button--padding;
-  font-family: $font--family;
+  font-family: $button--font-family;
   transition: background-color 340ms ease, border-color 340ms ease;
   border-radius: $border--radius;
   -webkit-appearance: none;
