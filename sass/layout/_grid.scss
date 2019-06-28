@@ -225,6 +225,25 @@
   margin-bottom: $gutter;
 }
 
+/**
+ * @atom Block
+ * @section Layout > Grid
+ * @markup
+ *  <div class="row">
+ *      <div class="column col-12">
+ *          <div class="block">
+ *              <div><p class="margin-bottom--none">Block in a column</p></div>
+ *              <div><p class="margin-bottom--none">Block in a column</p></div>
+ *          </div>
+ *      </div>
+ *  </div>
+ */
+.block {
+  display: flex;
+  flex-wrap: nowrap;
+  flex: 1;
+}
+
 .col-1 {
   width: 8.3333%;
 }
