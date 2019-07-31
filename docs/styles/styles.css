@@ -157,6 +157,42 @@
  * @section General > Links
  */
 /**
+ * Button color
+ *
+ * @nuclide Button-Color
+ * @section Buttons > Default
+ */
+/**
+ * Button color
+ *
+ * @nuclide Button-Color
+ * @section Buttons > Default
+ */
+/**
+ * Button background color
+ *
+ * @nuclide Button-Background-Colour
+ * @section Buttons > Default
+ */
+/**
+ * Button background color when hovered
+ *
+ * @nuclide Button-Background-Colour-Hovered
+ * @section Buttons > Default
+ */
+/**
+ * Button color disabled
+ *
+ * @nuclide Button-Color-Disabled
+ * @section Buttons > Disabled
+ */
+/**
+ * Button background color disabled
+ *
+ * @nuclide Button-Background-Color-Disabled
+ * @section Buttons > Disabled
+ */
+/**
  * The default border color
  *
  * @nuclide Border-Color
@@ -433,30 +469,6 @@
  * @section Buttons > Default
  */
 /**
- * Button color
- *
- * @nuclide Button-Color
- * @section Buttons > Default
- */
-/**
- * Button color
- *
- * @nuclide Button-Color
- * @section Buttons > Default
- */
-/**
- * Button background color
- *
- * @nuclide Button-Background-Colour
- * @section Buttons > Default
- */
-/**
- * Button background color when hovered
- *
- * @nuclide Button-Background-Colour-Hovered
- * @section Buttons > Default
- */
-/**
  * Button border
  *
  * @nuclide Button-Border
@@ -469,22 +481,22 @@
  * @section Buttons > Default
  */
 /**
- * Button color disabled
- *
- * @nuclide Button-Color-Disabled
- * @section Buttons > Disabled
- */
-/**
- * Button background color disabled
- *
- * @nuclide Button-Background-Color-Disabled
- * @section Buttons > Disabled
- */
-/**
- * Button Border disabled
+ * Button border disabled
  *
  * @nuclide Button-Border-Disabled
  * @section Buttons > Disabled
+ */
+/**
+ * Button font family
+ *
+ * @nuclide Button-Font-Family
+ * @section Buttons > Font
+ */
+/**
+ * Button font weight
+ *
+ * @nuclide Button-Font-Weight
+ * @section Buttons > Font
  */
 /**
  * Default transition
@@ -1470,16 +1482,6 @@ table.table--alternating-columns td:nth-child(even) {
  */
 input,
 input[type="file"],
-input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="tel"],
-input[type="url"],
-input[type="number"],
-input[type="search"],
-input[type="date"],
-input[type="time"],
-input[type="color"],
 textarea,
 select {
   box-sizing: border-box;
@@ -1499,94 +1501,34 @@ select {
   transition: background-color 280ms ease-in-out, border-color 400ms ease-in-out; }
 
 input.input--inline,
-input[type="text"].input--inline,
-input[type="password"].input--inline,
-input[type="email"].input--inline,
-input[type="tel"].input--inline,
-input[type="url"].input--inline,
-input[type="number"].input--inline,
-input[type="search"].input--inline,
-input[type="date"].input--inline,
-input[type="time"].input--inline,
-input[type="color"].input--inline,
 textarea.input--inline,
 select.input--inline {
   display: inline-block;
   width: auto; }
 
 input.input--valid,
-input[type="text"].input--valid,
-input[type="password"].input--valid,
-input[type="email"].input--valid,
-input[type="tel"].input--valid,
-input[type="url"].input--valid,
-input[type="number"].input--valid,
-input[type="search"].input--valid,
-input[type="date"].input--valid,
-input[type="time"].input--valid,
-input[type="color"].input--valid,
 textarea.input--valid,
 select.input--valid {
   border-color: #35c13a; }
 
 input.input--error,
-input[type="text"].input--error,
-input[type="password"].input--error,
-input[type="email"].input--error,
-input[type="tel"].input--error,
-input[type="url"].input--error,
-input[type="number"].input--error,
-input[type="search"].input--error,
-input[type="date"].input--error,
-input[type="time"].input--error,
-input[type="color"].input--error,
 textarea.input--error,
 select.input--error {
   border-color: #c62d32; }
 
 input[readonly],
-input[type="text"][readonly],
-input[type="password"][readonly],
-input[type="email"][readonly],
-input[type="tel"][readonly],
-input[type="url"][readonly],
-input[type="number"][readonly],
-input[type="search"][readonly],
-input[type="date"][readonly],
-input[type="time"][readonly],
-input[type="color"][readonly],
 textarea[readonly],
 select[readonly] {
   background-color: #c4c4c4;
   border: 1px solid #c4c4c4; }
 
 input:focus,
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="email"]:focus,
-input[type="tel"]:focus,
-input[type="url"]:focus,
-input[type="number"]:focus,
-input[type="search"]:focus,
-input[type="date"]:focus,
-input[type="time"]:focus,
-input[type="color"]:focus,
 textarea:focus,
 select:focus {
   border: 1px solid #1c1c1c;
   color: #1c1c1c; }
 
 input:disabled,
-input[type="text"]:disabled,
-input[type="password"]:disabled,
-input[type="email"]:disabled,
-input[type="tel"]:disabled,
-input[type="url"]:disabled,
-input[type="number"]:disabled,
-input[type="search"]:disabled,
-input[type="date"]:disabled,
-input[type="time"]:disabled,
-input[type="color"]:disabled,
 textarea:disabled,
 select:disabled {
   background-color: #c4c4c4; }
@@ -1670,16 +1612,23 @@ label.label--inline {
  * @atom Form Field
  * @section Forms > Field
  * @modifiers
- *  .label--text Label text
- *  .label--inline Inline label
+ *  .form-field--inline Inline form field
  * @markup
  *  <div class="form-field">
+ *      <label class="label--text">Label Text</label>
+ *      <input type="text"  placeholder="Text Input">
+ *  </div>
+ *  <div class="form-field form-field--inline">
  *      <label class="label--text">Label Text</label>
  *      <input type="text"  placeholder="Text Input">
  *  </div>
  */
 .form-field {
   margin-bottom: 1.1875rem; }
+
+.form-field--inline {
+  display: flex;
+  flex: 0 1 auto; }
 
 /**
  * @atom Field Error
@@ -1773,7 +1722,7 @@ input[type="button"] {
   background: #1c1c1c;
   border: 1px solid #1c1c1c;
   color: #fcfcfc;
-  font-weight: 500;
+  font-weight: 700;
   text-decoration: none;
   cursor: pointer;
   line-height: 1.25;
@@ -2199,6 +2148,24 @@ button.button--switch.button--switch--on:after {
   padding-right: 0.59375rem;
   margin-bottom: 1.1875rem; }
 
+/**
+ * @atom Block
+ * @section Layout > Grid
+ * @markup
+ *  <div class="row">
+ *      <div class="column col-12">
+ *          <div class="block">
+ *              <div><p class="margin-bottom--none">Block in a column</p></div>
+ *              <div><p class="margin-bottom--none">Block in a column</p></div>
+ *          </div>
+ *      </div>
+ *  </div>
+ */
+.block {
+  display: flex;
+  flex-wrap: nowrap;
+  flex: 1; }
+
 .col-1 {
   width: 8.3333%; }
 
@@ -2475,6 +2442,15 @@ button.button--switch.button--switch--on:after {
 .flex--column-reverse {
   flex-direction: column-reverse; }
 
+.justify-content--space-between {
+  justify-content: space-between; }
+
+.justify-content--center {
+  justify-content: center; }
+
+.justify-content--flex-end {
+  justify-content: flex-end; }
+
 @media only screen and (max-width: 1599px) {
   .flex--xlrg--row {
     flex-direction: row; }
@@ -2483,7 +2459,13 @@ button.button--switch.button--switch--on:after {
   .flex--xlrg--column {
     flex-direction: column; }
   .flex--xlrg--column-reverse {
-    flex-direction: column-reverse; } }
+    flex-direction: column-reverse; }
+  .justify-content--xlrg--space-between {
+    justify-content: space-between; }
+  .justify-content--xlrg--center {
+    justify-content: center; }
+  .justify-content--xlrg--flex-end {
+    justify-content: flex-end; } }
 
 @media only screen and (max-width: 1439px) {
   .flex--lrg--row {
@@ -2493,7 +2475,13 @@ button.button--switch.button--switch--on:after {
   .flex--lrg--column {
     flex-direction: column; }
   .flex--lrg--column-reverse {
-    flex-direction: column-reverse; } }
+    flex-direction: column-reverse; }
+  .justify-content--lrg--space-between {
+    justify-content: space-between; }
+  .justify-content--lrg--center {
+    justify-content: center; }
+  .justify-content--lrg--flex-end {
+    justify-content: flex-end; } }
 
 @media only screen and (max-width: 1239px) {
   .flex--med--row {
@@ -2503,7 +2491,13 @@ button.button--switch.button--switch--on:after {
   .flex--med--column {
     flex-direction: column; }
   .flex--med--column-reverse {
-    flex-direction: column-reverse; } }
+    flex-direction: column-reverse; }
+  .justify-content--med--space-between {
+    justify-content: space-between; }
+  .justify-content--med--center {
+    justify-content: center; }
+  .justify-content--med--flex-end {
+    justify-content: flex-end; } }
 
 @media only screen and (max-width: 1023px) {
   .flex--sml--row {
@@ -2513,7 +2507,13 @@ button.button--switch.button--switch--on:after {
   .flex--sml--column {
     flex-direction: column; }
   .flex--sml--column-reverse {
-    flex-direction: column-reverse; } }
+    flex-direction: column-reverse; }
+  .justify-content--sml--space-between {
+    justify-content: space-between; }
+  .justify-content--sml--center {
+    justify-content: center; }
+  .justify-content--sml--flex-end {
+    justify-content: flex-end; } }
 
 @media only screen and (max-width: 767px) {
   .flex--xsml--row {
@@ -2523,7 +2523,13 @@ button.button--switch.button--switch--on:after {
   .flex--xsml--column {
     flex-direction: column; }
   .flex--xsml--column-reverse {
-    flex-direction: column-reverse; } }
+    flex-direction: column-reverse; }
+  .justify-content--xsml--space-between {
+    justify-content: space-between; }
+  .justify-content--xsml--center {
+    justify-content: center; }
+  .justify-content--xsml--flex-end {
+    justify-content: flex-end; } }
 
 /**
  * @atom Push
@@ -2835,20 +2841,10 @@ button.button--switch.button--switch--on:after {
  * @modifiers
  *  .panel--tight Panel with tight padding
  *  .panel--loose Panel with loose padding
- *  .panel--flat Remove the border radius on all sides
- *  .panel--top--flat Remove the border radius on the top side
- *  .panel--right--flat Remove the border radius on the right side
- *  .panel--bottom--flat Remove the border radius on the bottom side
- *  .panel--left--flat Remove the border radius on the left side
  * @markup
  *  <div class="panel margin-bottom--gutter"><p class="margin-bottom--none">Panel</p></div>
  *  <div class="panel panel--tight margin-bottom--gutter"><p class="margin-bottom--none">Panel Tight</p></div>
  *  <div class="panel panel--loose margin-bottom--gutter"><p class="margin-bottom--none">Panel Loose</p></div>
- *  <div class="panel panel--flat margin-bottom--gutter"><p class="margin-bottom--none">Panel Flat</p></div>
- *  <div class="panel panel--flat--top margin-bottom--gutter"><p class="margin-bottom--none">Panel Flat Top</p></div>
- *  <div class="panel panel--flat--right margin-bottom--gutter"><p class="margin-bottom--none">Panel Flat Right</p></div>
- *  <div class="panel panel--flat--bottom margin-bottom--gutter"><p class="margin-bottom--none">Panel Flat Bottom</p></div>
- *  <div class="panel panel--flat--left margin-bottom--gutter"><p class="margin-bottom--none">Panel Flat Left</p></div>
  */
 .panel {
   border: 1px solid #c4c4c4;
@@ -2861,25 +2857,6 @@ button.button--switch.button--switch--on:after {
 
 .panel.panel--loose {
   padding: 2.375rem; }
-
-.panel.panel--flat {
-  border-radius: 0; }
-
-.panel.panel--flat--top {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0; }
-
-.panel.panel--flat--right {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0; }
-
-.panel.panel--flat--bottom {
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0; }
-
-.panel.panel--flat--left {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0; }
 
 /**
  * @atom Border
@@ -2990,6 +2967,44 @@ button.button--switch.button--switch--on:after {
 
 .border--thickest {
   border-width: 4px; }
+
+.border-radius {
+  border-radius: 4px; }
+
+.border-radius--top {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px; }
+
+.border-radius--right {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px; }
+
+.border-radius--bottom {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px; }
+
+.border-radius--left {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px; }
+
+.border-radius--flat {
+  border-radius: 0; }
+
+.border-radius--top--flat {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
+
+.border-radius--right--flat {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0; }
+
+.border-radius--bottom--flat {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0; }
+
+.border-radius--left--flat {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0; }
 
 /**
  * @atom Padding
@@ -3192,6 +3207,18 @@ button.button--switch.button--switch--on:after {
 
 .margin-bottom--double-gutter {
   margin-bottom: 2.375rem; }
+
+.margin-top--auto {
+  margin-top: auto; }
+
+.margin-right--auto {
+  margin-right: auto; }
+
+.margin-bottom--auto {
+  margin-bottom: auto; }
+
+.margin-left--auto {
+  margin-left: auto; }
 
 .page-wrapper {
   min-height: 100%; }
