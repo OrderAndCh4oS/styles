@@ -16,7 +16,7 @@ gulp.task('sass', function() {
             importer: tildeImporter,
         }))
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./dist'))
+        .pipe(gulp.dest('./build'))
         .pipe(gulp.dest('./public'))
         .pipe(gulp.dest('./docs/styles'));
 });
