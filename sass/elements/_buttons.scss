@@ -42,7 +42,7 @@ input[type="button"] {
   padding: $button--padding;
   font-family: $button--font-family;
   transition: background-color 340ms ease, border-color 340ms ease;
-  border-radius: $border--radius;
+  border-radius: $button--border-radius;
   -webkit-appearance: none;
 
   &.button--active,
