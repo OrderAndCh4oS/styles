@@ -23,6 +23,14 @@ $button--border: $border--width $border--stroke $color--primary;
 $button--border--hover: $border--width $border--stroke $color--primary--hover;
 
 /**
+ * Button border radius
+ *
+ * @nuclide Button-Border-Radius
+ * @section Buttons > Default
+ */
+$button--border-radius: 3px;
+
+/**
  * Button border disabled
  *
  * @nuclide Button-Border-Disabled
