@@ -481,6 +481,12 @@
  * @section Buttons > Default
  */
 /**
+ * Button border radius
+ *
+ * @nuclide Button-Border-Radius
+ * @section Buttons > Default
+ */
+/**
  * Button border disabled
  *
  * @nuclide Button-Border-Disabled
@@ -1729,7 +1735,7 @@ input[type="button"] {
   padding: 0.3125rem 0.75rem 0.3125rem;
   font-family: "Avenir", "Verdana", "Helvetica", sans-serif;
   transition: background-color 340ms ease, border-color 340ms ease;
-  border-radius: 4px;
+  border-radius: 3px;
   -webkit-appearance: none; }
 
 .button.button--active, .pagination .button--active.pagination--button, .button:hover, .pagination .pagination--button:hover, .pagination .pagination--current, .button:focus, .pagination .pagination--button:focus, .button:active, .pagination .pagination--button:active,
@@ -2332,104 +2338,6 @@ button.button--switch.button--switch--on:after {
   .col-xsml-12 {
     width: 100%; } }
 
-/**
- * @atom Flex
- * @section Layout > Flex
- * @modifiers
- *  .flex--row Flex direction row
- *  .flex--row-reverse Flex direction row reverse
- *  .flex--column Flex direction column
- *  .flex--column-reverse Flex direction column reverse
- *  .flex--xlrg--row Flex direction row xlrg and down
- *  .flex--xlrg--row-reverse Flex direction row reverse xlrg and down
- *  .flex--xlrg--column Flex direction column xlrg and down
- *  .flex--xlrg--column-reverse Flex direction column reverse xlrg and down
- *  .flex--lrg--row Flex direction row lrg and down
- *  .flex--lrg--row-reverse Flex direction row reverse lrg and down
- *  .flex--lrg--column Flex direction column lrg and down
- *  .flex--lrg--column-reverse Flex direction column reverse lrg and down
- *  .flex--med--row Flex direction row med and down
- *  .flex--med--row-reverse Flex direction row reverse med and down
- *  .flex--med--column Flex direction column med and down
- *  .flex--med--column-reverse Flex direction column reverse med and down
- *  .flex--sml--row Flex direction row sml and down
- *  .flex--sml--row-reverse Flex direction row reverse sml and down
- *  .flex--sml--column Flex direction column sml and down
- *  .flex--sml--column-reverse Flex direction column reverse sml and down
- *  .flex--xsml--row Flex direction row xsml and down
- *  .flex--xsml--row-reverse Flex direction row reverse xsml and down
- *  .flex--xsml--column Flex direction column xsml and down
- *  .flex--xsml--column-reverse Flex direction column reverse xsml and down
- * @markup
- *  <div class="row flex--row">
- *      <div class="column col-4">
- *          <div class="panel">
- *              <p class="margin-bottom--none text--minus-one">Col One</p>
- *          </div>
- *      </div>
- *      <div class="column col-4">
- *          <div class="panel">
- *            <p class="margin-bottom--none text--minus-one">Col Two</p>
- *          </div>
- *      </div>
- *      <div class="column col-4">
- *          <div class="panel">
- *            <p class="margin-bottom--none text--minus-one">Col Three</p>
- *          </div>
- *      </div>
- *  </div>
- *  <div class="row flex--row-reverse">
- *      <div class="column col-4">
- *          <div class="panel">
- *              <p class="margin-bottom--none text--minus-one">Col One</p>
- *          </div>
- *      </div>
- *      <div class="column col-4">
- *          <div class="panel">
- *            <p class="margin-bottom--none text--minus-one">Col Two</p>
- *          </div>
- *      </div>
- *      <div class="column col-4">
- *          <div class="panel">
- *            <p class="margin-bottom--none text--minus-one">Col Three</p>
- *          </div>
- *      </div>
- *  </div>
- *  <div class="row flex--column">
- *      <div class="column col-4">
- *          <div class="panel">
- *              <p class="margin-bottom--none text--minus-one">Col One</p>
- *          </div>
- *      </div>
- *      <div class="column col-4">
- *          <div class="panel">
- *            <p class="margin-bottom--none text--minus-one">Col Two</p>
- *          </div>
- *      </div>
- *      <div class="column col-4">
- *          <div class="panel">
- *            <p class="margin-bottom--none text--minus-one">Col Three</p>
- *          </div>
- *      </div>
- *  </div>
- *  <div class="row flex--column-reverse">
- *      <div class="column col-4">
- *          <div class="panel">
- *              <p class="margin-bottom--none text--minus-one">Col One</p>
- *          </div>
- *      </div>
- *      <div class="column col-4">
- *          <div class="panel">
- *            <p class="margin-bottom--none text--minus-one">Col Two</p>
- *          </div>
- *      </div>
- *      <div class="column col-4">
- *          <div class="panel">
- *            <p class="margin-bottom--none text--minus-one">Col Three</p>
- *          </div>
- *      </div>
- *  </div>
- */
 .flex--row {
   flex-direction: row; }
 
@@ -2531,157 +2439,6 @@ button.button--switch.button--switch--on:after {
   .justify-content--xsml--flex-end {
     justify-content: flex-end; } }
 
-/**
- * @atom Push
- * @section Layout > Grid
- * @modifiers
- *  .push-1 push one
- *  .push-2 push two
- *  .push-3 push three
- *  .push-4 push four
- *  .push-5 push five
- *  .push-6 push six
- *  .push-7 push seven
- *  .push-8 push eight
- *  .push-9 push nine
- *  .push-10 push ten
- *  .push-11 push eleven
- *  .push-xsml-1 push one up to xsml breakpoint
- *  .push-xsml-2 push two up to xsml breakpoint
- *  .push-xsml-3 push three up to xsml breakpoint
- *  .push-xsml-4 push four up to xsml breakpoint
- *  .push-xsml-5 push five up to xsml breakpoint
- *  .push-xsml-6 push six up to xsml breakpoint
- *  .push-xsml-7 push seven up to xsml breakpoint
- *  .push-xsml-8 push eight up to xsml breakpoint
- *  .push-xsml-9 push nine up to xsml breakpoint
- *  .push-xsml-10 push ten up to xsml breakpoint
- *  .push-xsml-11 push eleven up to xsml breakpoint
- *  .push-sml-1 push one p to sml breakpoint
- *  .push-sml-2 push two up to sml breakpoint
- *  .push-sml-3 push three up to sml breakpoint
- *  .push-sml-4 push four up to sml breakpoint
- *  .push-sml-5 push five up to sml breakpoint
- *  .push-sml-6 push six up to sml breakpoint
- *  .push-sml-7 push seven up to sml breakpoint
- *  .push-sml-8 push eight up to sml breakpoint
- *  .push-sml-9 push nine up to sml breakpoint
- *  .push-sml-10 push ten up to sml breakpoint
- *  .push-sml-11 push eleven up to sml breakpoint
- *  .push-med-1 push one p to med breakpoint
- *  .push-med-2 push two up to med breakpoint
- *  .push-med-3 push three up to med breakpoint
- *  .push-med-4 push four up to med breakpoint
- *  .push-med-5 push five up to med breakpoint
- *  .push-med-6 push six up to med breakpoint
- *  .push-med-7 push seven up to med breakpoint
- *  .push-med-8 push eight up to med breakpoint
- *  .push-med-9 push nine up to med breakpoint
- *  .push-med-10 push ten up to med breakpoint
- *  .push-med-11 push eleven up to med breakpoint
- *  .push-lrg-1 push one p to lrg breakpoint
- *  .push-lrg-2 push two up to lrg breakpoint
- *  .push-lrg-3 push three up to lrg breakpoint
- *  .push-lrg-4 push four up to lrg breakpoint
- *  .push-lrg-5 push five up to lrg breakpoint
- *  .push-lrg-6 push six up to lrg breakpoint
- *  .push-lrg-7 push seven up to lrg breakpoint
- *  .push-lrg-8 push eight up to lrg breakpoint
- *  .push-lrg-9 push nine up to lrg breakpoint
- *  .push-lrg-10 push ten up to lrg breakpoint
- *  .push-lrg-11 push eleven up to lrg breakpoint
- *  .push-xlrg-1 push one p to xlrg breakpoint
- *  .push-xlrg-2 push two up to xlrg breakpoint
- *  .push-xlrg-3 push three up to xlrg breakpoint
- *  .push-xlrg-4 push four up to xlrg breakpoint
- *  .push-xlrg-5 push five up to xlrg breakpoint
- *  .push-xlrg-6 push six up to xlrg breakpoint
- *  .push-xlrg-7 push seven up to xlrg breakpoint
- *  .push-xlrg-8 push eight up to xlrg breakpoint
- *  .push-xlrg-9 push nine up to xlrg breakpoint
- *  .push-xlrg-10 push ten up to xlrg breakpoint
- *  .push-xlrg-11 push eleven up to xlrg breakpoint
- * @markup
- *  <div class="container">
- *      <div class="row">
- *          <div class="column col-1 push-1">
- *              <div class="panel">
- *                  <p class="margin-bottom--none text--minus-one">Push 1</p>
- *              </div>
- *          </div>
- *      </div>
- *      <div class="row">
- *          <div class="column col-1 push-2">
- *              <div class="panel">
- *                  <p class="margin-bottom--none text--minus-one">Push 2</p>
- *              </div>
- *          </div>
- *      </div>
- *      <div class="row">
- *          <div class="column col-1 push-3">
- *              <div class="panel">
- *                  <p class="margin-bottom--none text--minus-one">Push 3</p>
- *              </div>
- *          </div>
- *      </div>
- *      <div class="row">
- *          <div class="column col-1 push-4">
- *              <div class="panel">
- *                  <p class="margin-bottom--none text--minus-one">Push 4</p>
- *              </div>
- *          </div>
- *      </div>
- *      <div class="row">
- *          <div class="column col-1 push-5">
- *              <div class="panel">
- *                  <p class="margin-bottom--none text--minus-one">Push 5</p>
- *              </div>
- *          </div>
- *      </div>
- *      <div class="row">
- *          <div class="column col-1 push-6">
- *              <div class="panel">
- *                  <p class="margin-bottom--none text--minus-one">Push 6</p>
- *              </div>
- *          </div>
- *      </div>
- *      <div class="row">
- *          <div class="column col-1 push-7">
- *              <div class="panel">
- *                  <p class="margin-bottom--none text--minus-one">Push 7</p>
- *              </div>
- *          </div>
- *      </div>
- *      <div class="row">
- *          <div class="column col-1 push-8">
- *              <div class="panel">
- *                  <p class="margin-bottom--none text--minus-one">Push 8</p>
- *              </div>
- *          </div>
- *      </div>
- *      <div class="row">
- *          <div class="column col-1 push-9">
- *              <div class="panel">
- *                  <p class="margin-bottom--none text--minus-one">Push 9</p>
- *              </div>
- *          </div>
- *      </div>
- *      <div class="row">
- *          <div class="column col-1 push-10">
- *              <div class="panel">
- *                  <p class="margin-bottom--none text--minus-one">Push 10</p>
- *              </div>
- *          </div>
- *      </div>
- *      <div class="row">
- *          <div class="column col-1 push-11">
- *              <div class="panel">
- *                  <p class="margin-bottom--none text--minus-one">Push 11</p>
- *              </div>
- *          </div>
- *      </div>
- *  </div>
- */
 .push-1 {
   margin-left: 8.3333%; }
 
